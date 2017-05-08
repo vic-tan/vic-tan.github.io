@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dafaAndroid-快速发布开源项目到jcenter
+title: Android-快速发布开源项目到jcenter
 date: 2016-12-23
 categories: blog
 tags: [Android]
