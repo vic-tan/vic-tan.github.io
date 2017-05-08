@@ -87,8 +87,7 @@ header-img: "img/zhihu.jpg"
 
 如果你觉得真如我所说，请你把本文分享给你周边的朋友，大家都受益，或者扫下面的二维码进行分享好友 ，或者复制下链接分享。
 
-*  网址链接： <p>
-<https://vic-tan.github.io/milestone/>
+*  <https://vic-tan.github.io/milestone/>
 
 *  分享二维码
 <center>
