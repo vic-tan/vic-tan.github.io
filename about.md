@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "关于"
+title: "about"
 description: "my name is 谭乐言 On my way to change"
 header-img: "img/green.jpg"
 ---
@@ -30,7 +30,7 @@ header-img: "img/green.jpg"
 
 
 <center>
-    <p><img src="http://i1.piimg.com/593662/c30990e60e02112c.jpg" align="center"></p>
+    <p><img   height="150" width="150" src="http://i1.piimg.com/593662/c30990e60e02112c.jpg" align="left"></p>
 </center>
 
 
