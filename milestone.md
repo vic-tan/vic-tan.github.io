@@ -45,3 +45,15 @@ app试玩赚钱前几年就有了，我是最近才做。之所以推荐给大�
 <center>
     <p><img   height="280" width="280" src="http://i2.muimg.com/593662/584304546eba610e.jpg" align="center"></p>
 </center>
+
+
+*   秒赚：安卓、苹果、ipad均可做，签到可得50金币，一个任务的价格是1元左右，满5元可提现。
+<center>
+    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/b48853325d2e8614.jpg" align="center"></p>
+</center>
+
+*   熊猫试玩：安卓、苹果、ipad均可做，注册送2元，一个任务的价格2元左右，满10元提现。。
+<center>
+    <p><img   height="280" width="280" src="http://i1.piimg.com/593662/167618d2dc8fa0bb.jpg" align="center"></p>
+</center>
+
