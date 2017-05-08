@@ -36,7 +36,7 @@ header-img: "img/green.jpg"
 
 
 <center>
-    <p><img   height="270" width="220" src="http://i1.piimg.com/593662/a24d5dc8ed5804f9.png" align="left"></p>
+    <p><img   height="270" width="220" src="http://i4.buimg.com/593662/10c60b96439e0c28.png" align="left"></p>
 </center>
 
 
