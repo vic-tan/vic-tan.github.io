@@ -30,7 +30,7 @@ header-img: "img/green.jpg"
 
 
 <center>
-    <p><img   height="150" width="150" src="http://i1.piimg.com/593662/c30990e60e02112c.jpg" align="left"></p>
+    <p><img   height="220" width="190" src="http://i1.piimg.com/593662/c30990e60e02112c.jpg" align="left"></p>
 </center>
 
 
