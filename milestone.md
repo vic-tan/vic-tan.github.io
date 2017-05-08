@@ -91,5 +91,5 @@ header-img: "img/zhihu.jpg"
 
 *  分享二维码
 <center>
-    <p><img   height="280" width="230" src="http://i4.buimg.com/593662/10c60b96439e0c28.png" align="center"></p>
+    <p><img   height="280" width="230" src="http://i4.buimg.com/593662/62f555d0e3fb0102.png" align="center"></p>
 </center>
