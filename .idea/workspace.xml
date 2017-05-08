@@ -32,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="284">
-                <caret line="52" column="98" lean-forward="false" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
+              <first_editor relative-caret-position="228">
+                <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -220,20 +220,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="iframe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vic-tan.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vic-tan.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -347,12 +333,12 @@
       <workItem from="1494165307741" duration="263000" />
       <workItem from="1494168470150" duration="1279000" />
       <workItem from="1494207843017" duration="232000" />
-      <workItem from="1494208077416" duration="23388000" />
+      <workItem from="1494208077416" duration="23716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25162000" />
+    <option name="totallyTimeSpent" value="25490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
@@ -643,8 +629,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="284">
-            <caret line="52" column="98" lean-forward="false" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
+          <first_editor relative-caret-position="228">
+            <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
