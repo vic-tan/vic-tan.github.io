@@ -78,7 +78,7 @@ header-img: "img/zhihu.jpg"
     <p><img   height="230" width="230" src="http://i1.piimg.com/593662/9986846b60adcd0e.jpg" align="center"></p>
 </center>
 
-*   iMoney：只能苹果、ipad可用热葫芦：注册送2元，1个任务是1到3元左右，满10元提现。
+*   热葫芦：只能苹果、ipad可用：注册送2元，1个任务是1到3元左右，满10元提现。
 <center>
     <p><img   height="230" width="230" src="http://i1.piimg.com/593662/209ba8b38d50b22e.jpg" align="center"></p>
 </center>
