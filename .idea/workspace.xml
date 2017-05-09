@@ -16,12 +16,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="milestone.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="milestone.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/milestone.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="121">
-                <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <first_editor relative-caret-position="134">
+                <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -29,12 +29,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-05-08-手机下载应用试玩赚零花钱新手教程.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-05-08-手机下载应用试玩赚零花钱新手教程.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="114">
-                <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <first_editor relative-caret-position="177">
+                <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="20" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_posts/2017-05-01-我的地址快捷入口.md" />
-        <option value="$PROJECT_DIR$/milestone.md" />
         <option value="$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md" />
+        <option value="$PROJECT_DIR$/milestone.md" />
       </list>
     </option>
   </component>
@@ -287,12 +287,12 @@
       <workItem from="1494207843017" duration="232000" />
       <workItem from="1494208077416" duration="25483000" />
       <workItem from="1494249755280" duration="2137000" />
-      <workItem from="1494301021134" duration="1674000" />
+      <workItem from="1494301021134" duration="2306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31068000" />
+    <option name="totallyTimeSpent" value="31700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
@@ -636,22 +636,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/milestone.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="121">
-            <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <first_editor relative-caret-position="177">
+            <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-05-08-手机下载应用试玩赚零花钱新手教程.md">
+    <entry file="file://$PROJECT_DIR$/milestone.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <first_editor relative-caret-position="134">
+            <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />
