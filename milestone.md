@@ -45,6 +45,22 @@ header-img: "img/zhihu.jpg"
     <p><img   height="420" width="280" src="http://i2.muimg.com/593662/de0a9d942ec7c0c7.jpg" align="center"></p>
 </center>
 
+*   神灯：只能苹果、ipad可用，一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+<center>
+    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
+</center>
+
+*   懒猫：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+<center>
+    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/391078944926208a.jpg" align="center"></p>
+</center>
+
+
+*   红包达人：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+<center>
+    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/c79a75faa4fe4678.png" align="center"></p>
+</center>
+
 
 *   钱咖：安卓、苹果、ipad均可做，一单1.5到3.5元，任务最多，可以看到任务的更新时间，任务比较简单，满10元提现，最近使用微信提现失败，大家使用支付宝提现就能成功。
 <center>
