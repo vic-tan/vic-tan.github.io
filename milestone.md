@@ -35,19 +35,41 @@ header-img: "img/zhihu.jpg"
 # 下载各平台试玩助手
 *   扫一扫或识别下面二维码下载各平台试玩助手
 
-*   试客小兵（应用试客）：苹果、ipad可用，一单价格2到3.5元，下午三点更新任务，10元提现。这个是最好的一个平台，任务简单，不需要注册，下载，打开几分钟就可以。
+*   试客小兵（应用试客）：一单价格2到3.5元，下午三点更新任务，10元提现。这个是最好的一个平台，任务简单，不需要注册，下载，打开几分钟就可以。
 <center>
     <p><img   height="250" width="280" src="http://i1.piimg.com/593662/58ef5e21d448ff8b.jpg" align="center"></p>
 </center>
 
-*   PP红包：只能苹果、ipad可用，一单1到2元，登录送3元，每天30多个快速任务，满10元可以微信和支付宝提现。
+*   神灯：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+<center>
+    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
+</center>
+
+*   鼠宝：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+<center>
+    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
+</center>
+
+*   iMoney：加入送1元，满3元提现，一个任务的价格是1元左右，还可以点赞赚钱，不过得提升等级。
+<center>
+    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/9986846b60adcd0e.jpg" align="center"></p>
+</center>
+
+*   PP红包：一单1到2元，登录送3元，每天30多个快速任务，满10元可以微信和支付宝提现。
 <center>
     <p><img   height="420" width="280" src="http://i2.muimg.com/593662/de0a9d942ec7c0c7.jpg" align="center"></p>
 </center>
 
-*   神灯：只能苹果、ipad可用，一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
+
+*   钱庄：登录送奖励，一单价格是一元左右，独家任务多，9，14，16点更新任务，下载任务比较多，满5元可以微信提现。
 <center>
-    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
+    <p><img   height="280" width="280" src="http://i2.muimg.com/593662/584304546eba610e.jpg" align="center"></p>
+</center>
+
+
+*   赚客：签到可得50金币，一个任务的价格是1元左右，满5元可提现。
+<center>
+    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/51c6eae5ef3437f6.jpg" align="center"></p>
 </center>
 
 *   懒猫：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
@@ -55,54 +77,19 @@ header-img: "img/zhihu.jpg"
     <p><img   height="250" width="280" src="http://i4.buimg.com/593662/391078944926208a.jpg" align="center"></p>
 </center>
 
-
 *   红包达人：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
 <center>
     <p><img   height="250" width="280" src="http://i4.buimg.com/593662/c79a75faa4fe4678.png" align="center"></p>
 </center>
 
 
-*   钱咖：安卓、苹果、ipad均可做，一单1.5到3.5元，任务最多，可以看到任务的更新时间，任务比较简单，满10元提现，最近使用微信提现失败，大家使用支付宝提现就能成功。
-<center>
-    <p><img   height="280" width="280" src="http://i2.muimg.com/593662/ebf668a2d6ffd118.jpg" align="center"></p>
-</center>
-
-
-*   钱庄：安卓、苹果、ipad均可做，登录送奖励，一单价格是一元左右，独家任务多，9，14，16点更新任务，下载任务比较多，满5元可以微信提现。
-<center>
-    <p><img   height="280" width="280" src="http://i2.muimg.com/593662/584304546eba610e.jpg" align="center"></p>
-</center>
-
-
-*   秒赚：安卓、苹果、ipad均可做，签到可得50金币，一个任务的价格是1元左右，满5元可提现。
-<center>
-    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/b48853325d2e8614.jpg" align="center"></p>
-</center>
-
-*   赚客：安卓、苹果、ipad均可做，签到可得50金币，一个任务的价格是1元左右，满5元可提现。
-<center>
-    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/51c6eae5ef3437f6.jpg" align="center"></p>
-</center>
-
-*   熊猫试玩：安卓、苹果、ipad均可做，注册送2元，一个任务的价格2元左右，满10元提现。
-<center>
-    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/167618d2dc8fa0bb.jpg" align="center"></p>
-</center>
-
-*   iMoney：安卓、苹果、ipad均可做，加入送1元，满3元提现，一个任务的价格是1元左右，还可以点赞赚钱，不过得提升等级。
-<center>
-    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/9986846b60adcd0e.jpg" align="center"></p>
-</center>
-
-*   热葫芦：只能苹果、ipad可用：注册送2元，1个任务是1到3元左右，满10元提现。
-<center>
-    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/209ba8b38d50b22e.jpg" align="center"></p>
-</center>
-
 *   内涵红包：安卓、苹果、ipad可用热葫芦：注册送2元，1个任务是1到3元左右，满10元提现。
 <center>
     <p><img   height="230" width="230" src="http://i1.piimg.com/593662/81a5072b323a7a79.jpg" align="center"></p>
 </center>
+
+
+
 
 上面这些试玩赚钱APP我都提现过，都是真实可靠的，所以，大家可以放心去做。
 
