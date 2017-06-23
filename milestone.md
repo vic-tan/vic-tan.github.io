@@ -47,7 +47,7 @@ header-img: "img/zhihu.jpg"
 
 *   鼠宝：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
 <center>
-    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
+    <p><img   height="250" width="250" src="http://i1.buimg.com/593662/3ea1e4823b590da2.jpg" align="center"></p>
 </center>
 
 *   iMoney：加入送1元，满3元提现，一个任务的价格是1元左右，还可以点赞赚钱，不过得提升等级。
