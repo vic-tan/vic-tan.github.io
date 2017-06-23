@@ -66,15 +66,26 @@ header-img: "img/zhihu.jpg"
     <p><img   height="280" width="280" src="http://i2.muimg.com/593662/584304546eba610e.jpg" align="center"></p>
 </center>
 
-
-*   赚客：签到可得50金币，一个任务的价格是1元左右，满5元可提现。
+*   小鱼：登录送奖励，一单价格是一元左右。
 <center>
-    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/51c6eae5ef3437f6.jpg" align="center"></p>
+    <p><img   height="280" width="280" src="http://i1.buimg.com/593662/cb8e1eecce8a5131.jpg" align="center"></p>
 </center>
+
+*   掉钱眼儿：登录送奖励，一单价格是一元左右。
+<center>
+    <p><img   height="280" width="280" src="http://i2.kiimg.com/593662/fb0c65136b898e43.jpg" align="center"></p>
+</center>
+
 
 *   懒猫：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
 <center>
     <p><img   height="250" width="280" src="http://i4.buimg.com/593662/391078944926208a.jpg" align="center"></p>
+</center>
+
+
+*   赚客：签到可得50金币，一个任务的价格是1元左右，满5元可提现。
+<center>
+    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/51c6eae5ef3437f6.jpg" align="center"></p>
 </center>
 
 *   红包达人：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
