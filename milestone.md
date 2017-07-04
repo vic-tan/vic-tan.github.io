@@ -73,7 +73,7 @@ header-img: "img/zhihu.jpg"
 
 *   掉钱眼儿：登录送奖励，一单价格是一元左右。
 <center>
-    <p><img   height="280" width="280" src="http://i2.kiimg.com/593662/fb0c65136b898e43.jpg" align="center"></p>
+    <p><img   height="420" width="280" src="http://i4.piimg.com/593662/228b7943767df16b.png" align="center"></p>
 </center>
 
 
