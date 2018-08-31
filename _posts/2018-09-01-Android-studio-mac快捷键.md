@@ -11,6 +11,6 @@ description: Android-studio-mac快捷键
 # Android-studio-mac快捷键
 
 
-####1、 shift + com + (+,-)
+###1、 shift + com + (+,-)
 类方法代码展开或收起
 
