@@ -62,7 +62,7 @@ header-img: "img/zhihu.jpg"
     * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
 
 
-## <-----------------------TV 相关-------------------——>
+## <--------------------------TV 相关----------------------——>
 ### 启动工厂DesignMenuActivity界面
 > * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
 
@@ -110,5 +110,76 @@ header-img: "img/zhihu.jpg"
 > * 5、 把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头
 
 
+### 串口与adb 端口冲突时，可以先把日志写到文件再打开串口
+> * logcat -s FactoryUart > /data/temp/log.log
+
+### 串口占用时先保存要查看日志，再占用
+> * logcat -s  tag > data/log.log
+
+### 盲切ID
+> * 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数）
+### 键盘切ID
+> * 062598 menu 047
+注意：前面这数字要用一排的那行数字输入
+id 是三位数
+
+### 改屏参
+> * 连接串口->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启)
+
+### TV系统升级
+> * 连接串口->reboot->长按tab等待日志出来
+
+### 去掉遥控器屏蔽串口命令
+> * settings put global shop_ir_lock 0
+
+### 反抄写
+> * 1、把反抄写文件放到U盘根目录下
+> * 2、上电一直按着ESC按住进bootcode，显示Realtek>后
+> * 3、输入 mp_restore
+
+## <--------------------------代码编译----------------------——>
+### 整个软件编译
+> * 1、进入项目级目录(如2851M)
+> * 2、./
+> * 3、./scbc_build_51m.sh
+> * 4、回车
+> * 5、2
+> * 6、n
+> * 7、n
+> * 8、第一次y以后n
+> * 9、一直回车
+> * 10、输出 Image creation complete. Output file:install_wipe.img 为正常
+> * 11、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+
+### 单个项目编译
+> * 1、进入项目R文件级
+> * 2、source build/envsetup.sh
+> * 3、lunch
+> * 4、找到对应项目序号(2851M 序号3 )
+> * 5、lunch 3
+> * 6、进入需要编译的目录(如kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider)
+> * 7、mm -j32
+
+### 编译中间件TVMidwareManager
+> * 1、repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
+> * 2、repo sync -j8 (同步)
+> * 3、到2851/目录下 repo sync .
+> * 4、到/2851M/kernel/android/R目录下
+> * 5、source build/envsetup.sh
+> * 6、lunch 3
+> * 7、把整个TVMidwareManager项目拷贝到/2851M/kernel/android/R/vendor/tv051/app/rtk_app下
+> * 8、拷贝完后cd 到/2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager下
+> * 9、 mm -j32
+> * 10、编译完成后输出 Install: /2851M/kernel/android/R/out/target/product/R4/system_ext/framework/tv-midware-manager.jar
 
 
+### 中间件更新步骤
+> * 中间件路径 https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware/debug/[2851M]
+    * 1、下载以上最新tv-midware-manager.jar文件push 到TV上 /system_ext/framework目录
+    * 2、下载以上最新TVMidwareService.apk文件push 到TV上 /system_ext/app/TVMidwareService 目录
+
+### 本地项目打包apptvmidware.jar步骤
+> * 1、打开中间件项目，更新最新代码
+> * 2、在左下角的Buiild Variants : apptvmidware 选择 debug
+> * 3、选中apptvmidware项目->Build ->make module
+> * 4、右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
