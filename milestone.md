@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "手机下载应用试玩赚零花钱"
+title: "笔记"
 description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
