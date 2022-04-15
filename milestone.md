@@ -4,13 +4,11 @@ description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
 
-## 代码提交与合并
-
 ### RKT开发完成需同步到主分支(以2851M为例)
 
 > * 1.到自己服服器
 > * 2.cd进入2851M/kernel/android/R/vendor 目录下,如果是其它可以按下面几个步骤
-    * 2-1.如果提供sync code Excel表格，则先找path路径关键词到git[http://10.126.16.60/gerrit/#/admin/projects/](http://10.126.16.60/gerrit/#/admin/projects/)搜索到项目路径
+    * 2-1.如果提供sync code Excel表格，则先找path路径关键词到git路径[http://10.126.16.60/gerrit/#/admin/projects/](http://10.126.16.60/gerrit/#/admin/projects/)搜索到项目路径
     * 2-2.找到对应的提交路径点 (gitweb)进入相对的文件目录-> 在heads 找到分支 点击shortlog
     * 2-3.找到对应的提交代码点击 复制commit id
 > * 3.git log
@@ -50,5 +48,14 @@ header-img: "img/zhihu.jpg"
 > * 19.git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件 
 > * 20.git status 确定是否同步成功
 
+
+###.RTK代码sync code Excel提交同步分支相关路径
+
+> * vendor_realtek_common_ATV_frameworks_native_ExtTv        
+    > * 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
+> * vendor_tv051_app           								 
+    > * 2851M/kernel/android/R/vendor/tv051/app
+> * kernel_linux_linux-4.14_drivers_rtk_kdriver  			 
+    > * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
 
 
