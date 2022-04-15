@@ -5,7 +5,7 @@ header-img: "img/zhihu.jpg"
 ---
 ### 笔记
 
-## <---------------------------------------------------代码提交与合并------------------------------------——>
+## <-----------------------代码提交与合并-------------------——>
 ### RKT开发完成需同步到主分支(以2851M为例)
 
 > * 1、到自己服服器
@@ -62,7 +62,7 @@ header-img: "img/zhihu.jpg"
     * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
 
 
-## <---------------------------------------------------TV 相关------------------------------------——>
+## <-----------------------TV 相关-------------------——>
 ### 启动工厂DesignMenuActivity界面
 > * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
 
@@ -83,7 +83,7 @@ header-img: "img/zhihu.jpg"
 
 
 
-### CTS 版本文件查看权限（以下路径是2851M 41A路径可能不一样要看下挂载路径  ls -l dev/block/by-name/）
+### CTS 版本文件查看权限
 
 > * 1、上电长按tab（不小心按错了长按了Esc建 可以 输入go r）
 > * 2、创建文件夹（要查看哪个目录就用以下那个）
@@ -105,9 +105,6 @@ header-img: "img/zhihu.jpg"
     * mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
     * mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro
     * mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata
-
-
-
 
 > * 4、如果插上U盘一直有输出日志打印，输入ps 命令查看所有进程，然后可以kill 109 进程（/sbin/loader_m）
 > * 5、 把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头
