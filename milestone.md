@@ -5,121 +5,355 @@ description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
 
-# 什么是应用试玩
+<-----------------------------------------------------------------------------------—代码提交与合并-----------------------------------------------------------------------------------——>
 
-应用试玩其实好理解，就是像平常我们手机去下载某个应用一样,应用试玩其实好理解，就是像平常我们手机去下载某个应用一样去下载指定应用，下载完后去打开这个应用玩几分钟就行了，当然你打开不玩也可以，放在后台运行也算试玩。
-这就是应用试玩，是不是好容易理解。下面来讲讲有哪些平台。
-
-# 前言
-
-手机下载应用试玩赚钱前几年就有了，我是最近才做。之所以推荐给大家是因确实能赚点零花钱，直接可能可以提现到微信和支付宝，也不需要我们交什么费用，不像有些兼职，需要交押金才可以。
-这段时间以来，我下午只要有一空就会做试玩赚钱，由于我做了几十个平台，哪个有任务，我就做哪个平台，一会就能赚个几十元。
-
-虽然试玩赚不了大钱，但却可以赚点零花钱，早餐钱，买菜钱，毕竟我们并不是指望它是我们主要来源，有事没事找开手机装几个软件即可以挣十几，总比天天拿着手机玩朋友圏，空间，微博来得实际些。
-
-目前，我已经把各个平台的操作流程都了解的差不多了，而且几乎都差不多，都是复制关键词，搜索，下载，打开二三分钟就可以赚1到3元，非常的简单。
-
-为了帮助更多想使用苹果手机赚钱的朋友，我把这些平台给弄一个排行榜，大家如果想做，可以按排行榜选择自己喜欢的软件来做。
-
-1，以下二维码如果微信打不开，或提示升级等问题，直接选择在浏览器中打开就行，或用手机QQ扫描二维码下载。
-
-2，有的下载后直接可以打开，有的得设置，如果是苹果依次打开设置－通用－描述文件与设备管理－企业级应用－找到所安装的软件，点击信任－再回到桌面就可以打开软件了。
-
-3，如果你在苹果应用市场的帐号需要重新登录，发现密码输入错误，请到苹果商店官网输入邮箱，找回密码，重新设置下密码再登录就行了。
-
-# 新手教程
-
-如果你觉得不懂，可以点击以下链接查看新手教程（手把手教你,包含10分钟的短视频）。
-*  <https://vic-tan.github.io/blog/2017/05/08/手机下载应用试玩赚零花钱新手教程/>
-
-# 下载各平台试玩助手
-*   扫一扫或识别下面二维码下载各平台试玩助手
-
-*   试客小兵（应用试客）：一单价格2到3.5元，下午三点更新任务，10元提现。这个是最好的一个平台，任务简单，不需要注册，下载，打开几分钟就可以。
-<center>
-    <p><img   height="250" width="280" src="http://i1.piimg.com/593662/58ef5e21d448ff8b.jpg" align="center"></p>
-</center>
-
-*   神灯：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
-<center>
-    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/339ade217105bc48.png" align="center"></p>
-</center>
-
-*   鼠宝：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
-<center>
-    <p><img   height="250" width="250" src="http://i1.buimg.com/593662/3ea1e4823b590da2.jpg" align="center"></p>
-</center>
-
-*   iMoney：加入送1元，满3元提现，一个任务的价格是1元左右，还可以点赞赚钱，不过得提升等级。
-<center>
-    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/9986846b60adcd0e.jpg" align="center"></p>
-</center>
-
-*   PP红包：一单1到2元，登录送3元，每天30多个快速任务，满10元可以微信和支付宝提现。
-<center>
-    <p><img   height="420" width="280" src="http://i2.muimg.com/593662/de0a9d942ec7c0c7.jpg" align="center"></p>
-</center>
-
-
-*   钱庄：登录送奖励，一单价格是一元左右，独家任务多，9，14，16点更新任务，下载任务比较多，满5元可以微信提现。
-<center>
-    <p><img   height="280" width="280" src="http://i2.muimg.com/593662/584304546eba610e.jpg" align="center"></p>
-</center>
-
-*   小鱼：登录送奖励，一单价格是一元左右。
-<center>
-    <p><img   height="280" width="280" src="http://i1.buimg.com/593662/cb8e1eecce8a5131.jpg" align="center"></p>
-</center>
-
-*   掉钱眼儿：登录送奖励，一单价格是一元左右。
-<center>
-    <p><img   height="420" width="280" src="http://i4.piimg.com/593662/228b7943767df16b.png" align="center"></p>
-</center>
-
-
-*   懒猫：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
-<center>
-    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/391078944926208a.jpg" align="center"></p>
-</center>
-
-
-*   赚客：签到可得50金币，一个任务的价格是1元左右，满5元可提现。
-<center>
-    <p><img   height="420" width="280" src="http://i1.piimg.com/593662/51c6eae5ef3437f6.jpg" align="center"></p>
-</center>
-
-*   红包达人：一单1到2元，登录送2元，每天30多个快速任务，满10元可以微信和支付宝提现。
-<center>
-    <p><img   height="250" width="280" src="http://i4.buimg.com/593662/c79a75faa4fe4678.png" align="center"></p>
-</center>
-
-
-*   内涵红包：安卓、苹果、ipad可用热葫芦：注册送2元，1个任务是1到3元左右，满10元提现。
-<center>
-    <p><img   height="230" width="230" src="http://i1.piimg.com/593662/81a5072b323a7a79.jpg" align="center"></p>
-</center>
+#.RKT开发完成需同步到主分支(以2851M为例)
+1、到自己服服器
+2、cd进入2851M/kernel/android/R/vendor 目录下,如果是其它可以按下面几个步骤
+2-1、如果提供sync code Excel表格，则先找path路径关键词 到git(http://10.126.16.60/gerrit/#/admin/projects/)搜索到项目路径，
+2-2、找到对应的提交路径点 (gitweb)进入相对的文件目录-> 在heads 找到分支 点击shortlog
+2-3、找到对应的提交代码点击 复制commit id
+3、git log
+4、查看需要同步提交的记录log (如果分支不对，先切换分支)（或者直接在git 搜索到的）
+4-1、git checkout scbc/realtek/mac7p/android-11/scbc
+4-2、git log 是否有上面提交的记录
+4-3、git pull scbc realtek/mac7p/android-11/scbc
+4-4、git log --oneline 查看是否有上面提交记录
+4-5、git show 7e520f1d  查看修改内容并修改commit id(其它情况按上面步骤获得id
+5、切回到主分支 git checkout scbc/rt51m/master
+6、git log 确定分支切成功没有
+7、合并修改的内容 git cherry-pick commit id  报错说明有冲突，自己手动改再提交
+8、git push scbc HEAD:rt51m/master。
 
 
 
+#.频道 DB 添加并同步到mastar 分支
+注意：首先要确定当前分支，先从开发分支
+1、到2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
+2、到factorydata_app对应目录下，把tv.db 放到dvb目录下，如果是RTK的TV则是放到  rtk_provider_db目录下，否则放到provider_db目录下
+3、到factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下
+4、到/2851M/kernel/android/R/device/tv051/R4/custom_imagesls
+5、git log 查看一下当前目录及当前日志
+6、git pull scbc realtek/merlin5/android-11/scbc 更新最新项目
+7、git status 查看是否有冲突
+8、git checkout ../..scbc.mk 有则回退
+9、 git add  tclconfig/preset_channel/factorydata_app/2/ 添加文件夹
+10、git status 查看是否添加
+11、git commit -m "add rtk pl db tv" 添加提交信息
+12、git push scbc HEAD:realtek/merlin5/android-11/scbc 提交到分支
+13、git status 查看是否已提交
+14、复制刚才提交的commit id
+15、git checkout scbc/rt51m/master 切换到量产master 分支
+16、git log 查看当前分支信息及日志信息
+17、git pull scbc rt51m/master 同步当前分支
+18、git status
+19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
+20、git status 确定是否同步成功
 
-上面这些试玩赚钱APP我都提现过，都是真实可靠的，所以，大家可以放心去做。
 
-上面都是不错的平台，不会轻易的封号，这才是最主要的，只要这个平台能够提现到帐，那就是好平台。对于一些平台恶意封号，价钱再高我们也不要做。
+#.RTK代码sync code Excel提交同步分支相关路径
+vendor_realtek_common_ATV_frameworks_native_ExtTv        2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
+vendor_tv051_app           								 2851M/kernel/android/R/vendor/tv051/app
+kernel_linux_linux-4.14_drivers_rtk_kdriver  			 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver
 
-苹果手机试玩，开始一天能赚几十元，不过后来赚的就越来越少了，所以，大家可以多下载一些软件。我们也不要指望这个能赚多少，多少钱，只不过当个兴趣，没事做几个，赚点零花钱就行了。
+<-----------------------------------------------------------------------------------—TV 相关-----------------------------------------------------------------------------------——>
 
-许多人都想找个兼职，可是，找来找去也不知道干什么好。而试玩APP，就当作是我们的一个兼职，没事的时候做点任务，赚点外块，就这么简单，最主要的是价格高，简单，提现快。
+#.启动工厂DesignMenuActivity界面
+am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
 
-试玩赚钱APP，只要存在一天，我就会做一天，因为对于手机赚钱来说，是非常不错的一种兼职。大家在开始做的时候，肯定有不会，不懂的，不过，只要操作的时间长了就会了，也希望大家能通过苹果手机赚到更多的钱。
+#.修改TV系统文件申请权限（增删改）
+1、开机ESC按住进bootcode，显示Realtek>后
+2、env set OEMLock off
+3、env save
+4、reset
+5、打开用adb工具
+6、adb connect 192.168.1.128 （windowns :adb connect 192.168.1.128:5555 ）
+7、adb root
+8、adb disable-verity
+9、adb reboot
+10、adb connect 192.168.1.128
+11、adb root
+12、adb remount
+走完以上步骤即可以对系统文件增删改了
 
 
-# 分享
 
-如果你觉得真如我所说，请你把本文分享给你周边的朋友，大家都受益，或者扫下面的二维码进行分享好友 ，或者复制下链接分享。
+#.CTS 版本文件查看权限（以下路径是2851M 41A路径可能不一样要看下挂载路径  ls -l dev/block/by-name/）
 
-*  <https://vic-tan.github.io/milestone/>
+1、上电长按tab（不小心按错了长按了Esc建 可以 输入go r）
+2、创建文件夹（要查看哪个目录就用以下那个）
+mkdir /mnt/vendor/tclconfig
+mkdir /mnt/vendor/impdata
 
-*  分享二维码
-<center>
-    <p><img   height="280" width="230" src="http://i4.buimg.com/593662/62f555d0e3fb0102.png" align="center"></p>
-</center>
+3、挂载（把要看的文件挂载出来）
+mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig
+mount -t ext4 /dev/block/mmcblk0p33 /mnt/vendor/tvdata
+mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata
+mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
+mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro
+mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata
+
+4、如果插上U盘一直有输出日志打印，输入ps 命令查看所有进程，然后可以kill 109 进程（/sbin/loader_m）
+5、 把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头
+
+mkdir /mnt/vendor/factory
+mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
+
+#.(41A)
+/*
+FW_AKERNEL_a -> /dev/block/mmcblk0p12
+FW_AKERNEL_b -> /dev/block/mmcblk0p13
+FW_DVLOGO_a -> /dev/block/mmcblk0p18
+FW_DVLOGO_b -> /dev/block/mmcblk0p19
+FW_TZFW_a -> /dev/block/mmcblk0p16
+FW_TZFW_b -> /dev/block/mmcblk0p17
+FW_VKERNEL_a -> /dev/block/mmcblk0p14
+FW_VKERNEL_b -> /dev/block/mmcblk0p15
+boot -> /dev/block/mmcblk0p25
+bootloader_a -> /dev/block/mmcblk0p1
+bootloader_b -> /dev/block/mmcblk0p2
+cache -> /dev/block/mmcblk0p36
+dtbo -> /dev/block/mmcblk0p28
+factory -> /dev/block/mmcblk0p4
+factory_default -> /dev/block/mmcblk0p5
+factory_ro_a -> /dev/block/mmcblk0p6
+factory_ro_b -> /dev/block/mmcblk0p7
+impdata -> /dev/block/mmcblk0p31
+metadata -> /dev/block/mmcblk0p24
+misc -> /dev/block/mmcblk0p23
+mmcblk0 -> /dev/block/mmcblk0
+mmcblk0boot0 -> /dev/block/mmcblk0boot0
+mmcblk0boot1 -> /dev/block/mmcblk0boot1
+oem -> /dev/block/mmcblk0p34
+oem_preload -> /dev/block/mmcblk0p35
+persist -> /dev/block/mmcblk0p22
+recovery -> /dev/block/mmcblk0p26
+rescue_linux -> /dev/block/mmcblk0p3
+reserved_0 -> /dev/block/mmcblk0p8
+reserved_1 -> /dev/block/mmcblk0p9
+reserved_2 -> /dev/block/mmcblk0p10
+reserved_3 -> /dev/block/mmcblk0p11
+super -> /dev/block/mmcblk0p20
+tclconfig -> /dev/block/mmcblk0p29
+tvdata -> /dev/block/mmcblk0p30
+userdata -> /dev/block/mmcblk0p21
+vbmeta -> /dev/block/mmcblk0p32
+vbmeta_system -> /dev/block/mmcblk0p33
+vendor_boot -> /dev/block/mmcblk0p27
+*/
+
+
+
+
+
+#.串口与adb 端口冲突时，可以先把日志写到文件再打开串口
+logcat -s FactoryUart > /data/temp/log.log
+
+#.串口占用时先保存要查看日志，再占用
+logcat -s  tag > data/log.log
+
+
+
+#.盲切ID
+按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数）
+#.键盘切ID
+062598 menu 047
+注意：前面这数字要用一排的那行数字输入
+id 是三位数
+
+
+#.改屏参
+连接串口->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启)
+
+#.TV系统升级
+连接串口->reboot->长按tab等待日志出来
+
+
+#.去掉遥控器屏蔽串口命令
+settings put global shop_ir_lock 0
+
+
+
+
+
+#.反抄写
+1、把反抄写文件放到U盘根目录下
+2、上电一直按着ESC按住进bootcode，显示Realtek>后
+3、输入 mp_restore
+
+
+
+
+<-----------------------------------------------------------------------------------—代码编译----------------------------------------------------------------------------------- >
+
+#.整个软件编译
+1、进入项目级目录(如2851M)
+2、./
+3、./scbc_build_51m.sh
+4、回车
+5、2
+6、n
+7、n
+8、第一次y以后n
+9、一直回车
+10、输出 Image creation complete. Output file:install_wipe.img 为正常
+11、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+
+
+
+#.单个项目编译
+1、进入项目R文件级
+2、source build/envsetup.sh
+3、lunch
+4、找到对应项目序号(2851M 序号3 )
+5、lunch 3
+6、进入需要编译的目录(如kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider)
+7、mm -j32
+
+
+
+#.编译中间件TVMidwareManager
+1、repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
+2、repo sync -j8 (同步)
+3、到2851/目录下 repo sync .
+4、到/2851M/kernel/android/R目录下
+5、source build/envsetup.sh
+6、lunch 3
+7、把整个TVMidwareManager项目拷贝到/2851M/kernel/android/R/vendor/tv051/app/rtk_app下
+8、拷贝完后cd 到/2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager下
+9、 mm -j32
+10、编译完成后输出 Install: /2851M/kernel/android/R/out/target/product/R4/system_ext/framework/tv-midware-manager.jar
+
+
+#.中间件更新步骤
+中间件路径 https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware/debug/[2851M]
+1、下载以上最新tv-midware-manager.jar文件push 到TV上 /system_ext/framework目录
+2、下载以上最新TVMidwareService.apk文件push 到TV上 /system_ext/app/TVMidwareService 目录
+
+
+
+#.本地项目打包apptvmidware.jar步骤
+1、打开中间件项目，更新最新代码
+2、在左下角的Buiild Variants : apptvmidware 选择 debug
+3、选中apptvmidware项目->Build ->make module
+4、右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包
+
+
+
+
+<-----------------------------------------------------------------------------------—公司账号-----------------------------------------------------------------------------------——>
+
+#.OA/邮箱/域账号
+账号：lifei1.tan
+密码：Scbc202201#
+
+#.域账号（TCL-WIFI）
+账号：lifei1.tan
+密码：Scbc202201#
+
+#.编译
+编译服务器：10.126.69.28
+访问方式：ssh/samba
+账号：lifei
+密码：lifei@2022#
+
+#.FTP
+编译服务器：10.118.1.85
+端     口：21
+账号：MOKA-RD
+密码：94YZfm7W
+
+
+#.Git
+服务器：http://10.126.16.60/gerrit/#/dashboard/self
+账号：lifei
+密码：lifei@2022#
+
+#.SVN
+账号：lifei1.tan
+密码：lifei1.tan@2022
+SVN权限组：SE_TV
+SVN根目录：https://ODM-DESIGN-CENTER-HZ.tclking.com/svn/scbc_apps/trunk
+
+#.MantisBT账号
+账号：lifei1.tan
+密码：Scbc202201#
+
+#.KMS(知识管理系统)账号
+账号：lifei1.tan
+密码：Scbc202201#
+
+#.PMS(产品管理系统)账号
+账号：lifei1.tan
+密码：Scbc202201#
+
+#.FireBase账号
+网址：https://console.firebase.google.com/u/1/
+账号：tcl.scbctv@gmail.com
+密码：scbc200219#
+
+
+#.Termius账号
+账号：179840002@email.top 后面可以无限加
+密码：-TANlifei1991813
+
+
+
+<-----------------------------------------------------------------------------------—相关路径-----------------------------------------------------------------------------------——>
+
+#.所有APP项目总路径
+https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src
+
+#.工厂菜单项目SVN路径
+https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/Factory_General
+
+#.中间间项目SVN路径
+https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware
+
+#.项目档案
+https://odm-design-center-hz.tclking.com/svn/Project_Document
+
+#.项目抄Key址址
+https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851M安卓TV机芯项目档案
+https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案
+https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案
+https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案
+
+#.红屏断言
+https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp
+
+
+#.2851M项目路径
+ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
+
+#.2851M代码管理
+https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632
+
+#.流程规范
+1、软件设计规范
+https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466
+
+#.预设频道路径
+\mnt\verdor\tclcofig\model
+/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
+
+
+
+#.工厂菜单apk安装路径
+adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory
+
+#.日志apk安装路径
+adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp
+
+#.中间件服务安装路径
+adb push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService
+
+#.中间件代码安装路径
+adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework
+
+
+
+#.共享目录
+\10.126.69.28（2841A）
+\10.118.1.100（2851M）
+
