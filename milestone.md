@@ -183,3 +183,114 @@ id 是三位数
 > * 2、在左下角的Buiild Variants : apptvmidware 选择 debug
 > * 3、选中apptvmidware项目->Build ->make module
 > * 4、右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
+
+
+## <--------------------------账 号----------------------——>
+
+### OA/邮箱/域账号
+> * 账号：lifei1.tan
+> * 密码：Scbc202201#
+
+### 域账号（TCL-WIFI）
+> * 账号：lifei1.tan
+> * 密码：Scbc202201#
+
+### 编译
+> * 编译服务器：10.126.69.28
+> * 访问方式：ssh/samba
+> * 账号：lifei
+> * 密码：lifei@2022#
+
+### FTP
+> * 编译服务器：10.118.1.85
+> * 端     口：21
+> * 账号：MOKA-RD
+> * 密码：94YZfm7W
+
+
+### Git
+> * 服务器：http://10.126.16.60/gerrit/#/dashboard/self
+> * 账号：lifei
+> * 密码：lifei@2022#
+
+### SVN
+> * 账号：lifei1.tan
+> * 密码：lifei1.tan@2022
+> * SVN权限组：SE_TV
+> * SVN根目录：https://ODM-DESIGN-CENTER-HZ.tclking.com/svn/scbc_apps/trunk
+
+### MantisBT账号
+> * 账号：lifei1.tan
+> * 密码：Scbc202201#
+
+### KMS(知识管理系统)账号
+> * 账号：lifei1.tan
+> * 密码：Scbc202201#
+
+### PMS(产品管理系统)账号
+> * 账号：lifei1.tan
+> * 密码：Scbc202201#
+
+### FireBase账号
+> * 网址：https://console.firebase.google.com/u/1/
+> * 账号：tcl.scbctv@gmail.com
+> * 密码：scbc200219#
+
+
+### Termius账号
+> * 账号：179840002@email.top 后面可以无限加
+> * 密码：-TANlifei1991813
+
+
+## <--------------------------相关路径----------------------——>
+### 所有APP项目总路径
+> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src
+
+### 工厂菜单项目SVN路径
+> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/Factory_General
+
+### 中间间项目SVN路径
+> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware
+
+### 项目档案
+> * https://odm-design-center-hz.tclking.com/svn/Project_Document
+
+### 项目抄Key址址
+> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851M安卓TV机芯项目档案
+> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案
+> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案
+> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案
+
+### 红屏断言
+> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp
+
+### 2851M代码管理
+> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)
+
+### 流程规范
+> * 1、软件设计规范
+> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466)
+
+### 预设频道路径
+> * \mnt\verdor\tclcofig\model
+> * /home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
+
+
+
+### 工厂菜单apk安装路径
+> * adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory
+
+### 日志apk安装路径
+> * adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp
+
+### 中间件服务安装路径
+> * adb push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService
+
+### 中间件代码安装路径
+> * adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework
+
+
+
+### 共享目录
+> * \10.126.69.28（2841A）
+> * \10.118.1.100（2851M）
