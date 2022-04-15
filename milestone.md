@@ -3,7 +3,9 @@ layout: page title: "笔记"
 description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
+### 笔记
 
+## 代码提交与合并
 ### RKT开发完成需同步到主分支(以2851M为例)
 
 > * 1.到自己服服器
@@ -49,13 +51,34 @@ header-img: "img/zhihu.jpg"
 > * 20.git status 确定是否同步成功
 
 
-###.RTK代码sync code Excel提交同步分支相关路径
+
+### RTK代码sync code Excel提交同步分支相关路径
 
 > * vendor_realtek_common_ATV_frameworks_native_ExtTv        
-    > * 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
+    * 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
 > * vendor_tv051_app           								 
-    > * 2851M/kernel/android/R/vendor/tv051/app
+    * 2851M/kernel/android/R/vendor/tv051/app
 > * kernel_linux_linux-4.14_drivers_rtk_kdriver  			 
-    > * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
+    * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
+
+
+## TV 相关
+### 启动工厂DesignMenuActivity界面
+> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
+
+### 修改TV系统文件申请权限（增删改）
+> * 1、开机ESC按住进bootcode，显示Realtek>后
+> * 2、env set OEMLock off
+> * 3、env save
+> * 4、reset
+> * 5、打开用adb工具
+> * 6、adb connect 192.168.1.128 （windowns :adb connect 192.168.1.128:5555 ）
+> * 7、adb root
+> * 8、adb disable-verity
+> * 9、adb reboot
+> * 10、adb connect 192.168.1.128
+> * 11、adb root
+> * 12、adb remount
+> * 走完以上步骤即可以对系统文件增删改了
 
 
