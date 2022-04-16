@@ -1,7 +1,6 @@
 ---
 layout: page 
 title: "notes"
-description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
 ### 笔记

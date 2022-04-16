@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "question"
-description: "my name is 谭乐言 On my way to change"
 header-img: "img/green.jpg"
 ---
 
