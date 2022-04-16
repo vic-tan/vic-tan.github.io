@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7a18b287-24eb-429c-a62f-24f3520dcfb0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/milestone.md" beforeDir="false" afterPath="$PROJECT_DIR$/milestone.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Interview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/clean-blog.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/clean-blog.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,14 @@
         <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
