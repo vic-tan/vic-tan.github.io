@@ -1,44 +1,28 @@
 ---
 layout: page
-title: "about"
+title: "question"
 description: "my name is 谭乐言 On my way to change"
 header-img: "img/green.jpg"
 ---
 
 
+### 问题
+
+## <-----------------------工厂菜单-------------------——>
+
+### 反抄软件升级后启用串口切DTV 无法切到DTV目录下
+> * 1、预置DB频道没有id不是1频道，而800，有可以是LCN搜台的，导致id为800。RTK导致无法切到DTV。
 
 
-
-# 个人信息
-
-*   谭乐言/男/1991
-*   本科/武汉科技大学
-*   Github: <https://github.com/vic-tan>
-
-* * *
+### DTV 没有声音
+> * 1、RMCA_ready 是否正确
+> * 2、查看与SVN 上的key 是否相同
+> * 3、拿两机子对比下看是否想同
+> * 4、找RTK
 
 
-
-# 联系方式
-
-*   Email：179840045@qq.com
-*   QQ：179840045
-*   微信号：tanlifei_vic
-
-
-
-* * *
-
-# 手机试玩赚零花钱
-
-
-——手机试玩赚零花钱<https://vic-tan.github.io/milestone/>
-
-
-<center>
-    <p><img   height="270" width="220" src="http://i4.buimg.com/593662/62f555d0e3fb0102.png" align="center"></p>
-</center>
-
+### 串口抄Attestation key 失败
+> * 1、有时接信源烧key有时会NG，拔掉信号线就可以烧录成功了
 
 
 
