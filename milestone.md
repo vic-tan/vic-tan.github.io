@@ -1,5 +1,5 @@
 ---
-layout: page title: "笔记"
+layout: page title: "moka"
 description: "谭乐言"
 header-img: "img/zhihu.jpg"
 ---
@@ -185,62 +185,6 @@ id 是三位数
 > * 3、选中apptvmidware项目->Build ->make module
 > * 4、右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
 
-
-## <--------------------------账 号----------------------——>
-
-### OA/邮箱/域账号
-> * 账号：lifei1.tan
-> * 密码：Scbc202201#
-
-### 域账号（TCL-WIFI）
-> * 账号：lifei1.tan
-> * 密码：Scbc202201#
-
-### 编译
-> * 编译服务器：10.126.69.28
-> * 访问方式：ssh/samba
-> * 账号：lifei
-> * 密码：lifei@2022#
-
-### FTP
-> * 编译服务器：10.118.1.85
-> * 端     口：21
-> * 账号：MOKA-RD
-> * 密码：94YZfm7W
-
-
-### Git
-> * 服务器：http://10.126.16.60/gerrit/#/dashboard/self
-> * 账号：lifei
-> * 密码：lifei@2022#
-
-### SVN
-> * 账号：lifei1.tan
-> * 密码：lifei1.tan@2022
-> * SVN权限组：SE_TV
-> * SVN根目录：https://ODM-DESIGN-CENTER-HZ.tclking.com/svn/scbc_apps/trunk
-
-### MantisBT账号
-> * 账号：lifei1.tan
-> * 密码：Scbc202201#
-
-### KMS(知识管理系统)账号
-> * 账号：lifei1.tan
-> * 密码：Scbc202201#
-
-### PMS(产品管理系统)账号
-> * 账号：lifei1.tan
-> * 密码：Scbc202201#
-
-### FireBase账号
-> * 网址：https://console.firebase.google.com/u/1/
-> * 账号：tcl.scbctv@gmail.com
-> * 密码：scbc200219#
-
-
-### Termius账号
-> * 账号：179840002@email.top 后面可以无限加
-> * 密码：-TANlifei1991813
 
 
 ## <--------------------------相关路径----------------------——>
