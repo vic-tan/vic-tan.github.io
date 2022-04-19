@@ -32,12 +32,12 @@ header-img: "img/zhihu.jpg"
 > * 1、到2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > * 2、到factorydata_app对应目录下，把tv.db 放到dvb目录下，如果是RTK的TV则是放到 rtk_provider_db目录下，否则放到provider_db目录下
 > * 3、到factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下
-> * 4、到/2851M/kernel/android/R/device/tv051/R4/custom_imagesls
+> * 4、到/2851M/kernel/android/R/device/tv051/R4/custom_images ls
 > * 5、git log 查看一下当前目录及当前日志
 > * 6、git pull scbc realtek/merlin5/android-11/scbc 更新最新项目
 > * 7、git status 查看是否有冲突
 > * 8、git checkout ../..scbc.mk 有则回退
-> * 9、git add tclconfig/preset_channel/factorydata_app/2/ 添加文件夹
+> * 9、git add tclconfig/preset_channel/factorydata_app 添加文件夹
 > * 10、git status 查看是否添加 
 > * 11、git commit -m "add rtk pl db tv" 添加提交信息 
 > * 12、git push scbc HEAD:realtek/merlin5/android-11/scbc 提交到分支
