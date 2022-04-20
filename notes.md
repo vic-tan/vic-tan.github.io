@@ -239,3 +239,19 @@ id 是三位数
 ### 共享目录
 > * \10.126.69.28（2841A）
 > * \10.118.1.100（2851M）
+
+
+## <--------------------------常用git 命令----------------------——>
+### 查看时间范围内的提交日志
+> * git log --after="2021-3-1" --before="2021-5-1" --pretty=format:"%an %ad : %s" --date=short --no-merges --reverse
+        * 参数	含义
+        * –author	作者
+        * –committer	提交者
+        * –after	某时间后
+        * –before	某时间前
+        * –reverse	按时间顺序
+        * –grep	提交说明包含字符串
+        * -S	修改内容包含字符串
+        * –pretty	格式化信息	oneline、short、full、fuller、format
+        * –date	日期格式	relative、local、default、iso、rfc、short、raw
+        * –no-merges	隐藏合并提交
