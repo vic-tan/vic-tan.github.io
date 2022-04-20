@@ -244,14 +244,14 @@ id 是三位数
 ## <--------------------------常用git 命令----------------------——>
 ### 查看时间范围内的提交日志
 > * git log --after="2022-3-1" --before="2022-5-1" --pretty=format:"%an %ad : %s" --date=short --no-merges --reverse
-   * 参数	含义
-   * –author	作者
-   * –committer	提交者
-   * –after	某时间后
-   * –before	某时间前
-   * –reverse	按时间顺序
-   * –grep	提交说明包含字符串
-   * -S	修改内容包含字符串
-   * –pretty	格式化信息	oneline、short、full、fuller、format
-   * –date	日期格式	relative、local、default、iso、rfc、short、raw
-   * –no-merges	隐藏合并提交
+    * 参数	含义
+    * –author	作者
+    * –committer	提交者
+    * –after	某时间后
+    * –before	某时间前
+    * –reverse	按时间顺序
+    * –grep	提交说明包含字符串
+    * -S	修改内容包含字符串
+    * –pretty	格式化信息	oneline、short、full、fuller、format
+    * –date	日期格式	relative、local、default、iso、rfc、short、raw
+    * –no-merges	隐藏合并提交
