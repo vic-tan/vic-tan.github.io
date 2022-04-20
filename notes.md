@@ -47,8 +47,9 @@ header-img: "img/zhihu.jpg"
 > * 16、git log 查看当前分支信息及日志信息 
 > * 17、git pull scbc rt51m/master 同步当前分支 
 > * 18、git status 
-> * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件 
+> * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
 > * 20、git status 确定是否同步成功
+> * 21、git push scbc HEAD:rt51m/master。
 
 
 
