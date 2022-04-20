@@ -36,7 +36,7 @@ header-img: "img/zhihu.jpg"
 > * 5、git log 查看一下当前目录及当前日志
 > * 6、git pull scbc realtek/merlin5/android-11/scbc 更新最新项目
 > * 7、git status 查看是否有冲突
-> * 8、git checkout ../..scbc.mk 有则回退
+> * 8、git checkout ../..scbc.mk 有则回退之前的修改
 > * 9、git add tclconfig/preset_channel/factorydata_app 添加文件夹
 > * 10、git status 查看是否添加 
 > * 11、git commit -m "add rtk pl db tv" 添加提交信息 
@@ -50,6 +50,9 @@ header-img: "img/zhihu.jpg"
 > * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
 > * 20、git status 确定是否同步成功
 > * 21、git push scbc HEAD:rt51m/master。
+> * 22、如果提示pull 则先回退到上一步 git reset --hard 
+> * 23、repo sync . 同步所有文件
+> * 24、又重新从第6步开始
 
 
 
@@ -262,3 +265,5 @@ id 是三位数
     * –pretty	格式化信息	oneline、short、full、fuller、format
     * –date	日期格式	relative、local、default、iso、rfc、short、raw
     * –no-merges	隐藏合并提交
+
+
