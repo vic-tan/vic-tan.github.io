@@ -23,7 +23,10 @@ header-img: "img/zhihu.jpg"
 > * 5、切回到主分支 git checkout scbc/rt51m/master
 > * 6、git log 确定分支切成功没有
 > * 7、合并修改的内容 git cherry-pick commit id 报错说明有冲突，自己手动改再提交
-> * 8、git push scbc HEAD:rt51m/master。
+> * 8、git add .
+> * 9、git cherry-pick --continue
+> * 10、可以执行git cherry-pick --abort取消上次操作
+> * 11、git push scbc HEAD:rt51m/master。
 
 ### 频道 DB 添加并同步到mastar 分支
 
@@ -48,10 +51,9 @@ header-img: "img/zhihu.jpg"
 > * 17、git pull scbc rt51m/master 同步当前分支 
 > * 18、git status 
 > * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
-> * 20、可以执行git cherry-pick --abort取消上次操作
 > * 20、git status 确定是否同步成功
 > * 21、git push scbc HEAD:rt51m/master。
-> * 22、如果提示pull 则先回退到上一步 git reset --hard 
+> * 22、如果提示push 失败要先pull， 则先回退到上一步 git reset --hard 
 > * 23、repo sync . 同步所有文件
 > * 24、又重新从第6步开始
 
