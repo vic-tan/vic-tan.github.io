@@ -139,6 +139,9 @@ id 是三位数
 
 ### 去掉遥控器屏蔽串口命令
 > * settings put global shop_ir_lock 0
+> 
+### 删除文件
+> *  rm -rf R4（R4 表示文件名字）
 
 ### 反抄写
 > * 1、把反抄写文件放到U盘根目录下
@@ -154,16 +157,17 @@ id 是三位数
 ## <--------------------------代码编译----------------------——>
 ### 整个软件编译
 > * 1、进入项目级目录(如2851M)
-> * 2、./scbc_build_51m.sh
+> * 2、./scbc_build_51m.sh (后面加 0 true 表示公版)
 > * 3、回车
 > * 4、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
 > * 5、2
 > * 6、n
 > * 7、n
 > * 8、第一次y以后n
-> * 9、一直回车
-> * 10、输出 Image creation complete. Output file:install_wipe.img 为正常
-> * 11、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+> * 9、品牌选择（1，2 表示区域客户，3、4表示松下）
+> * 10、一直回车
+> * 11、输出 Image creation complete. Output file:install_wipe.img 为正常
+> * 12、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
 
 ### 单个项目编译
 > * 1、进入项目R文件级
