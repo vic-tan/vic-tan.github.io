@@ -48,6 +48,7 @@ header-img: "img/zhihu.jpg"
 > * 17、git pull scbc rt51m/master 同步当前分支 
 > * 18、git status 
 > * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
+> * 20、可以执行git cherry-pick --abort取消上次操作
 > * 20、git status 确定是否同步成功
 > * 21、git push scbc HEAD:rt51m/master。
 > * 22、如果提示pull 则先回退到上一步 git reset --hard 
