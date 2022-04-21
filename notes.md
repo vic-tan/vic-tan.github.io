@@ -154,16 +154,15 @@ id 是三位数
 ## <--------------------------代码编译----------------------——>
 ### 整个软件编译
 > * 1、进入项目级目录(如2851M)
-> * 2、./
-> * 3、./scbc_build_51m.sh
-> * 4、回车
-> * 5、2
+> * 2、./scbc_build_51m.sh
+> * 3、回车
+> * 4、2
+> * 5、n
 > * 6、n
-> * 7、n
-> * 8、第一次y以后n
-> * 9、一直回车
-> * 10、输出 Image creation complete. Output file:install_wipe.img 为正常
-> * 11、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+> * 7、第一次y以后n
+> * 8、一直回车
+> * 9、输出 Image creation complete. Output file:install_wipe.img 为正常
+> * 10、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
 
 ### 单个项目编译
 > * 1、进入项目R文件级
