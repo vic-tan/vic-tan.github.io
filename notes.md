@@ -52,7 +52,7 @@ header-img: "img/zhihu.jpg"
     * 4-5、git show 7e520f1d 查看修改内容并修改commit id(其它情况按上面步骤获得id
 > * 5、切回到主分支 git checkout scbc/rt51m/master
 > * 6、git log 确定分支切成功没有
-> * 7、合并修改的内容 git cherry-pick commit id 报错说明有冲突，自己手动改再提交
+> * 7、合并修改的内容 git cherry-pick commit id 报错说明有冲突，自己手动改再提交 ，如果报HEAD detached from 8a3c346 You are currently cherry-picking commit cde479c.有可能是有人同步过了
 > * 8、git add .
 > * 9、git cherry-pick --continue
 > * 10、可以执行git cherry-pick --abort取消上次操作
