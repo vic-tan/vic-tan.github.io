@@ -6,6 +6,28 @@ header-img: "img/zhihu.jpg"
 ### 笔记
 
 ## <-----------------------代码提交与合并-------------------——>
+### sync code Excel表格 找到对应的服务器下路径
+
+> * 1、方法一（推荐）
+    * 1-1、打开sync code Excel提交文件在我们git 服务器路径。
+    * 1-2、在信息行中，找到tree行点击tree。
+    * 1-3、复制随便找一个提交文件名：如TvApiHooker（不带后缀）。
+    * 1-4、打开服务器，找到对应的项目下如：2851M。
+    * 1-5、打开.repo文件夹。
+    * 1-6、打开manifests文件夹。
+    * 1-7、打开mac7p-atv-scbc.xml文件。
+    * 1-8、搜索TvApiHooker，便可找到对应的路径。
+
+> * 2、方法二
+    * 2-1、打开sync code Excel提交文件在我们git 服务器路径。
+    * 2-2、在信息行中，找到tree行点击tree。
+    * 2-3、复制随便找一个提交文件名：如TvApiHooker.cpp。
+    * 2-3、rtk 文件一般在/kernel/android/R/vendor/realtek/common/ATV 下，先cd到目录
+    * 2-4、输入命令 find -name "TvApiHooker.cpp"。
+    * 2-5、等一会会搜索到对应的路径./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
+
+
+
 
 ### 切分支切换，确保环境代码干净
 > * 1、如果切分支支不到对应的分支，或者有错误
