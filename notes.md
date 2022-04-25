@@ -263,6 +263,11 @@ id 是三位数
 > * 1、软件设计规范
 > * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466)
 
+### 应用&中间件 ReleaseNote
+> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057)
+
+
+
 ### 预设频道路径
 > * \mnt\verdor\tclcofig\model
 > * /home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
