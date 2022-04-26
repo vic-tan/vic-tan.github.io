@@ -286,7 +286,11 @@ id 是三位数
 ### 中间件代码安装路径
 > * adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework
 
-
+### apk jarsigner 签名 
+> * 1、打开 <命令提示符> 程序
+> * 2、使用<jarsigner>签名
+> * 3、jarsigner -verbose -keystore 【您的私钥存放路径】 -signedjar 【签名后文件存放路径】 【未签名的文件路径】 【您的证书名称，证书名称即Alias(你设置的别名)】
+    * jarsigner -verbose -keystore /Users/tanlifei/Desktop/work/moka/资料/key/rt2851m_release.keystore -signedjar /Users/tanlifei/Desktop/临时/apk/Factory.apk /Users/tanlifei/Desktop/work/moka/project/Factory-Release/Factory.apk android
 
 ### 共享目录
 > * \10.126.69.28（2841A）
