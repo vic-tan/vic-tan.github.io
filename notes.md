@@ -303,14 +303,14 @@ id 是三位数
     * –date	日期格式	relative、local、default、iso、rfc、short、raw
     * –no-merges	隐藏合并提交
 
-## <--------------------------db 工厂预设频道路径----------------------——>
+## <-----------------------db 工厂预设频道路径-------------------——>
 
 ### 预设频道路径
 > * 1、确定客户的制式与工厂ID，提供db数据,必须有三个db文件和channel 文件夹
 > * 2、进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > * 3、到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
-> * 4、把tv.db 放到 rtk_provider_db或provider_db其中一个目录下，具体放哪个文件，按以下确定
-    * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看包名是否带rtk，带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
+> * 4、把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
+    * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带rtk，带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
 > * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下
 > * 工厂所有信息如下：
     * 序号 工厂  工厂代号（数据库特征名）
