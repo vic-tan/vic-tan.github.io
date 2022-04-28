@@ -303,6 +303,14 @@ id 是三位数
     * –date	日期格式	relative、local、default、iso、rfc、short、raw
     * –no-merges	隐藏合并提交
 
+### 查看DailyBuild 编译code 对应的版本
+> * 1、打开编译DailyBuild 文件夹 eg:DailyBuild_RT2851M_0428
+> * 2、打开save_apk_svn
+> * 3、搜索自己要找的apk名
+> * 4、找到Last Changed Rev: 14784
+> * 5、14784 即为SVN 代码打包的代码
+
+
 ## <-----------------------db 工厂预设频道路径-------------------——>
 
 ### 预设频道路径
@@ -310,8 +318,8 @@ id 是三位数
 > * 2、进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > * 3、到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
 > * 4、把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
-    * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带rtk，带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
-> * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下
+    * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
+> * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
     * 序号 工厂  工厂代号（数据库特征名）
     * 1 惠州工厂 HZ                                     
