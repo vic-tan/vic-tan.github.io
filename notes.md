@@ -163,7 +163,7 @@ id 是三位数
 
 ### 去掉遥控器屏蔽串口命令
 > * settings put global shop_ir_lock 0
-> 
+ 
 ### 删除文件
 > *  rm -rf R4（R4 表示文件名字）
 
