@@ -97,6 +97,9 @@ header-img: "img/zhihu.jpg"
     * 2851M/kernel/android/R/vendor/tv051/app
 > * kernel_linux_linux-4.14_drivers_rtk_kdriver  			 
     * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
+> * ExtTv.java
+    * kernel\android\R\vendor\tv051\app\exttv-framework\core\java\com\exttv\tv
+
 
 
 ## <--------------------------TV 相关----------------------——>
