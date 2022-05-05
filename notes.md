@@ -159,8 +159,8 @@ header-img: "img/zhihu.jpg"
     * mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata
 
 > * 4、如果插上U盘一直有输出日志打印，输入ps 命令查看所有进程，然后可以kill 109 进程（/sbin/loader_m）
-> * 5、 把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头(文件夹cp -rf * /mmnt/udisk/sda1/)
-> * 6、 sync
+> * 5、把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头(文件夹cp -rf * /mmnt/udisk/sda1/)
+> * 6、sync
 
 
 ### 盲切ID
