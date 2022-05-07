@@ -204,7 +204,7 @@ id 是三位数
 > * logcat -s  tag > data/log.log
 
 ### Grep -E这个参数过滤多个关键字
-> * logcat | grep -E "word1 | word2"
+> * logcat &#124; grep -E "word1 &#124; word2 &#124; word3"
 
 ## <--------------------------代码编译----------------------——>
 ### 整个软件编译
