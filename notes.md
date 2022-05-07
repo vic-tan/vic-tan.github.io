@@ -343,64 +343,64 @@ id 是三位数
     * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
 > * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
-    * 序号  | 工厂        | 工厂代号（数据库特征名）
-    * 1    |惠州工厂      | HZ                                     
-    * 2 波兰工厂 PL
-    * 3 TTET 工厂 CD
-    * 4 无锡工厂 WX
-    * 5 内蒙古工厂 NM
-    * 6 惠州 ODM 工厂 HZ_ODM
-    * 7 越南工厂 YN
-    * 8 泰国工厂 TH
-    * 9 菲律宾工厂 FLB
-    * 10 印度尼西亚工厂 IND
-    * 11 俄罗斯工厂 RU
-    * 12 埃及工厂 EG
-    * 13 捷克工厂 JAC
-    * 14 巴基斯坦工厂 PAKISTAN
-    * 15 BENNE 工厂 BENNE
-    * 16 ARABY 工厂 ARABY
-    * 17 ELTHOLATHIA 工厂 ELTHOLATHIA
-    * 18 突尼斯工厂 TUN
-    * 19 刚果工厂 CONDOR
-    * 20 UPAC 工厂 UPAC
-    * 21 俄罗斯 PKV 工厂 PKV
-    * 22 东莞理想工厂 DG
-    * 23 苏州乐轩工厂 SZ
-    * 24 惠州 TOT 工厂 TOT
-    * 25 阿尔及利亚工厂 ALGERIA
-    * 26 CVT 工厂 CVT
-    * 27 南非工厂 RSA
-    * 28 泰国 ORION 工厂 ORION
-    * 29 墨西哥工厂 MX
-    * 30 阿根廷 RV 工厂 RV
-    * 31 巴西 SEMP 工厂 SEMP
-    * 32 印度工厂 INDIA
-    * 33 哥伦比亚工厂 CB
-    * 34 阿根廷 NEWSAN 工厂 NEWSAN
-    * 35 印度 DIXON 工厂 DIXON
-    * 36 阿根廷 SOLNIK 工厂 SOLNIK
-    * 37 乌兹别克斯坦工厂 UZB
-    * 38 俄罗斯 KVANT 工厂 RU_KVANT
-    * 39 阿根廷 ELECTROFUEGUINA 工厂 ELECTROFUEGUINA
-    * 40 松下马来西亚工厂 PANASONIC_MALAYSIA
-    * 41 伊朗工厂 IRAN
-    * 42 俄罗斯 TELEBALT 工厂 RU_TELEBALT
-    * 43 印度 TIRUPATI 工厂 TIRUPATI
-    * 44 松下墨西哥 PANAMEX 工厂 PANAMEX
-    * 45 松下俄罗斯 HORIZONT 工厂 HORIZONT
-    * 46 北非 ELARABY 工厂 ELA
-    * 47 印度 ONIDA 工厂 ONIDA
-    * 48 泰霖 TL 工厂 TL
-    * 49 MAXI 工厂 MAXI
-    * 50 乌兹别克 ARTEL 客户工厂 ARTEL
-    * 51 土耳其 ARCELIK 工厂 ARCELIK
-    * 52 巴西松下 Panabras 客户工厂 PANABRAS
-    * 53 印度 VIDEOTEX 工厂 VIDEOTEX
-    * 54 印度 Genus 工厂 GENUS
-    * 55 印度 Veira 工厂 VEIRA
-    * 56 印度 Micromax 工厂 MICROMAX
-    * 57 乌兹别克 ARTEL_SMT 客户工厂 ARTEL_SMT
-    * 58 俄罗斯 Videoton 工厂 VIDEOTON
-    * 59 增加泰国 TASTH009 工厂 TASTH009
-    * 60 松下 PTW 客户工厂 PTW
+    * 序号|工厂| 工厂代号（数据库特征名）
+    * 1| 惠州工厂|HZ                                     
+    * 2| 波兰工厂| PL
+    * 3| TTET| 工厂| CD
+    * 4| 无锡工厂| WX
+    * 5| 内蒙古工厂| NM
+    * 6| 惠州 ODM |工厂| HZ_ODM
+    * 7| 越南工厂| YN
+    * 8| 泰国工厂| TH
+    * 9| 菲律宾工厂| FLB
+    * 10| 印度尼西亚工厂| IND
+    * 11| 俄罗斯工厂| RU
+    * 12| 埃及工厂| EG
+    * 13| 捷克工厂| JAC
+    * 14| 巴基斯坦工厂| PAKISTAN
+    * 15| BENNE工厂| BENNE
+    * 16| ARABY工厂| ARABY
+    * 17| ELTHOLATHIA 工厂| ELTHOLATHIA
+    * 18| 突尼斯工厂| TUN
+    * 19| 刚果工厂| CONDOR
+    * 20| UPAC工厂 |UPAC
+    * 21| 俄罗斯 PKV 工厂| PKV
+    * 22| 东莞理想工厂| DG
+    * 23| 苏州乐轩工厂| SZ
+    * 24| 惠州 TOT 工厂 |TOT
+    * 25| 阿尔及利亚工厂 |ALGERIA
+    * 26| CVT 工厂 |CVT
+    * 27| 南非工厂| RSA
+    * 28| 泰国 ORION 工厂 |ORION
+    * 29| 墨西哥工厂 |MX
+    * 30| 阿根廷 RV 工厂| RV
+    * 31| 巴西 SEMP 工厂| SEMP
+    * 32| 印度工厂 |INDIA
+    * 33| 哥伦比亚工厂 |CB
+    * 34| 阿根廷 NEWSAN 工厂 |NEWSAN
+    * 35| 印度 DIXON 工厂 |DIXON
+    * 36| 阿根廷 SOLNIK 工厂| SOLNIK
+    * 37| 乌兹别克斯坦工厂 |UZB
+    * 38| 俄罗斯 KVANT 工厂 |RU_KVANT
+    * 39| 阿根廷 ELECTROFUEGUINA 工厂| ELECTROFUEGUINA
+    * 40| 松下马来西亚工厂 |PANASONIC_MALAYSIA
+    * 41| 伊朗工厂 |IRAN
+    * 42| 俄罗斯 TELEBALT 工厂 |RU_TELEBALT
+    * 43| 印度 TIRUPATI 工厂 |TIRUPATI
+    * 44| 松下墨西哥 PANAMEX 工厂| PANAMEX
+    * 45| 松下俄罗斯 HORIZONT 工厂 |HORIZONT
+    * 46| 北非 ELARABY 工厂 |ELA
+    * 47| 印度 ONIDA 工厂| ONIDA
+    * 48| 泰霖| TL 工厂 |TL
+    * 49| MAXI| 工厂 |MAXI
+    * 50| 乌兹别克| ARTEL 客户工厂 |ARTEL
+    * 51| 土耳其| ARCELIK 工厂 |ARCELIK
+    * 52| 巴西松下| Panabras 客户工厂 |PANABRAS
+    * 53| 印度| VIDEOTEX 工厂 |VIDEOTEX
+    * 54| 印度| Genus 工厂 |GENUS
+    * 55| 印度| Veira 工厂 |VEIRA
+    * 56| 印度| Micromax 工厂 |MICROMAX
+    * 57| 乌兹别克| ARTEL_SMT 客户工厂 |ARTEL_SMT
+    * 58| 俄罗斯| Videoton 工厂 |VIDEOTON
+    * 59| 增加泰国| TASTH009 工厂 |TASTH009
+    * 60| 松下| PTW 客户工厂 |PTW
