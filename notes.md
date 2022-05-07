@@ -66,8 +66,8 @@ header-img: "img/zhihu.jpg"
 > * 6、git log 确定分支切成功没有
 > * 7、合并修改的内容 git cherry-pick commit id 报错说明有冲突，自己手动改再提交 ，如果报HEAD detached from 8a3c346 You are currently cherry-picking commit cde479c.有可能是有人同步过了
 > * 8、git add .
-> * 9、git cherry-pick --continue
-> * 10、可以执行git cherry-pick --abort取消上次操作
+> * 9、git cherry-pick -&#45;continue
+> * 10、可以执行git cherry-pick -&#45;abort取消上次操作
 > * 11、git push scbc HEAD:rt51m/master。
 
 ### 频道 DB 添加并同步到mastar 分支
@@ -95,7 +95,7 @@ header-img: "img/zhihu.jpg"
 > * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
 > * 20、git status 确定是否同步成功
 > * 21、git push scbc HEAD:rt51m/master。
-> * 22、如果提示push 失败要先pull， 则先回退到上一步 git reset --hard 
+> * 22、如果提示push 失败要先pull， 则先回退到上一步 git reset -&#45;hard 
 > * 23、repo sync . 同步所有文件
 > * 24、又重新从第6步开始
 
@@ -182,6 +182,7 @@ id 是三位数
  
 ### 删除文件
 > *  rm -rf R4（R4 表示文件名字）
+
 ### 从U盘复制文件到当前路径
 > * cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA .
 
