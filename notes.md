@@ -210,17 +210,21 @@ id 是三位数
 ## <--------------------------代码编译----------------------——>
 ### 整个软件编译
 > * 1、进入项目级目录(如2851M)
-> * 2、./scbc_build_51m.sh (后面加 0 true 表示公版)
-> * 3、回车
-> * 4、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
-> * 5、2
-> * 6、n
-> * 7、n
-> * 8、第一次y以后n
-> * 9、品牌选择（1，2 表示区域客户，3、4表示松下）
-> * 10、一直回车
-> * 11、输出 Image creation complete. Output file:install_wipe.img 为正常
-> * 12、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+> * 2、先清空数据，确保环境代码干净，repo forall -c "pwd && git clean -xfd && git checkout -- ."
+> * 3、需要编译那个分支init 到哪个分支路径 repo init path  
+> * 4、同步代码repo sync -j8
+> * 5、如果有报错，哪里报错就删除哪里的文件，如删除kernel/android/R/vendor/R4 文件夹。eg: rm -rf kernel/android/R/vendor/R4  然后重新从1开始
+> * 6、./scbc_build_51m.sh (后面加 0 true 表示公版)
+> * 7、回车
+> * 8、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
+> * 9、2
+> * 10、n
+> * 11、n
+> * 12、第一次y以后n
+> * 13、品牌选择（1，2 表示区域客户，3、4表示松下）
+> * 14、一直回车
+> * 15、输出 Image creation complete. Output file:install_wipe.img 为正常
+> * 16、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
 
 ### 单个项目编译
 > * 1、进入项目R文件级
