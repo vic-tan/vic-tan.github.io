@@ -343,8 +343,8 @@ id 是三位数
     * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
 > * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
-    *|序号     |工厂                    |         工厂代号（数据库特征名）|
-    | :----- | ----: | :----: |
+    *|序号     |工厂        |  代号（数据库名）|
+    | :----- | :---- | :---- |
     |1| 惠州工厂|HZ|                                 
     |2| 波兰工厂| PL|
     |3| TTET工厂| CD|
