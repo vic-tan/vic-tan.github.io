@@ -27,7 +27,7 @@ header-img: "img/zhihu.jpg"
     * 2-5、等一会会搜索到对应的路径./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
 
 ### patch 代码方法
-> * 1、选择打开patch 文件，找到要patch 文件路径 Subject: 【PATCH】
+> * 1、选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
 > * 2、在自己的服务器上cd 到该目录下，把patch 文件放到该目录下
 > * 2、执行patch -p1 < ？ 命令 ？ 表示patch 文件全名，包括后缀 
     * eg:  patch -p1 <0001-kernel-android-R-vendor-realtek-common-ATV-app-RtkTv.patch
