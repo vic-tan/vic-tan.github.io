@@ -115,8 +115,11 @@ header-img: "img/zhihu.jpg"
 
 
 ## <--------------------------TV 相关----------------------——>
-### 启动工厂DesignMenuActivity界面
+### 启动工厂菜单DesignMenuActivity界面
 > * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
+
+### 启动设置主界面
+> * am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings
 
 ### 修改TV系统文件申请权限（增删改）
 > * 1、开机ESC按住进bootcode，显示Realtek>后
