@@ -7,21 +7,19 @@ header-img: "img/green.jpg"
 
 ## <-----------------------工厂菜单-------------------——>
 
-### DTV 没有声音
-
+### DTV 没有声音（RMCA key 正常，但DTV有画面没有声音问题分析过过程）ATV 跟KEY 无关
 > * 1、RMCA_ready 是否正确
 > * 2、查看与SVN 上的key 是否相同
 > * 3、拿两机子对比下看是否想同
-> * 4、找RTK
+> * 4、vendor/factory 下RMCA 相同RMCA key重抄md5是否一致
+> * 5、找RTK分析
 
 ## <-----------------------串口问题-------------------——>
 
 ### 反抄软件升级后启用串口切DTV 无法切到DTV目录下
-
 > * 1、预置DB频道没有id不是1频道，而800，有可以是LCN搜台的，导致id为800。RTK导致无法切到DTV。
 
 ### 串口抄失败
-
 > * 1、查看Key 大小是否正确
 > * 2、查看mnt/verdor/impdata 是否成功
 > * 3、如果是RMCA key 则查看mnt/verdor/impdata/RMCA_ready 与mnt/verdor/tclconfig/pre_key/RMCA 中是否匹配
@@ -29,18 +27,19 @@ header-img: "img/green.jpg"
 > * 5、可以夹版本排查问题
 
 ### 遥控测试按“0”键（屏幕有响应）后发串口命令放回值异常
-
 > * 1、是否随机出现还是总是
 > * 2、抓日志
 > * 3、软件版本路径ID
 > * 4、查看日志，中间件调用流程->UartService ->AppUart ->FactoryUart-> startUartThread() - >
     > UartCommunication () -> transferData()->getRemoteCode()
 
+
+
+
 ## <-----------------------串口工具-------------------——>
 
 所有串口第一步都要先进入工厂模式
 ### 白平衡调试
-
 > * 1、全部命令选择——>内置PATTERN 切换
 > * 2、执行命令选择——>内置PATTERN 切换
 > * 3、串口命令预览——>数据1表示打开白平衡调试，0表示关闭
