@@ -199,6 +199,14 @@ id 是三位数
 > * 1、长按APT 等上面两个灯长亮后
 > * 2、如果是RCA协议按000 ，NEC协议按001 ,松下按010
 
+
+### 查看用audio fw
+> * 1、进kernel\system\configs文件夹
+> * 2、找到对应的品牌配置
+> * 3、打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
+> * 4、进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
+
+
 ## <--------------------------logcat ----------------------——>
 
 ### 串口与adb 端口冲突时，可以先把日志写到文件再打开串口
