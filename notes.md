@@ -115,11 +115,15 @@ header-img: "img/zhihu.jpg"
 
 
 ## <--------------------------TV 相关----------------------——>
-### 启动工厂菜单DesignMenuActivity界面
-> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity
+### 启动Activity界面
+> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity //工厂菜单
+> * am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings //设置主界面
+> * am start -n  com.apps.livetv/.SelectInputActivity   // 信源菜单
+> * am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity   //ATV搜台 
+> * am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity   //RTK ATV搜台
+> * am start -n com.apps.dtv/.DigitalSetup.DigitalChannelSetupActivity     //DTV搜台
+> * am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity     //RTK DTV搜台
 
-### 启动设置主界面
-> * am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings
 
 ### 修改TV系统文件申请权限（增删改）
 > * 1、开机ESC按住进bootcode，显示Realtek>后
