@@ -33,6 +33,10 @@ header-img: "img/green.jpg"
 > * 4、查看日志，中间件调用流程->UartService ->AppUart ->FactoryUart-> startUartThread() - >
     > UartCommunication () -> transferData()->getRemoteCode()
 
+## <-----------------------注意事项-------------------——>
+### 预置频道注意事项
+> * 1、切了id，记得shop后在预置频道。
+
 
 
 
