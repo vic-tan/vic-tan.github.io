@@ -193,6 +193,9 @@ id 是三位数
 ### 从U盘复制文件到当前路径
 > * cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA .
 
+### 设置tclconfig 权限
+> * mount -o remount,rw /mnt/vendor/tclconfig
+
 ### 反抄写
 > * 1、把反抄写文件放到U盘根目录下
 > * 2、上电一直按着ESC按住进bootcode，显示Realtek>后
