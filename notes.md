@@ -116,7 +116,9 @@ header-img: "img/zhihu.jpg"
 
 ## <--------------------------TV 相关----------------------——>
 ### 启动Activity界面
-> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity //工厂菜单
+> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity //工厂菜单 
+    * 1-1、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950
+    * 1-2、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
 > * am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings //设置主界面
 > * am start -n  com.apps.livetv/.SelectInputActivity   // 信源菜单
 > * am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity   //ATV搜台 
