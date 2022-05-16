@@ -33,6 +33,16 @@ header-img: "img/green.jpg"
 > * 4、查看日志，中间件调用流程->UartService ->AppUart ->FactoryUart-> startUartThread() - >
     > UartCommunication () -> transferData()->getRemoteCode()
 
+### DVB_S无信号，需要重新预制频点并且重启才生效
+> * 1、工厂信号是否有变动？
+> * 2、这个问题什么时候出现的，哪个版本？
+> * 3、频道列表，频道是否正常
+> * 4、不重启是否正常
+> * 5、在HDMI预置频道或者预制频道之后，重新进信源
+> * 6、切ID tvdata是否会清除（之前有这个问题）
+
+
+
 ## <-----------------------注意事项-------------------——>
 ### 预置频道注意事项
 > * 1、切了id，记得shop后在预置频道。
