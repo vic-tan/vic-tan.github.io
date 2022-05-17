@@ -453,3 +453,5 @@ id 是三位数
     |58| 俄罗斯Videoton工厂 |VIDEOTON|
     |59| 增加泰国TASTH009工厂 |TASTH009|
     |60| 松下PTW客户工厂 |PTW|
+    |61| 印度MOKA工厂 |MOKA|
+    |62| 印度ACER客户工厂 |ACER|
