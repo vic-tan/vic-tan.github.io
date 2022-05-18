@@ -355,6 +355,9 @@ id 是三位数
     * –date	日期格式	relative、local、default、iso、rfc、short、raw
     * –no-merges	隐藏合并提交
 
+### 回退版本
+> * 1、git revert ID
+
 ### 查看DailyBuild 编译code 对应的版本
 > * 1、打开编译DailyBuild 文件夹 eg:DailyBuild_RT2851M_0428
 > * 2、打开save_apk_svn
