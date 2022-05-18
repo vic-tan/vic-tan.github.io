@@ -215,6 +215,11 @@ id 是三位数
 > * 3、打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
 > * 4、进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
 
+## <--------------------------串口相关 ----------------------——>
+
+### PASS 返回值
+> * PASS
+    * 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail）
 
 ## <--------------------------logcat ----------------------——>
 
