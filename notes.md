@@ -378,6 +378,9 @@ id 是三位数
 ### Termius 账号
 > * 1、Termius 账号179840045@email.top (版本7.34.1可重复用0045可以累加，密码随便)
 
+### SPM版本发布releaseNote路径
+> * https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752
+
 ### 查找2851M批次及发布软件时间
 > * 1、把批次进入该网址查找对应的软件版本[https://rd-mokadisplay.tcl.com/rdm/](https://rd-mokadisplay.tcl.com/rdm/)
 > * 2、打开2851M软件发布列表打到发布时间即可[https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2](https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2)
