@@ -4,6 +4,40 @@ title: "notes"
 header-img: "img/zhihu.jpg"
 ---
 
+## -----------------------------------提交代码----------------------------
+
+### 编译整个软件
+***
+
+> 1. 连接进入自己的服务器
+> 2. 命令进入需要编译的项目， eg: cd 2851M
+> 3. 确保项目环境干净，防止出现因之前切换过分支导致环境不干净，先清除环境，输入如下清除命令 repo forall -c "pwd && git clean -xfd && git checkout -- ."
+> 4. 确定要编译的分支，然后init编译的分支,可以在以下查找分支
+> + [2841A分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35542944)
+> + [2851M分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)
+> + 输入init命令 eg:repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
+
+>  1、连接进入自己的服务器
+>  2、命令进入需要编译的项目，eg: cd 2851M
+>  3、确保项目环境干净，防止出现因之前切换过分支导致环境不干净，先清除环境，输入清除命令 repo forall -c "pwd && git clean -xfd && git checkout -- ."
+>  4、确定要编译的分支，然后init编译的分支 
+  * 4-1、 
+> * 4、同步代码repo sync -j8
+> * 5、如果有报错，哪里报错就删除哪里的文件，如删除kernel/android/R/vendor/R4 文件夹。eg: rm -rf kernel/android/R/vendor/R4  然后重新从1开始
+> * 6、./scbc_build_51m.sh (后面加 0 true 表示公版)
+> * 7、回车
+> * 8、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
+> * 9、2
+> * 10、n
+> * 11、n
+> * 12、第一次y以后n
+> * 13、品牌选择（1，2 表示区域客户，3、4表示松下）
+> * 14、一直回车
+> * 15、输出 Image creation complete. Output file:install_wipe.img 为正常
+> * 16、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+
+
+
 ## -----------------------代码提交与合并-------------------—
 ### sync code Excel表格 找到对应的服务器下路径
 
@@ -25,7 +59,7 @@ header-img: "img/zhihu.jpg"
     * 2-4、输入命令 find -name "TvApiHooker.cpp"。
     * 2-5、等一会会搜索到对应的路径./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
 
-### patch 代码方法
+### patch 文件代码合并命令
 > * 1、选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
 > * 2、在自己的服务器上cd 到该目录下，把patch 文件放到该目录下
 > * 3、执行patch -p1 < ？ 命令 ？ 表示patch 文件全名，包括后缀 
@@ -37,10 +71,11 @@ header-img: "img/zhihu.jpg"
     * 对比是不是patch 要修改的内容，进行修改，然后删除 rm -rf AndroidManifest.xml.orig
      
 
-### diff 代码方法
+### diff 文件代码合并命令方法
 > * 1、选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
 > * 2、在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
-> * 3、执行git apply 文件路径
+> * 3、执行git apply 文件路径(可以tab 出来)
+
 
 ### 切分支切换，确保环境代码干净
 > * 1、如果切分支支不到对应的分支，或者有错误
@@ -234,23 +269,7 @@ id 是三位数
 > * logcat &#124; grep -E "word1 &#124; word2 &#124; word3"
 
 ## --------------------------代码编译----------------------
-### 整个软件编译
-> * 1、进入项目级目录(如2851M)
-> * 2、先清空数据，确保环境代码干净，repo forall -c "pwd && git clean -xfd && git checkout -- ."
-> * 3、需要编译那个分支init 到哪个分支路径 repo init path  
-> * 4、同步代码repo sync -j8
-> * 5、如果有报错，哪里报错就删除哪里的文件，如删除kernel/android/R/vendor/R4 文件夹。eg: rm -rf kernel/android/R/vendor/R4  然后重新从1开始
-> * 6、./scbc_build_51m.sh (后面加 0 true 表示公版)
-> * 7、回车
-> * 8、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
-> * 9、2
-> * 10、n
-> * 11、n
-> * 12、第一次y以后n
-> * 13、品牌选择（1，2 表示区域客户，3、4表示松下）
-> * 14、一直回车
-> * 15、输出 Image creation complete. Output file:install_wipe.img 为正常
-> * 16、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+
 
 ### 单个项目编译
 > * 1、进入项目R文件级
