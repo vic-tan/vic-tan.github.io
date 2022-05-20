@@ -3,6 +3,7 @@ layout: page
 title: "notes"
 header-img: "img/zhihu.jpg"
 ---
+
 ## -----------------------代码提交与合并-------------------—
 ### sync code Excel表格 找到对应的服务器下路径
 
@@ -27,17 +28,19 @@ header-img: "img/zhihu.jpg"
 ### patch 代码方法
 > * 1、选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
 > * 2、在自己的服务器上cd 到该目录下，把patch 文件放到该目录下
-> * 2、执行patch -p1 < ？ 命令 ？ 表示patch 文件全名，包括后缀 
+> * 3、执行patch -p1 < ？ 命令 ？ 表示patch 文件全名，包括后缀 
     * eg:  patch -p1 <0001-kernel-android-R-vendor-realtek-common-ATV-app-RtkTv.patch
-> * 3、如果出Hunk #2 succeeded at 149 (offset 5 lines). 说明有冲突 
+> * 4、如果出Hunk #2 succeeded at 149 (offset 5 lines). 说明有冲突 
     * 如果有冲突，会多出一个.orig的文件。如 :AndroidManifest.xml.orig （orig 为之前的文件）
     * git diff 冲突文件查看具体修改（或者用对比工具比较）
     * 如:git diff /home/lifei/2851M/kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider/AndroidManifest.xml
     * 对比是不是patch 要修改的内容，进行修改，然后删除 rm -rf AndroidManifest.xml.orig
      
 
-
-
+### diff 代码方法
+> * 1、选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
+> * 2、在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
+> * 3、执行git apply 文件路径
 
 ### 切分支切换，确保环境代码干净
 > * 1、如果切分支支不到对应的分支，或者有错误
