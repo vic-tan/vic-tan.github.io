@@ -175,7 +175,7 @@ header-img: "img/zhihu.jpg"
 
 
 ***
-## ------------------------------------ TV 相关------------------------------ 
+## ----------------------------------- TV 相关------------------------------ 
 
 ***
 ### 申请TV系统文件读写权限
@@ -235,6 +235,7 @@ header-img: "img/zhihu.jpg"
 > 6. 拷贝完执行 sync 
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格
+
 ***
 |  2851M | 
 |  ----  | 
@@ -245,7 +246,7 @@ header-img: "img/zhihu.jpg"
 | mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro  | 
 | mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata  |   
 
-
+***
 |  2841A | 
 |  ----  | 
 | mount -t ext4 /dev/block/mmcblk0p29 /mnt/vendor/tclconfig  | 
