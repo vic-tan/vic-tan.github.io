@@ -240,11 +240,7 @@ header-img: "img/zhihu.jpg"
 |  挂载文件夹   | TV路径  |
 |  :----  | :----  |
 | /mnt/vendor/tclconfig  | mount -t ext4 /dev/block/mmcblk0p31 |
-| /mnt/vendor/tvdata  | mount -t ext4 /dev/block/mmcblk0p33|
-| /mnt/vendor/impdata  |mount -t ext4 /dev/block/mmcblk0p34|
-| /mnt/vendor/factory  | mount -t ext4 /dev/block/mmcblk0p34 |
-| /mnt/vendor/factory_ro  |mount -t ext4 /dev/block/mmcblk0p6 |
-| /mnt/vendor/tvdata  |mount -t ext4 /dev/block/mmcblk0p30 |
+
 
 #### 2841A
 |   挂载文件夹  | TV路径  |
