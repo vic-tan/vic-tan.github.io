@@ -73,7 +73,7 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 首先已确定工厂抄KEY 工具的订单正确，所以我们服务器获取的KYE正常。查看板卡，发现有被重新焊过的痕迹，经跟RTK 确认，新的IC和新的EMMC一旦抄过key，就会相互绑定。绑定过后更换IC 或者更换其它机器上已经抄过key 的EMMC，会导致抄widevine等  key 失败。更换新的EMMC 不影响      
+    > 首先已确定工厂抄KEY 工具的订单正确，所以我们服务器获取的KYE正常。查看板卡，发现有被重新焊过的痕迹，说明IC 或才EMMC 是旧的，有可能之前已抄过key ，经跟RTK 确认，KEY 一旦抄过无法清除，而且新的IC和新的EMMC一旦抄过key，就会相互绑定。绑定过后更换IC 或者更换其它机器上已经抄过key 的EMMC，会导致抄widevine等  key 失败。更换新的EMMC 不影响      
 * 解决方法 
     >  换新的EMMC
 
