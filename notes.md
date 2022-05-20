@@ -236,7 +236,7 @@ header-img: "img/zhihu.jpg"
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格
 ***
-|  2851M   | 
+|  2851M | 
 |  ----  | 
 | mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig  | 
 | mount -t ext4 /dev/block/mmcblk0p33 /mnt/vendor/tvdata  | 
@@ -245,8 +245,8 @@ header-img: "img/zhihu.jpg"
 | mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro  | 
 | mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata  |   
 
-***
-|  2841A  | 
+
+|  2841A | 
 |  ----  | 
 | mount -t ext4 /dev/block/mmcblk0p29 /mnt/vendor/tclconfig  | 
 | mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/impdata  | 
@@ -291,11 +291,6 @@ header-img: "img/zhihu.jpg"
 > * 2、找到对应的品牌配置
 > * 3、打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
 > * 4、进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
-
-
-
-
-
 
 
 
@@ -368,8 +363,6 @@ header-img: "img/zhihu.jpg"
     * –date	日期格式	relative、local、default、iso、rfc、short、raw
     * –no-merges	隐藏合并提交
 
-### 回退版本
-> * 1、git revert ID
 
 ### 查看DailyBuild 编译code 对应的版本
 > * 1、打开编译DailyBuild 文件夹 eg:DailyBuild_RT2851M_0428
