@@ -109,6 +109,23 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### 中间件更新步骤
+***
+
+> 1. svn下载[中间件路径 ](https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware/debug/[2851M])
+> 2. 下载以上最新tv-midware-manager.jar文件push 到TV上 /system_ext/framework目录
+> 3. 下载以上最新TVMidwareService.apk文件push 到TV上 /system_ext/app/TVMidwareService 目录
+
+***
+### 本地项目打包apptvmidware.jar步骤
+***
+> 1. 打开SVN的中间件项目，更新最新代码
+> 2. 在android studio 工具上左下角的Buiild Variants : apptvmidware 选择 debug
+> 3. 选中apptvmidware项目->Build ->make module
+> 4. 右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
+
+
+***
 ### patch文件代码合并命令
 ***
 
@@ -139,7 +156,7 @@ header-img: "img/zhihu.jpg"
 ***
 
 > 1. 把.bin 文件放到U盘根目下
-> 2. reboot -> 按住空格键 或者 ESC 键 进入Realtek> 
+> 2. reboot -> 按住空格键 ，或者按住Esc键进入bootcode ，当显示Realtek> 可松开 
 > 3. 输入 usb start
 > 4. fatload usb 0:1 0x108000 ? , ?表示文件名 e:fatload usb 0:1 0x108000 vmlinux.bin
 > 5. 输入 go all
@@ -157,62 +174,85 @@ header-img: "img/zhihu.jpg"
 
 
 
-## -------------------------TV 相关----------------------—
+***
+## ------------------------------------ TV 相关------------------------------ 
+
+***
+### 申请TV系统文件读写权限
+***
+
+> 1. adb connect 192.168.1.128
+> 2. adb root
+> 3. adb remount
+> 4. 如果提示要重启则启以后，再走一次前三步一般情况即有文件读写权限，如果没有则按以下的申请
+> 5. 开机 长按住ESC键进bootcode，显示Realtek>后可松开 
+> 6. env set OEMLock off
+> 7. env save
+> 8. reset
+> 9. 打开用adb工具
+> 10. adb connect 192.168.1.128 （windowns :adb connect 192.168.1.128:5555 ）
+> 11. adb root
+> 12. adb disable-verity
+> 13. adb reboot
+> 14. adb connect 192.168.1.128
+> 15. adb root
+> 16. adb remount
+> 17. 走完以上步骤即则可以对系统文件读写了
+
+
+***
 ### 启动Activity界面
-> * am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity //工厂菜单 
+***
+
+|  名称   | 命令  |
+|  ----  | ----  |
+| 工厂菜单  | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity |
+| 设置界面  | am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings|
+| 信源菜单  | am start -n  com.apps.livetv/.SelectInputActivity|
+| ATV搜台  | am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity |
+| RTK ATV  |am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity |
+| DTV搜台  |am start -n com.apps.dtv/.DigitalSetup.DigitalChannelSetupActivity |
+| RTK DTV | am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity|
+
+
+***
+### CTS 版本文件挂载查看权限
+***
+
+> 1. 开机按住tab 键，或者按住Esc键进入bootcode，当显示Realtek> 后输入go r
+> 2. 创建想要挂载对应的文件夹，想挂载tclconfig则 :mkdir /mnt/vendor/tclconfig
+> 3. 把系统文件挂载到新创建的文件夹中,eg:mount -t ext4 /dev/block/？ /mnt/vendor/tclconfig,这个？号根据机型不同可能名字不同,41A/51M 如下面表格
+> 4. 如果想把文件复制出来，则插上U盘，如果不停有日志打印影响输入，通过执行ps 命令查看所有进程，找到/sbin/loader_m进程的PID，执行kill PID 进程，eg: kill 109 
+> 5. 执行 cp RMCA_ready /mmnt/udisk/sda1/ 把文件拷贝到U盘，文件夹则执行 cp -rf * /mmnt/udisk/sda1/
+> 6. 拷贝完执行 sync 
+> 7. 第6步不执行，有可能无法复制  
+> 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格
+
+|  2851M   | 
+|  ----  | 
+| mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig  | 
+| mount -t ext4 /dev/block/mmcblk0p33 /mnt/vendor/tvdata  | 
+| mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata  | 
+| mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory  | 
+| mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro  | 
+| mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata  |   
+
+***
+|  2841A  | 
+|  ----  | 
+| mount -t ext4 /dev/block/mmcblk0p29 /mnt/vendor/tclconfig  | 
+| mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/impdata  | 
+| mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata  | 
+| mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory  | 
+| mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro | 
+| mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata  |   
+
+
+
     * 1-1、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950
     * 1-2、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
-> * am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings //设置主界面
-> * am start -n  com.apps.livetv/.SelectInputActivity   // 信源菜单
-> * am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity   //ATV搜台 
-> * am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity   //RTK ATV搜台
-> * am start -n com.apps.dtv/.DigitalSetup.DigitalChannelSetupActivity     //DTV搜台
-> * am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity     //RTK DTV搜台
 
 
-### 修改TV系统文件申请权限（增删改）
-> * 1、开机ESC按住进bootcode，显示Realtek>后
-> * 2、env set OEMLock off
-> * 3、env save
-> * 4、reset
-> * 5、打开用adb工具
-> * 6、adb connect 192.168.1.128 （windowns :adb connect 192.168.1.128:5555 ）
-> * 7、adb root
-> * 8、adb disable-verity
-> * 9、adb reboot
-> * 10、adb connect 192.168.1.128
-> * 11、adb root
-> * 12、adb remount
-> * 走完以上步骤即可以对系统文件增删改了
-
-
-
-### CTS 版本文件查看权限
-
-> * 1、上电长按tab（不小心按错了长按了Esc建 可以 输入go r）
-> * 2、创建文件夹（要查看哪个目录就用以下那个）
-    * mkdir /mnt/vendor/tclconfig
-    * mkdir /mnt/vendor/impdata
-> * 3、挂载（把要看的文件挂载出来）（这个？号根据机型不同可能名字不同）
-    * mount -t ext4 /dev/block/？ /mnt/vendor/tclconfig
-    * ？号值可以通过命令 ls -l dev/block/by-name/查询
-    * 2851M
-    * mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig
-    * mount -t ext4 /dev/block/mmcblk0p33 /mnt/vendor/tvdata
-    * mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata
-    * mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
-    * mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro
-    * mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata
-    * 2841A
-    * mount -t ext4 /dev/block/mmcblk0p29 /mnt/vendor/tclconfig
-    * mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/impdata
-    * mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
-    * mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro
-    * mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata
-
-> * 4、如果插上U盘一直有输出日志打印，输入ps 命令查看所有进程，然后可以kill 109 进程（/sbin/loader_m）
-> * 5、把文件复制到U盘 cp RMCA_ready /mmnt/udisk/sda1/  U盘路径/mmnt/udisk/开头(文件夹cp -rf * /mmnt/udisk/sda1/)
-> * 6、sync
 
 
 ### 盲切ID
@@ -281,16 +321,7 @@ id 是三位数
 
 
 
-### 中间件更新步骤
-> * 中间件路径 https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware/debug/[2851M]
-    * 1、下载以上最新tv-midware-manager.jar文件push 到TV上 /system_ext/framework目录
-    * 2、下载以上最新TVMidwareService.apk文件push 到TV上 /system_ext/app/TVMidwareService 目录
 
-### 本地项目打包apptvmidware.jar步骤
-> * 1、打开中间件项目，更新最新代码
-> * 2、在左下角的Buiild Variants : apptvmidware 选择 debug
-> * 3、选中apptvmidware项目->Build ->make module
-> * 4、右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
 
 
 
