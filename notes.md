@@ -4,18 +4,19 @@ title: "notes"
 header-img: "img/zhihu.jpg"
 ---
 
-## -----------------------------------提交代码----------------------------
+## -----------------------------------提交代码----------------------------  
 
+***
 ### 编译整个软件
 ***
 
-> 1. 连接进入自己的服务器
+> 1. 连接进入自己的服务器 eg 10.126.69.28
 > 2. 命令进入需要编译的项目， eg: cd 2851M
 > 3. 确保项目环境干净，防止出现因之前切换过分支导致环境不干净，先清除环境，输入如下清除命令 repo forall -c "pwd && git clean -xfd && git checkout -- ."
 > 4. 确定要编译的分支，然后init编译的分支,可以在以下查找分支
 > + [2841A分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35542944)
 > + [2851M分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)
-> + 输入init命令 eg:repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
+> + 输入repo init -u patch 命令 eg:repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
 > 5. 同步当前分支代码 命令:repo sync -j8
 > 6. 同步过程如果提示报错文件，可以先删除该文件，然后重新从2步开始，还是不行可以直接删除R3或R4文件，再重新第2步开始
 > + 删除文件命令 eg:rm -rf kernel/android/R/vendor/R4
@@ -32,30 +33,83 @@ header-img: "img/zhihu.jpg"
 > 13. 请输入客户品牌[Please type product][0-NOKIA(Default) 1-MOTOROLA 2-NOKIA_2K 3-PANASONIC_EU 4-PANASONIC_FFM 5-PANASONIC_BASE] 品牌选择（1，2 表示区域客户，3、4表示松下）
 > 14. 回车后，如果是清空环境第一次编译，一般要等待2个小时，已经编译过第二次，则基本上30分钟。
 > 15. 编译完成后会输出 Image creation complete. Output file:install_wipe.img 为正常
-> 16. 编译完成后会输出路径为根目录 eg:2851M/Buildimg/V8-T851MGL-LF1V20220421_TAN
+> 16. 编译完成后会输出路径为根目录 eg:2851M/Buildimg/V8-T851MGL-LF1V20220421_TAN  
 
 
+***
+### 同步开发代码
+***  
 
-## -----------------------代码提交与合并-------------------—
-### sync code Excel表格 找到对应的服务器下路径
+> 1. 连接进入自己的服务器 eg : 10.126.69.28
+> 2. 命令进入需要编译的项目， eg: cd 2851M
+> 3. 切换到开发分支,可执行repo init -u patch 切到对应分支，或者cd 到有仓库的文件目录下git checkout 切换分支
+> 4. 同步当前分支代码 命令:repo sync -j8
+> 5. cd 到需要同步代码的仓库
+> + 预置DB路径 ：2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
+> + RTK 同步Code 仓库路径请看下面RTK 同步Code 代码的仓库查找说明纪要
+> 6. git pull scbc realtek/merlin5/android-11/scbc 更新当前目录或者（repo sync .）
+> 7. git status 查看当前工作区否干净
+> 8. git log 或者git log -&#45;oneline查看日志并检查当前分支是否正确
+> 9. 复制要同步的commit id 
+> 11. git branch -a 查看当前仓库所有分支 
+> 12. git checkout 要同步的分支 eg git checkout scbc/rt51m/master 
+> 13. git log 确定一下分支是否切换成功
+> 14. git cherry-pick ID ，ID 为复制的要同步的commit id
+> 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 
+> 16. git status 此时工作区否为你修改冲突的文件
+> 17. git add 文件名 
+> + 如果是提交操作，需要走git commit -m "add rtk pl db tv" 添加提交信息 然后走20步开始即可
+> 18. git checkout ../..scbc.mk 当前可以回退之前的修改
+> 18. git cherry-pick -&#45;continue 继续同步
+> 19. 如果想取消同步，可以执行git cherry-pick -&#45;abort取消上次操作
+> 20. git push scbc HEAD:rt51m/master 把同步到本地的代码提交到远程服务
+> 21. 如果提示push失败，提示要先pull， 则先回退到上一步 git reset -&#45;hard 重新从6步开始 
 
-> * 1、方法一（推荐）
-    * 1-1、打开sync code Excel提交文件在我们git 服务器路径。
-    * 1-2、在信息行中，找到tree行点击tree。
-    * 1-3、复制随便找一个提交文件名：如TvApiHooker（不带后缀）。
-    * 1-4、打开服务器，找到对应的项目下如：2851M。
-    * 1-5、打开.repo文件夹。
-    * 1-6、打开manifests文件夹。
-    * 1-7、打开mac7p-atv-scbc.xml文件。
-    * 1-8、搜索TvApiHooker，对应的path便是对应的路径。
 
-> * 2、方法二
-    * 2-1、打开sync code Excel提交文件在我们git 服务器路径。
-    * 2-2、在信息行中，找到tree行点击tree。
-    * 2-3、复制随便找一个提交文件名：如TvApiHooker.cpp。
-    * 2-3、rtk 文件一般在/kernel/android/R/vendor/realtek/common/ATV 下，先cd到目录
-    * 2-4、输入命令 find -name "TvApiHooker.cpp"。
-    * 2-5、等一会会搜索到对应的路径./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
+***
+### RTK 同步Code 代码的仓库查找
+***  
+
+> 1. 一般RTK 会提供一个 sync code Excel表格
+> 2. 打开sync code Excel提交文件在
+> 2. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
+> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找  
+
+> 4. 方法一（推荐）
+> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
+> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
+> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker（不带后缀）
+> + 连接自己的服务器 eg 10.126.69.28
+> + 进入项目根目录，打开.repo--> manifests-->mac7p-atv-scbc.xml文件。
+> + 搜索TvApiHooker关键字，查找对应的文件路径即可  
+
+> 5. 方法二
+> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
+> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
+> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker.cpp
+> + 连接自己的服务器 eg 10.126.69.28
+> + rtk 文件一般在/kernel/android/R/vendor/realtek/common/ATV 下，先cd到目录
+> + 输入命令搜索文件名 find -name "TvApiHooker.cpp" 
+> + 搜索到会显示对应的路径eg./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
+
+***
+### 编译单个项目
+***
+
+> 1. 确定分支，然后同步代码 repo sync -j8 
+> 2. 进入项目R文件夹,eg：2851M/kernel/android/R
+> 3. 执行脚本 source build/envsetup.sh
+> 5. 执行 lunch 找到对应的项目序号 
+> 6. 2851M/2841A 序号为3 所以我们一般输入lunch 3 
+> 7. 进入单个项目目录，eg:kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider
+> + 中间件TVMidwareManager路径为2851M/kernel/android/R/vendor/tv051/app/rtk_app/目录下
+> 8. 替换需要编译的项目
+> 9. 执行编译 mm -j32
+> 10. 编译完成后输出 build completed successfully （时间）
+> 11. 完成后输出文件输出路径为 kernel\android\R\out\target\product\R4\system_ext\framework
+> + 中间件输出文件为该目录下的tv-midware-manager.jar文件
+
+
 
 ### patch 文件代码合并命令
 > * 1、选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
@@ -73,66 +127,6 @@ header-img: "img/zhihu.jpg"
 > * 1、选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
 > * 2、在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
 > * 3、执行git apply 文件路径(可以tab 出来)
-
-
-### 切分支切换，确保环境代码干净
-> * 1、如果切分支支不到对应的分支，或者有错误
-> * 2、repo forall -c "pwd && git clean -xfd && git checkout -- ."
-> * 3、rm -rf R4 （删除R4 或者R3）
-> * 4、repo init -u 切到对应的分支
-> * 5、repo sync -j8 （同步）
-
-### RKT开发完成需同步到主分支(以2851M为例)
-
-> * 1、到自己服服器
-> * 2、cd进入2851M/kernel/android/R/vendor 目录下,如果是其它可以按下面几个步骤
-    * 2-1、如果提供sync code Excel表格，则先找path路径关键词到git路径[http://10.126.16.60/gerrit/#/admin/projects/](http://10.126.16.60/gerrit/#/admin/projects/)搜索到项目路径
-    * 2-2、找到对应的提交路径点 (gitweb)进入相对的文件目录-> 在heads 找到分支 点击shortlog
-    * 2-3、找到对应的提交代码点击 复制commit id
-> * 3、git log
-> * 4、查看需要同步提交的记录log (如果分支不对，先切换分支)（或者直接在git 搜索到的）
-    * 4-1、git checkout scbc/realtek/mac7p/android-11/scbc
-    * 4-2、git log 是否有上面提交的记录
-    * 4-3、git pull scbc realtek/mac7p/android-11/scbc
-    * 4-4、git log --oneline 查看是否有上面提交记录
-    * 4-5、git show 7e520f1d 查看修改内容并修改commit id(其它情况按上面步骤获得id
-> * 5、切回到主分支 git checkout scbc/rt51m/master
-> * 6、git log 确定分支切成功没有
-> * 7、合并修改的内容 git cherry-pick commit id 报错说明有冲突，自己手动改再提交 ，如果报HEAD detached from 8a3c346 You are currently cherry-picking commit cde479c.有可能是有人同步过了
-> * 8、git add .
-> * 9、git cherry-pick -&#45;continue
-> * 10、可以执行git cherry-pick -&#45;abort取消上次操作
-> * 11、git push scbc HEAD:rt51m/master。
-
-### 频道 DB 添加并同步到mastar 分支
-
-注意：首先要确定当前分支，先从开发分支
-
-> * 1、到2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
-> * 2、到factorydata_app对应目录下，把tv.db 放到dvb目录下，如果是RTK的TV则是放到 rtk_provider_db目录下，否则放到provider_db目录下
-> * 3、到factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下
-> * 4、到/2851M/kernel/android/R/device/tv051/R4/custom_images ls
-> * 5、git log 查看一下当前目录及当前日志
-> * 6、git pull scbc realtek/merlin5/android-11/scbc 更新最新项目
-> * 7、git status 查看是否有冲突
-> * 8、git checkout ../..scbc.mk 有则回退之前的修改
-> * 9、git add tclconfig/preset_channel/factorydata_app 添加文件夹
-> * 10、git status 查看是否添加 
-> * 11、git commit -m "add rtk pl db tv" 添加提交信息 
-> * 12、git push scbc HEAD:realtek/merlin5/android-11/scbc 提交到分支
-> * 13、git status 查看是否已提交 
-> * 14、复制刚才提交的commit id 
-> * 15、git checkout scbc/rt51m/master 切换到量产master 分支
-> * 16、git log 查看当前分支信息及日志信息 
-> * 17、git pull scbc rt51m/master 同步当前分支 
-> * 18、git status 
-> * 19、git cherry-pick 2da8dd7f0f6c89042d4ee3eccacd503c33832bd5 同步开发分支commit id 文件
-> * 20、git status 确定是否同步成功
-> * 21、git push scbc HEAD:rt51m/master。
-> * 22、如果提示push 失败要先pull， 则先回退到上一步 git reset -&#45;hard 
-> * 23、repo sync . 同步所有文件
-> * 24、又重新从第6步开始
-
 
 
 ### RTK代码sync code Excel提交同步分支相关路径
@@ -269,26 +263,7 @@ id 是三位数
 ## --------------------------代码编译----------------------
 
 
-### 单个项目编译
-> * 1、进入项目R文件级
-> * 2、source build/envsetup.sh
-> * 3、lunch
-> * 4、找到对应项目序号(2851M 序号3 )
-> * 5、lunch 3
-> * 6、进入需要编译的目录(如kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider)
-> * 7、mm -j32
 
-### 编译中间件TVMidwareManager
-> * 1、repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
-> * 2、repo sync -j8 (同步)
-> * 3、到2851/目录下 repo sync .
-> * 4、到/2851M/kernel/android/R目录下
-> * 5、source build/envsetup.sh
-> * 6、lunch 3
-> * 7、把整个TVMidwareManager项目拷贝到/2851M/kernel/android/R/vendor/tv051/app/rtk_app下
-> * 8、拷贝完后cd 到/2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager下
-> * 9、 mm -j32
-> * 10、编译完成后输出 Install: /2851M/kernel/android/R/out/target/product/R4/system_ext/framework/tv-midware-manager.jar
 
 
 ### 中间件更新步骤
