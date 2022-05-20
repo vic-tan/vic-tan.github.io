@@ -71,18 +71,16 @@ header-img: "img/zhihu.jpg"
 ***  
 
 > 1. 一般RTK 会提供一个 sync code Excel表格
-> 2. 打开sync code Excel提交文件在
+> 2. 打开sync code Excel提交文件
 > 2. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
-> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找  
-
+> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找
 > 4. 方法一（推荐）
 > + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
 > + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
 > + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker（不带后缀）
 > + 连接自己的服务器 eg 10.126.69.28
 > + 进入项目根目录，打开.repo--> manifests-->mac7p-atv-scbc.xml文件。
-> + 搜索TvApiHooker关键字，查找对应的文件路径即可  
-
+> + 搜索TvApiHooker关键字，查找对应的文件路径即可
 > 5. 方法二
 > + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
 > + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
@@ -110,23 +108,41 @@ header-img: "img/zhihu.jpg"
 > + 中间件输出文件为该目录下的tv-midware-manager.jar文件
 
 
+***
+### patch文件代码合并命令
+***
 
-### patch 文件代码合并命令
-> * 1、选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
-> * 2、在自己的服务器上cd 到该目录下，把patch 文件放到该目录下
-> * 3、执行patch -p1 < ？ 命令 ？ 表示patch 文件全名，包括后缀 
-    * eg:  patch -p1 <0001-kernel-android-R-vendor-realtek-common-ATV-app-RtkTv.patch
-> * 4、如果出Hunk #2 succeeded at 149 (offset 5 lines). 说明有冲突 
-    * 如果有冲突，会多出一个.orig的文件。如 :AndroidManifest.xml.orig （orig 为之前的文件）
-    * git diff 冲突文件查看具体修改（或者用对比工具比较）
-    * 如:git diff /home/lifei/2851M/kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider/AndroidManifest.xml
-    * 对比是不是patch 要修改的内容，进行修改，然后删除 rm -rf AndroidManifest.xml.orig
+> 1. 选择打开patch 文件，找到要patch 文件路径 Subject: &#91;PATCH&#93;
+> 2. 连接自己的服务器 eg 10.126.69.28
+> 3. 把patch文件放到该目录下
+> 5. 执行patch -p1 < ？ ,？ 表示patch 文件全名，输入前面几个可tab 出来
+> + eg: patch -p1 <0001.patch
+> 6. 如果显示 Hunk #2 succeeded at 149 (offset 5 lines). 说明有冲突 
+> + 出现冲突，会多出一个.orig的文件。eg :AndroidManifest.xml.orig （orig 为之前的文件）
+> + git diff 查看冲突文件修改信息，（或者用对比工具比较）进行修改
+> + eg :git diff /home/lifei/2851M/kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider/AndroidManifest.xml
+> + 对比是不是patch 要修改的内容，进行修改，然后删除 rm -rf AndroidManifest.xml.orig
+
      
-
+***
 ### diff 文件代码合并命令方法
-> * 1、选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
-> * 2、在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
-> * 3、执行git apply 文件路径(可以tab 出来)
+***
+
+> 1. 选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
+> 2. 在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
+> 3. 执行git apply 文件路径(可以tab 出来)
+> 4. 出现冲突 git diff 查看冲突文件修改信息，（或者用对比工具比较）进行修改
+
+
+***
+### bin 文件合并方法
+***
+
+> 1. 把.bin 文件放到U盘根目下
+> 2. reboot -> 按住空格键 或者 ESC 键 进入Realtek> 
+> 3. 输入 usb start
+> 4. fatload usb 0:1 0x108000 ? , ?表示文件名 e:fatload usb 0:1 0x108000 vmlinux.bin
+> 5. 输入 go all
 
 
 ### RTK代码sync code Excel提交同步分支相关路径
