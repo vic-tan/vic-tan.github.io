@@ -16,25 +16,23 @@ header-img: "img/zhihu.jpg"
 > + [2841A分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35542944)
 > + [2851M分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)
 > + 输入init命令 eg:repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
-
->  1、连接进入自己的服务器
->  2、命令进入需要编译的项目，eg: cd 2851M
->  3、确保项目环境干净，防止出现因之前切换过分支导致环境不干净，先清除环境，输入清除命令 repo forall -c "pwd && git clean -xfd && git checkout -- ."
->  4、确定要编译的分支，然后init编译的分支 
-  * 4-1、 
-> * 4、同步代码repo sync -j8
-> * 5、如果有报错，哪里报错就删除哪里的文件，如删除kernel/android/R/vendor/R4 文件夹。eg: rm -rf kernel/android/R/vendor/R4  然后重新从1开始
-> * 6、./scbc_build_51m.sh (后面加 0 true 表示公版)
-> * 7、回车
-> * 8、输入版本名 如：V8-T851MGL-LF1V20220421_tanlifei 按回车默认 V8-T851MGL-LF1V001
-> * 9、2
-> * 10、n
-> * 11、n
-> * 12、第一次y以后n
-> * 13、品牌选择（1，2 表示区域客户，3、4表示松下）
-> * 14、一直回车
-> * 15、输出 Image creation complete. Output file:install_wipe.img 为正常
-> * 16、输出目录为根目录(如2851M)2851M/Buildimg/V8-T851MGL-LF1V001
+> 5. 同步当前分支代码 命令:repo sync -j8
+> 6. 同步过程如果提示报错文件，可以先删除该文件，然后重新从2步开始，还是不行可以直接删除R3或R4文件，再重新第2步开始
+> + 删除文件命令 eg:rm -rf kernel/android/R/vendor/R4
+> 7. 执行脚本 ./scbc_build_51m.sh  回车
+> + 文件一定是在项目根目录下执行，在根目下，可以打前几个然后tab 出来 
+> + 在脚本后面加 0 true 表示公版 eg:./scbc_build_51m.sh 0 true
+> 8. 请输入版本号[Please type version] 按回国为默认V8-T851MGL-LF1V001版本号，最好按时间命名加上自己的标签，ge:V8-T851MGL-LF1V20220421_TAN
+> 9. CTS or not?[1-CTS 2-Debug 3-CTS&Debug] 表示编译软件类型，一般输入 2
+> + 1-CTS，表示用户模式，有很多权限限制
+> + 2-Debug，表示开发模式，有root等多个权限，适合开发
+> 10. Build OTA package or not? 表示是否支持OTA升级，一般输入 n
+> 11. 是否启用远场语音[n/y]? 表示当前软件是否支持远场语音，一般输入 n，41A硬件不支持这项
+> 12. Clean or not? 选n 是否先清除下环境
+> 13. 请输入客户品牌[Please type product][0-NOKIA(Default) 1-MOTOROLA 2-NOKIA_2K 3-PANASONIC_EU 4-PANASONIC_FFM 5-PANASONIC_BASE] 品牌选择（1，2 表示区域客户，3、4表示松下）
+> 14. 回车后，如果是清空环境第一次编译，一般要等待2个小时，已经编译过第二次，则基本上30分钟。
+> 15. 编译完成后会输出 Image creation complete. Output file:install_wipe.img 为正常
+> 16. 编译完成后会输出路径为根目录 eg:2851M/Buildimg/V8-T851MGL-LF1V20220421_TAN
 
 
 
