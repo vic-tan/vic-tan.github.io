@@ -234,7 +234,7 @@ header-img: "img/zhihu.jpg"
 > 5. 执行 cp RMCA_ready /mmnt/udisk/sda1/ 把文件拷贝到U盘，文件夹则执行 cp -rf * /mmnt/udisk/sda1/
 > 6. 拷贝完执行 sync 
 > 7. 第6步不执行，有可能无法复制  
-> 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格
+> 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格    
 
 ***
 |  2851M | 
