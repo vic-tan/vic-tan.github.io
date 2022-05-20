@@ -201,7 +201,7 @@ header-img: "img/zhihu.jpg"
 
 
 ***
-### 启动Activity界面
+### 命令启动Activity界面
 ***
 
 |  名称   | 命令  |
@@ -216,6 +216,14 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### 遥控器显示工厂菜单方法
+***
+
+> 1. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950
+> 2. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
+
+
+***
 ### CTS 版本文件挂载查看权限
 ***
 
@@ -227,7 +235,7 @@ header-img: "img/zhihu.jpg"
 > 6. 拷贝完执行 sync 
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格
-
+***
 |  2851M   | 
 |  ----  | 
 | mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig  | 
@@ -247,39 +255,29 @@ header-img: "img/zhihu.jpg"
 | mount -t ext4 /dev/block/mmcblk0p6 /mnt/vendor/factory_ro | 
 | mount -t ext4 /dev/block/mmcblk0p30 /mnt/vendor/tvdata  |   
 
+***
+### 其它相关操作
+***
+|  名称   | 具体操作  |
+|  ----  | ----  |
+| 系统升级 | 连接串口->reboot->长按tab等待日志出来 |
+| 盲切ID  | 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数） |
+| 键盘切ID  | 062598 menu 047 前面这数字要用一排的那行数字输入，id 是三位数 |
+| 改屏参 | 串口工具->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启) |
+| 屏蔽遥控器 | settings put global shop_ir_lock 0 |
+| 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
+| U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA . |
+| 删除文件| rm -rf R4（R4 表示文件名字） |
+| 串吕PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
+| Log过滤关键字| logcat &#124; grep -E "word1 &#124; word2 &#124; word3" |
+| 串口占用输出log| logcat -s  tag > data/log.log 或logcat -s FactoryUart > /data/temp/log.log |
+| 工厂遥控器| 长按APT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
+| 回退版本| git revert ID |
 
 
-    * 1-1、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950
-    * 1-2、设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
 
 
 
-
-### 盲切ID
-> * 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数）
-
-### 键盘切ID
-> * 062598 menu 047
-注意：前面这数字要用一排的那行数字输入
-id 是三位数
-
-### 改屏参
-> * 连接串口->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启)
-
-### TV系统升级
-> * 连接串口->reboot->长按tab等待日志出来
-
-### 去掉遥控器屏蔽串口命令
-> * settings put global shop_ir_lock 0
- 
-### 删除文件
-> *  rm -rf R4（R4 表示文件名字）
-
-### 从U盘复制文件到当前路径
-> * cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA .
-
-### 设置tclconfig 权限
-> * mount -o remount,rw /mnt/vendor/tclconfig
 
 ### 反抄写
 > * 1、把反抄写文件放到U盘根目录下
@@ -287,36 +285,12 @@ id 是三位数
 > * 3、输入 mp_restore
 
 
-### 工厂遥控器
-> * 1、长按APT 等上面两个灯长亮后
-> * 2、如果是RCA协议按000 ，NEC协议按001 ,松下按010
-
 
 ### 查看用audio fw
 > * 1、进kernel\system\configs文件夹
 > * 2、找到对应的品牌配置
 > * 3、打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
 > * 4、进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
-
-## --------------------------串口相关 ----------------------—
-
-### PASS 返回值
-> * PASS
-    * 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail）
-
-## --------------------------logcat ----------------------—
-
-### 串口与adb 端口冲突时，可以先把日志写到文件再打开串口
-> * logcat -s FactoryUart > /data/temp/log.log
-
-### 串口占用时先保存要查看日志，再占用
-> * logcat -s  tag > data/log.log
-
-### Grep -E这个参数过滤多个关键字
-> * logcat &#124; grep -E "word1 &#124; word2 &#124; word3"
-
-## --------------------------代码编译----------------------
-
 
 
 
