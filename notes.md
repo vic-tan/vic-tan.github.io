@@ -146,15 +146,14 @@ header-img: "img/zhihu.jpg"
 
 
 ### RTK代码sync code Excel提交同步分支相关路径
-
-> * vendor_realtek_common_ATV_frameworks_native_ExtTv        
-    * 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
-> * vendor_tv051_app           								 
-    * 2851M/kernel/android/R/vendor/tv051/app
-> * kernel_linux_linux-4.14_drivers_rtk_kdriver  			 
-    * 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
-> * ExtTv.java
-    * kernel\android\R\vendor\tv051\app\exttv-framework\core\java\com\exttv\tv
+> 1. vendor_realtek_common_ATV_frameworks_native_ExtTv        
+> + 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
+> 2. vendor_tv051_app           								 
+> + 2851M/kernel/android/R/vendor/tv051/app
+> 3. kernel_linux_linux-4.14_drivers_rtk_kdriver  			 
+> + 2851M/kernel/linux/linux-4.14/drivers/rtk_kdriver 
+> 4. ExtTv.java
+> + kernel\android\R\vendor\tv051\app\exttv-framework\core\java\com\exttv\tv
 
 
 
