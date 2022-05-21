@@ -247,6 +247,13 @@ header-img: "img/zhihu.jpg"
 | /mnt/vendor/factory_ro  | mount -t ext4 /dev/block/mmcblk0p6 |
 
 
+|  TV路径   | 对应挂载路径  |
+|  ----  | ----  |
+| /mnt/vendor/tclconfig  | mount -t ext4 /dev/block/mmcblk0p29 |
+| /mnt/vendor/impdata  | mount -t ext4 /dev/block/mmcblk0p31 |
+| /mnt/vendor/factory  | mount -t ext4 /dev/block/mmcblk0p4 |
+| /mnt/vendor/factory_ro  | mount -t ext4 /dev/block/mmcblk0p6 |
+| /mnt/vendor/tvdata  | mount -t ext4 /dev/block/mmcblk0p30 |
 
 
 |  2851M | 
