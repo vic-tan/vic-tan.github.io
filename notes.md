@@ -316,25 +316,23 @@ header-img: "img/zhihu.jpg"
 | 41抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案 |
 | 51抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案 |
 | 红屏断言 |https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp |
-| 2851M代码管理| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632]|
-| 应用&中间件 ReleaseNote| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057] |
-| 流程规范| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466] |
+| 2851M代码管理| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632|
+| 应用&中间件 ReleaseNote| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057 |
+| 流程规范| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466 |
 
 
 
+***
+### apk push 路径
+***
 
+|  apk 名称   | push路径  |
+|  ----  | ----  |
+| 工厂菜单apk | adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory |
+| 日志apk  | db push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp |
+| 中间件服务安装路径  | db push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService |
+| 中间件代码安装路径 | adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework |
 
-### 工厂菜单apk安装路径
-> * adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory
-
-### 日志apk安装路径
-> * adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp
-
-### 中间件服务安装路径
-> * adb push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService
-
-### 中间件代码安装路径
-> * adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework
 
 ### 共享目录
 > * \10.126.69.28（2841A）
@@ -394,12 +392,12 @@ header-img: "img/zhihu.jpg"
 ## -------------------db 工厂预设频道路径----------------
 
 ### 预设频道路径
-> * 1、确定客户的制式与工厂ID，提供db数据,必须有三个db文件和channel 文件夹
-> * 2、进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
-> * 3、到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
-> * 4、把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
+> 1. 确定客户的制式与工厂ID，提供db数据,必须有三个db文件和channel 文件夹
+> 2. 进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
+> 3. 到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
+> 4. 把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
     * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
-> * 5、打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
+> 5. 打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
     *|序号 |工厂 |  代号（数据库名）|
     | :----- | :---- | :---- |
