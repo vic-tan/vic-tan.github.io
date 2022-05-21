@@ -238,6 +238,12 @@ header-img: "img/zhihu.jpg"
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格    
 
 
+|  TV路径   | 对应挂载路径  |
+|  ----  | ----  |
+| /mnt/vendor/tclconfig  | mount -t ext4 /dev/block/mmcblk0p31 |
+
+
+
 |  2851M | 
 |  ----  | 
 | mount -t ext4 /dev/block/mmcblk0p31 /mnt/vendor/tclconfig  | 
