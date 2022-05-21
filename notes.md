@@ -161,8 +161,9 @@ header-img: "img/zhihu.jpg"
 > 4. fatload usb 0:1 0x108000 ? , ?表示文件名 e:fatload usb 0:1 0x108000 vmlinux.bin
 > 5. 输入 go all
 
-
+***
 ### RTK代码sync code Excel提交同步分支相关路径
+***
 > 1. vendor_realtek_common_ATV_frameworks_native_ExtTv        
 > + 2851M/kernel/android/R/vendor/realtek/common/ATV/frameworks/native/ExtTv
 > 2. vendor_tv051_app           								 
@@ -172,7 +173,14 @@ header-img: "img/zhihu.jpg"
 > 4. ExtTv.java
 > + kernel\android\R\vendor\tv051\app\exttv-framework\core\java\com\exttv\tv
 
-
+***
+### 查看DailyBuild 编译code 对应的版本
+***
+> 1. 打开编译DailyBuild 文件夹 eg:DailyBuild_RT2851M_0428
+> 2. 打开save_apk_svn
+> 3. 搜索自己要找的apk名
+> 4. 找到Last Changed Rev: 14784
+> 5. 14784 即为SVN 代码打包的代码
 
 ***
 ## --------------------------------- TV相关 ------------------------------
@@ -355,12 +363,7 @@ header-img: "img/zhihu.jpg"
     * –no-merges	隐藏合并提交
 
 
-### 查看DailyBuild 编译code 对应的版本
-> * 1、打开编译DailyBuild 文件夹 eg:DailyBuild_RT2851M_0428
-> * 2、打开save_apk_svn
-> * 3、搜索自己要找的apk名
-> * 4、找到Last Changed Rev: 14784
-> * 5、14784 即为SVN 代码打包的代码
+
 
 
 ### NPI项目
@@ -396,7 +399,7 @@ header-img: "img/zhihu.jpg"
 > 2. 进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > 3. 到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
 > 4. 把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
-    * 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
+> + 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带ealtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
 > 5. 打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
     *|序号 |工厂 |  代号（数据库名）|
