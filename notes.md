@@ -301,7 +301,7 @@ header-img: "img/zhihu.jpg"
 | 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
 | U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA . |
 | 删除文件| rm -rf R4（R4 表示文件名字） |
-| 串吕PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
+| 串口PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
 | Log过滤关键字| logcat &#124; grep -E "word1 &#124; word2 &#124; word3" |
 | 串口占用输出log| logcat -s  tag > data/log.log 或logcat -s FactoryUart > /data/temp/log.log |
 | 工厂遥控器| 长按APT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
@@ -339,10 +339,9 @@ header-img: "img/zhihu.jpg"
 
 |  apk 名称   | push路径  |
 |  ----  | ----  |
-| 中间件服务安装路径  | adb push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService |
-| 中间件代码安装路径 | adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework |
 | 工厂菜单apk | adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory |
 | 日志apk  | adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp |
+
 
 
 ***
@@ -371,15 +370,19 @@ header-img: "img/zhihu.jpg"
 
 
 
-
+***
 ### NPI项目
-> * TVN21-A-023 日本I客户55A5000 1RT851E1ISA COST ST5461D12-6 TV项目 （日本安卓R真4K智能电视）（李佳和-日规）
-> * TVN21-A-089 东欧松下75D8310L 1RT51MB1T2A CSOT ST7461D03-2 TV项目（台湾）（SPM 龙飞扬-松下HDR10+）
-> * TVN21-C-067 东欧松下43D8300P 1RT51MC1S2B 配INX V430DJ1-Q01 D2 TV项目(新西兰）（SPM 龙飞扬-松下远场语音）
-> * TVN21-C-083 东欧松下50D8300P 1RT51MC1ISA配INX V500DJ7-QE1 (D5) TV项目（菲律宾）（SPM 龙飞扬-泰霖）
-> * TVP22-E-002 北非Stream客户43D6100F 5RT41AB1S2A HKC PT430CT02-4 TV派生项目 (销往欧洲 CVTE机芯）（SPM 骆鑫-CVT）
-> * TVP21-L-009 南美Solnik客户 50D2090 1RT851A1ISA CHOT CV500U2-T01 V02 TV配屏项目（阿根廷)（SPM 陈嘉平）
-> * TVN22-C-023 战略P客户 32D2030 5RT41AB1S2A CSOT ST3151A07-2 V2.7 TV DVB-S2&T2项目（非洲TH-32LS670MF）（SPM 赵龙）
+***
+
+|  SPM   | 区域  | 项目名|
+|  ----  | ----  | ----  |
+| 李佳和 | 日规 | TVN21-A-023 日本I客户55A5000 1RT851E1ISA COST ST5461D12-6 TV项目 （日本安卓R真4K智能电视）|
+| 龙飞扬 | 松下HDR10+ | TVN21-A-089 东欧松下75D8310L 1RT51MB1T2A CSOT ST7461D03-2 TV项目（台湾）|
+| 龙飞扬 | 新西兰 | TVN21-C-067 东欧松下43D8300P 1RT51MC1S2B 配INX V430DJ1-Q01 D2 TV项目(新西兰）|
+| 龙飞扬 | 泰霖 | TVN21-C-083 东欧松下50D8300P 1RT51MC1ISA配INX V500DJ7-QE1 (D5) TV项目（菲律宾））|
+| 骆鑫 | CVT | TVP22-E-002 北非Stream客户43D6100F 5RT41AB1S2A HKC PT430CT02-4 TV派生项目 (销往欧洲 CVTE机芯）|
+| 陈嘉平 | 阿根廷 | TVP21-L-009 南美Solnik客户 50D2090 1RT851A1ISA CHOT CV500U2-T01 V02 TV配屏项目（阿根廷）|
+| 赵龙 | 战略P客户 | TVN22-C-023 战略P客户 32D2030 5RT41AB1S2A CSOT ST3151A07-2 V2.7 TV DVB-S2&T2项目（非洲TH-32LS670MF）|
 
 
 ## -----------------------常用账号-------------------
