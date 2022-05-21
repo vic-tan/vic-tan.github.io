@@ -327,7 +327,10 @@ header-img: "img/zhihu.jpg"
 | 2851M代码管理| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632|
 | 应用&中间件 ReleaseNote| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057 |
 | 流程规范| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466 |
-
+| SPM版本编译发布releaseNote| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752 |
+| 软件批次订单| https://rd-mokadisplay.tcl.com/rdm/ |
+| 2851M批次及发布软件时间| https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2 |
+| 2841A批次及发布软件时间| https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv |
 
 
 ***
@@ -336,31 +339,34 @@ header-img: "img/zhihu.jpg"
 
 |  apk 名称   | push路径  |
 |  ----  | ----  |
-| 工厂菜单apk | adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory |
-| 日志apk  | db push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp |
-| 中间件服务安装路径  | db push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService |
+| 中间件服务安装路径  | adb push /Users/tanlifei/Desktop/TVMidwareService.apk /system_ext/app/TVMidwareService |
 | 中间件代码安装路径 | adb push /Users/tanlifei/Desktop/tv-midware-manager.jar /system_ext/framework |
+| 工厂菜单apk | adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory |
+| 日志apk  | adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp |
 
 
+***
 ### 共享目录
-> * \10.126.69.28（2841A）
-> * \10.118.1.100（2851M）
+***
+> 1. \10.126.69.28（2841A）
+> 2. \10.118.1.100（2851M）
 
 
-## -------------------------常用git 命令----------------------
+***
 ### 查看时间范围内的提交日志
-> * git log --after="2022-3-1" --before="2022-5-1" --pretty=format:"%an %ad : %s" --date=short --no-merges --reverse
-    * 参数	含义
-    * –author	作者
-    * –committer	提交者
-    * –after	某时间后
-    * –before	某时间前
-    * –reverse	按时间顺序
-    * –grep	提交说明包含字符串
-    * -S	修改内容包含字符串
-    * –pretty	格式化信息	oneline、short、full、fuller、format
-    * –date	日期格式	relative、local、default、iso、rfc、short、raw
-    * –no-merges	隐藏合并提交
+***
+> 1. git log --after="2022-3-1" --before="2022-5-1" --pretty=format:"%an %ad : %s" --date=short --no-merges --reverse
+> + 参数	含义
+> + –author	作者
+> + –committer	提交者
+> + –after	某时间后
+> + –before	某时间前
+> + –reverse	按时间顺序
+> + –grep	提交说明包含字符串
+> + -S	修改内容包含字符串
+> + –pretty	格式化信息	oneline、short、full、fuller、format
+> + –date	日期格式	relative、local、default、iso、rfc、short、raw
+> + –no-merges	隐藏合并提交
 
 
 
@@ -381,20 +387,12 @@ header-img: "img/zhihu.jpg"
 ### Termius 账号
 > * 1、Termius 账号179840045@email.top (版本7.34.1可重复用0045可以累加，密码随便)
 
-### SPM版本发布releaseNote路径
-> * https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752
 
-### 查找2851M批次及发布软件时间
-> * 1、把批次进入该网址查找对应的软件版本[https://rd-mokadisplay.tcl.com/rdm/](https://rd-mokadisplay.tcl.com/rdm/)
-> * 2、打开2851M软件发布列表打到发布时间即可[https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2](https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2)
 
-### 查找2841A批次及发布软件时间
-> * 1、把批次进入该网址查找对应的软件版本[https://rd-mokadisplay.tcl.com/rdm/](https://rd-mokadisplay.tcl.com/rdm/)
-> * 2、打开2841A软件发布列表打到发布时间即可[https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv](https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv)
 
-## -------------------db 工厂预设频道路径----------------
-
+***
 ### 预设频道路径
+***
 > 1. 确定客户的制式与工厂ID，提供db数据,必须有三个db文件和channel 文件夹
 > 2. 进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > 3. 到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
