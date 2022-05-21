@@ -237,17 +237,18 @@ header-img: "img/zhihu.jpg"
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/查询 ，如下表格    
 
-2851M
+2851M  
+
 |  TV路径   | 对应挂载路径  |
 |  ----  | ----  |
 | /mnt/vendor/tclconfig  | mount -t ext4 /dev/block/mmcblk0p31 |
 | /mnt/vendor/tvdata  | mount -t ext4 /dev/block/mmcblk0p33 |
 | /mnt/vendor/impdata  | mount -t ext4 /dev/block/mmcblk0p34 |
 | /mnt/vendor/factory  | mount -t ext4 /dev/block/mmcblk0p4 |
-| /mnt/vendor/factory_ro  | mount -t ext4 /dev/block/mmcblk0p6 |  
+| /mnt/vendor/factory_ro  | mount -t ext4 /dev/block/mmcblk0p6 |
 
+2841A   
 
-2841A
 |  TV路径   | 对应挂载路径  |
 |  ----  | ----  |
 | /mnt/vendor/tclconfig  | mount -t ext4 /dev/block/mmcblk0p29 |
