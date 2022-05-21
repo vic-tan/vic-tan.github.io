@@ -224,6 +224,7 @@ header-img: "img/zhihu.jpg"
 > 2. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
 
 
+
 ***
 ### CTS 版本文件挂载查看权限
 ***
@@ -258,6 +259,25 @@ header-img: "img/zhihu.jpg"
 | /mnt/vendor/tvdata  | mount -t ext4 /dev/block/mmcblk0p30 |
 
 
+
+
+***
+### 反抄写
+***
+> 1. 把反抄写文件放到U盘根目录下
+> 2. 上电一直按着ESC按住进bootcode，显示Realtek>后
+> 3. 输入 mp_restore
+
+
+***
+### 查看用audio fw
+***
+> 1. 进kernel\system\configs文件夹
+> 2. 找到对应的品牌配置
+> 3. 打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
+> 4. 进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
+
+
 ***
 ### 其它相关操作
 ***
@@ -281,56 +301,24 @@ header-img: "img/zhihu.jpg"
 
 
 
+***
+### 相关路径
+***
 
-
-
-### 反抄写
-> * 1、把反抄写文件放到U盘根目录下
-> * 2、上电一直按着ESC按住进bootcode，显示Realtek>后
-> * 3、输入 mp_restore
-
-
-
-### 查看用audio fw
-> * 1、进kernel\system\configs文件夹
-> * 2、找到对应的品牌配置
-> * 3、打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
-> * 4、进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
-
-
-
-## <--------------------------相关路径----------------------——>
-### 所有APP项目总路径
-> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src
-
-### 工厂菜单项目SVN路径
-> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/Factory_General
-
-### 中间间项目SVN路径
-> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware
-
-### 项目档案
-> * https://odm-design-center-hz.tclking.com/svn/Project_Document
-
-### 项目抄Key址址
-> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851M安卓TV机芯项目档案
-> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案
-> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案
-> * https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案
-
-### 红屏断言
-> * https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp
-
-### 2851M代码管理
-> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)
-
-### 流程规范
-> * 1、软件设计规范
-> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466)
-
-### 应用&中间件 ReleaseNote
-> * [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057)
-
+|  名称   | 路径  |
+|  ----  | ----  |
+| 所有APP SVN总路径 | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src |
+| 工厂菜单SVN路径  | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/Factory_General |
+| 中间间SVN路径  | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware |
+| 项目档案 | https://odm-design-center-hz.tclking.com/svn/Project_Document |
+| 51M抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851M安卓TV机芯项目档案 |
+| 41A抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案 |
+| 41抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案 |
+| 51抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案 |
+| 红屏断言 |https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp |
+| 2851M代码管理| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632]|
+| 应用&中间件 ReleaseNote| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057] |
+| 流程规范| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466] |
 
 
 
