@@ -181,6 +181,8 @@ header-img: "img/zhihu.jpg"
 > 3. 搜索自己要找的apk名
 > 4. 找到Last Changed Rev: 14784
 > 5. 14784 即为SVN 代码打包的代码
+> 6. 如果自己编译代码想要理更改apk上的svn 版本，可修改服务器上的kernel\android\R\vendor\tv051\app\prebuilt_app\save_apk_svn的路径svn版本号，然后再编译。
+
 
 ***
 ## --------------------------------- TV相关 ------------------------------
