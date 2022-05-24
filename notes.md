@@ -100,7 +100,7 @@ header-img: "img/zhihu.jpg"
 > 5. 执行 lunch 找到对应的项目序号 
 > 6. 2851M/2841A 序号为3 所以我们一般输入lunch 3 
 > 7. 进入单个项目目录，eg:kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider
-> + 中间件TVMidwareManager路径为2851M/kernel/android/R/vendor/tv051/app/rtk_app/目录下
+> + 中间件TVMidwareManager路径为2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager目录下
 > 8. 替换需要编译的项目
 > 9. 执行编译 mm -j32
 > 10. 编译完成后输出 build completed successfully （时间）
