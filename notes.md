@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: "notes"
+title: "笔记"
 header-img: "img/zhihu.jpg"
 ---
 

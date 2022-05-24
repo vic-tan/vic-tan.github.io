@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "question"
+title: "问题"
 header-img: "img/green.jpg"
 ---
 

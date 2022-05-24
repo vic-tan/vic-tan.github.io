@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "task"
+title: "任务"
 header-img: "img/orange.jpg"
 ---
 
