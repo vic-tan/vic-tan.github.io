@@ -1,5 +1,6 @@
 ---
-layout: page title: "question"
+layout: page
+title: "question"
 header-img: "img/green.jpg"
 
 ---
