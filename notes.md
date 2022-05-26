@@ -333,7 +333,7 @@ header-img: "img/zhihu.jpg"
 | 软件批次订单| https://rd-mokadisplay.tcl.com/rdm/ |
 | 2851M批次及发布软件时间| https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2 |
 | 2841A批次及发布软件时间| https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv |
-
+| TV组每日任务| https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27963131 |
 
 ***
 ### apk push 路径
