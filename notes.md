@@ -330,7 +330,7 @@ header-img: "img/zhihu.jpg"
 | 问题测试表| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60701669](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60701669) |
 | 应用&中间件 ReleaseNote| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=47625057) |
 | 流程规范|[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60696466) |
-| SPM版本编译发布releaseNote| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752） |
+| SPM版本编译发布releaseNote| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60693752)|
 | 软件批次订单| [https://rd-mokadisplay.tcl.com/rdm/](https://rd-mokadisplay.tcl.com/rdm/) |
 | 2851M批次及发布软件时间| [https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2](https://docs.qq.com/sheet/DZUNJUWpWdVFVcWNO?tab=BB08J2) |
 | 2841A批次及发布软件时间| [https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv](https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv) |
