@@ -1,5 +1,5 @@
 # Site settings
-title: TAN LIFEI NOTES  
+title: TAN LIFEI
 header-img: "img/green.jpg"
 tagline: "cn"  
 baseurl: ""
@@ -7,9 +7,9 @@ url: "http://cnfeat"
 
 # About/contact
 owner: 
-  name: " 谭乐言"
+  name: " 谭丽飞"
   email: 179840045@qq.com
-  bio: "分享就是快乐"
+  bio: "好记性不如烂笔好"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
