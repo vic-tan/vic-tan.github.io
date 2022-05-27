@@ -23,6 +23,7 @@ header-img: "img/zhihu.jpg"
 > 7. 执行脚本 ./scbc_build_51m.sh  回车
 > + 文件一定是在项目根目录下执行，在根目下，可以打前几个然后tab 出来 
 > + 在脚本后面加 0 true 表示公版 eg:./scbc_build_51m.sh 0 true
+> + 此过程会自动去下载关联apk，如果此时想编译自己本的apk，工具日志下载完apk后就可可以直接替换自己的apk到对应的目录下，这样编译出来的就自己的apk。apk 路径一般在kernel/android/R/vendor/tv051/app/prebuilt_app/目录下
 > 8. 请输入版本号[Please type version] 按回国为默认V8-T851MGL-LF1V001版本号，最好按时间命名加上自己的标签，ge:V8-T851MGL-LF1V20220421_TAN
 > 9. CTS or not?[1-CTS 2-Debug 3-CTS&Debug] 表示编译软件类型，一般输入 2
 > + 1-CTS，表示用户模式，有很多权限限制
