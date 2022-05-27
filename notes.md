@@ -282,12 +282,33 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### 预制频道通道查找
+***
+> 1. 用SQLiteStudio 打开DB
+> 2. 打开SQL编辑器，查找 select type ,display_number, input_type from channels
+> 3. input_type 即为通道，可以在中间件项目CommDefine 查找，或下表格。
+
+|  通道值   | 通道  |
+|  ----  | ----  |
+| 0 | DTV_CABLE |
+| 1  | DTV_ANTENA |
+| 2  | DTV_SATELLITE  |
+| 8 | ATV |
+| 9 | ATV_CABLE |
+| 10 |OTHERS |
+| 11| ATSC_CABLE |
+| 12| ATSC_ANTENA |
+| 13| ISDB_CABLE |
+| 14| ISDB_ANTENA |
+
+***
 ### 查看用audio fw
 ***
 > 1. 进kernel\system\configs文件夹
 > 2. 找到对应的品牌配置
 > 3. 打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
 > 4. 进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
+
 
 
 ***
