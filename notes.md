@@ -232,7 +232,7 @@ header-img: "img/zhihu.jpg"
 ### 遥控器显示工厂菜单方法
 ***
 
-> 1. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950
+> 1. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->按数字1950/9735（design menu/factory menu）
 > 2. 设置主界面->Picture & Display -> Picture Adjustment ->Advanced Settings->Brightness -> 选中Contrast ->连按OK五下
 
 
