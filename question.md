@@ -7,6 +7,24 @@ header-img: "img/green.jpg"
 ## -----------------------------------问题纪要----------------------------
 ***
 
+
+***
+### 日规预制频道无法播放，需要更换地波码流【2022-06-10】
+***
+
+* 问题分析
+    > 试产线观察现象，JP008_NHK統合・大阪2019040430.ts无法播放，切换到NHK27(-t).ts正常。     
+* 解决方法 
+    > 更换地波码流为NHK27(-t).ts. 
+    > 修改tr_preset_channel.json 和tr_preset_service.json 文件
+    > 修改tr_preset_channel.json 中的original_network_id 和ts_id 为要修改码流分析器出来的NIT -> tableId ->network_id值十六进制改10进制即可
+    > 修改tr_preset_service.json 中的service_id 值为要修改码流分析器出来Sservice_descriptions lop 下几个对应的service_id值十六进制改10进制即可
+* 修改路径 
+    > kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/JP
+* 总结 
+    > 日规自己手动更改地波码流
+
+
 ### 【试产问题】串口命令开启100%内置白场后，再发送亮度或者对比度100的指令，画面会变灰【2021-07-22】
 ***
 
@@ -73,6 +91,9 @@ header-img: "img/green.jpg"
     > 首先已确定工厂抄KEY 工具的订单正确，所以我们服务器获取的KYE正常。查看板卡，发现有被重新焊过的痕迹，说明IC 或才EMMC 是旧的，有可能之前已抄过key ，经跟RTK 确认，KEY 一旦抄过无法清除，而且新的IC和新的EMMC一旦抄过key，就会相互绑定。绑定过后更换IC 或者更换其它机器上已经抄过key 的EMMC，会导致抄widevine等  key 失败。更换新的EMMC 不影响      
 * 解决方法 
     >  换新的EMMC,重新跟IC配对绑定
+
+
+
 
 ## -----------------------------------排查方法----------------------------
 ***
