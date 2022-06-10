@@ -20,7 +20,7 @@ header-img: "img/green.jpg"
     > 修改tr_preset_channel.json 中的original_network_id 和ts_id 为要修改码流分析器出来的NIT -> tableId ->network_id值十六进制改10进制即可
     > 修改tr_preset_service.json 中的service_id 值为要修改码流分析器出来Sservice_descriptions lop 下几个对应的service_id值十六进制改10进制即可
 * 修改路径 
-    > kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/JP
+    > kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/jp
 * 总结 
     > 日规自己手动更改地波码流
 
