@@ -496,3 +496,5 @@ header-img: "img/zhihu.jpg"
     |60| 松下PTW客户工厂 |PTW|
     |61| 印度MOKA工厂 |MOKA|
     |62| 印度ACER客户工厂 |ACER|
+    |63| 印尼Arisa工厂 |PGI|
+    |64| 泰国Xtream工厂 |Xtream|
