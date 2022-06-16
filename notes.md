@@ -429,7 +429,7 @@ header-img: "img/zhihu.jpg"
 > 2. 进入自己服务/home/lifei/2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel目录下
 > 3. 到factorydata_app对应目录下，找对应的工厂id 文件夹后，找对就的制式文件夹，进入dvb目录下，这三个文件夹没有则新建文件夹
 > 4. 把tv.db 放到 rtk_provider_db还是provider_db目录下，具体放哪个文件，按以下确定
-> + 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带realtek（rtk），带则把db放到rtk_provider_db目录下，否则放provider_db 目录下
+> + 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带com.realtek.（rtk），带则把db放到rtk_provider_db目录下，以com.apps则放provider_db 目录下
 > 5. 打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
     *|序号 |工厂 |  代号（数据库名）|
