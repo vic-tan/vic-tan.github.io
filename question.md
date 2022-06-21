@@ -15,13 +15,23 @@ header-img: "img/green.jpg"
 * Mantis ID号
     > 0125519
 * 问题分析
-    > SQA反馈41A电视shop后开机，在开机向导下选择all搜台，再选择cable通道搜台，结束后切到antenna通道播放5.1节目有图像无声音，初步猜测是RMCA key 不正常，但是进入mnt/vendor/impdata 下查看RMCA_ready md5值正常，41A只有一个RMCA key mnt/vendor/factory 下RMCA 也存在。之前赵龙边也出现过类似问题，是factory RMCA key 未生效，重新U盘抄同一个RMCA 按理说同一台机器，同一个key， factory 分区下的RMCA key md5值应该是同一个，但之前的问题两个key的md5值不一样，U盘重抄正常，有声音，所以第一次factory 分区RMCA key 有问题。而这一次重抄后依然有问题，而 widevine 、playready key抄写失败。跟RTK 分析是换了IC 或都EMMMC 导致key不生效。
+    > * SQA反馈41A电视shop后开机，在开机向导下选择all搜台，再选择cable通道搜台，结束后切到antenna通道播放5.1节目有图像无声音，初步猜测是RMCA key 不正常，但是进入mnt/vendor/impdata 下查看RMCA_ready md5值正常，41A只有一个RMCA key mnt/vendor/factory 下RMCA 也存在。之前赵龙边也出现过类似问题，是factory RMCA key 未生效，重新U盘抄同一个RMCA 按理说同一台机器，同一个key， factory 分区下的RMCA key md5值应该是同一个，但之前的问题两个key的md5值不一样，U盘重抄正常，有声音，所以第一次factory 分区RMCA key 有问题。而这一次重抄后依然有问题，而 widevine 、playready key抄写失败。跟RTK 分析是换了IC 或都EMMMC 导致key不生效。
 * 检测是否更换了IC 或都EMMMC日志
-    > cd /mnt/vendor/rtdlog/ 
-    > cat rtd_kcpu.log
-    > 是否有日志显示Verify key fail, rpmb secure key not match
+    > * cd /mnt/vendor/rtdlog/ 
+    > * cat rtd_kcpu.log
+    > * 是否有日志显示Verify key fail, rpmb secure key not match
 * 解决方法 
-    > 重新更换IC或者新的EMMC，然后重新抄key
+    > * 重新更换IC或者新的EMMC，然后重新抄key
+
+***
+### 【贴板问题】赵龙反馈41A试做的几个贴板DTV 有画面但是没有声音的问题【2022-04-22】
+***
+
+
+* 问题分析
+    > * 赵龙的41A几片贴板发现DTV有视频画面，但是没有声音，发现impdata 目录下的RMCA_ready也正常，最但是用U盘从新抄相同的RMCA key 后又正常有声音，同一个软件件升级到另一台机器又正常的，最后定位为板卡上的 vendor/factory 加密分区的RMCA key md5值，与重抄的加密Md5值不一样导致的。同一台机器，同一个RMCA 加密分区的RMCA 值应该是一样的。
+* 解决方法 
+    > * 查找为什么第一次RMCA 值不一样。
 
 
 ***
@@ -29,9 +39,9 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 松下菲律宾生产适应性反馈预制惠州工厂频道无效果，显示没有台，进入TV 还是显示要搜台。通过shop，重新预置HZ都没台，在daillyBuild版本预置正常。通过排查发现在daillyBuild发现是用的Moka设置界面，而客户用的是公版设置界面，通过对比制式，发现预制db只有provider_db而没有rtk_provider_db。   
+    > * 松下菲律宾生产适应性反馈预制惠州工厂频道无效果，显示没有台，进入TV 还是显示要搜台。通过shop，重新预置HZ都没台，在daillyBuild版本预置正常。通过排查发现在daillyBuild发现是用的Moka设置界面，而客户用的是公版设置界面，通过对比制式，发现预制db只有provider_db而没有rtk_provider_db。   
 * 解决方法 
-    > 在公版上搜台，把db导出来，重新提交rtk_provider_db
+    > * 在公版上搜台，把db导出来，重新提交rtk_provider_db
 
 
 ***
@@ -39,10 +49,10 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 测试时发现在工厂菜单Shop后会弹出google 相关的界面，如google 登录、google TV、网络连接等界面，而且遥控器无法使用，遥控器无法使用是应该工厂菜单Shop后会屏蔽遥控器按键，这属于正常。之所以会弹出google相关界面，首先是登录了google账号，然后在shop之后会把google 账号清除，而与google 账号登录相关联的应用发现在google 账号被清后会再次尝试连接，并弹出相关的提示界面。   
+    > * 测试时发现在工厂菜单Shop后会弹出google 相关的界面，如google 登录、google TV、网络连接等界面，而且遥控器无法使用，遥控器无法使用是应该工厂菜单Shop后会屏蔽遥控器按键，这属于正常。之所以会弹出google相关界面，首先是登录了google账号，然后在shop之后会把google 账号清除，而与google 账号登录相关联的应用发现在google 账号被清后会再次尝试连接，并弹出相关的提示界面。   
 * 解决方法 
-    > 此问题不影响工厂生产，工厂不会登录gogole. 
-    > 如果登录了google 账号，先google reset 后再去工厂做shop
+    > * 此问题不影响工厂生产，工厂不会登录gogole. 
+    > * 如果登录了google 账号，先google reset 后再去工厂做shop
 
 
 ***
@@ -52,59 +62,51 @@ header-img: "img/green.jpg"
 * 问题分析
     > 试产线观察现象，JP008_NHK統合・大阪2019040430.ts无法播放，切换到NHK27(-t).ts正常。     
 * 解决方法 
-    > 更换地波码流为NHK27(-t).ts. 
-    > 修改tr_preset_channel.json 和tr_preset_service.json 文件
-    > 修改tr_preset_channel.json 中的original_network_id 和ts_id 为要修改码流分析器出来的NIT -> tableId ->network_id值十六进制改10进制即可
-    > 修改tr_preset_service.json 中的service_id 值为要修改码流分析器出来Sservice_descriptions lop 下几个对应的service_id值十六进制改10进制即可
+    > * 更换地波码流为NHK27(-t).ts. 
+    > * 修改tr_preset_channel.json 和tr_preset_service.json 文件
+    > * 修改tr_preset_channel.json 中的original_network_id 和ts_id 为要修改码流分析器出来的NIT -> tableId ->network_id值十六进制改10进制即可
+    > * 修改tr_preset_service.json 中的service_id 值为要修改码流分析器出来Sservice_descriptions lop 下几个对应的service_id值十六进制改10进制即可
 * 修改路径 
-    > kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/jp
+    > * kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/jp
 * 总结 
-    > 日规自己手动更改地波码流
+    > * 日规自己手动更改地波码流
 
 
 ### 【试产问题】串口命令开启100%内置白场后，再发送亮度或者对比度100的指令，画面会变灰【2021-07-22】
 ***
 
 * 问题分析
-    > 试产线观察现象，一开始试产报的问题是白平衡调试NG，后面下去分析才发现是最大亮度调不过，经过模拟，定位到开启内置白场后，在发送亮度或者对比度的指令，整个画面会变灰，导致最大亮度测试NG        
+    > * 试产线观察现象，一开始试产报的问题是白平衡调试NG，后面下去分析才发现是最大亮度调不过，经过模拟，定位到开启内置白场后，在发送亮度或者对比度的指令，整个画面会变灰，导致最大亮度测试NG        
 * 解决方法 
-    > 修改scalercolorlib_IPQ.c 
+    > * 修改scalercolorlib_IPQ.c 
 * 修改路径 
-    > kernel/linux-kdriver2.git /tvscalercontrol/scaler
+    > * kernel/linux-kdriver2.git /tvscalercontrol/scaler
 * 总结 
-    > 7月份的试产才报出问题，之前试产批次都未测试最大亮度，新机芯自测白平衡时，需要勾选最大亮度
-
-***
-### 【贴板问题】赵龙反馈41A试做的几个贴板DTV 有画面但是没有声音的问题【2022-04-22】
-***
+    > * 7月份的试产才报出问题，之前试产批次都未测试最大亮度，新机芯自测白平衡时，需要勾选最大亮度
 
 
-* 问题分析
-    > 赵龙的41A几片贴板发现DTV有视频画面，但是没有声音，发现impdata 目录下的RMCA_ready也正常，最但是用U盘从新抄相同的RMCA key 后又正常有声音，同一个软件件升级到另一台机器又正常的，最后定位为板卡上的 vendor/factory 加密分区的RMCA key md5值，与重抄的加密Md5值不一样导致的。同一台机器，同一个RMCA 加密分区的RMCA 值应该是一样的。
-* 解决方法 
-    > 查找为什么第一次RMCA 值不一样。
  
 ***
 ### 【试产问题】泰霖反抄软件升级后在不用遥控器切的情况下，第一次启用串口切DTV，无法切到DTV目录下，用遥控器切一次DTV后，用串口能正常切【2022-03-22】
 ***
 
 * 问题分析
-    > 根据分析发现只有升级第一次用串口切DTV 会有会问题，切不过。后面发现用遥控器切，发现第一次切DTV 的频道台号为800，第二次切发现台号变成了1.跟据这个现象，定位到预置DB频道默认是为1的，而不是800，我们打开预置频道的DB数据查看确定是800，而用串口切到DTV 是让它跳入到1台，此时没有找到台号为1的频道，导致无法进入DTV。      
+    > * 根据分析发现只有升级第一次用串口切DTV 会有会问题，切不过。后面发现用遥控器切，发现第一次切DTV 的频道台号为800，第二次切发现台号变成了1.跟据这个现象，定位到预置DB频道默认是为1的，而不是800，我们打开预置频道的DB数据查看确定是800，而用串口切到DTV 是让它跳入到1台，此时没有找到台号为1的频道，导致无法进入DTV。      
 * 解决方法 
-    > 泰霖重新搜台，重新预置
+    > * 泰霖重新搜台，重新预置
 * 修改路径 
-    > kernel/linux-kdriver2.git /tvscalercontrol/scaler
+    > * kernel/linux-kdriver2.git /tvscalercontrol/scaler
 * 总结 
-    > 7月份的试产才报出问题，之前试产批次都未测试最大亮度，新机芯自测白平衡时，需要勾选最大亮度
+    > * 7月份的试产才报出问题，之前试产批次都未测试最大亮度，新机芯自测白平衡时，需要勾选最大亮度
 
 ***
 ### 泰霖反馈切换ID 导致DVB_S无信号，需要重新预制频点，并且预制以后需要重启才能生效问题【2022-05-14】
 ***
 
 * 问题分析
-    > 首先跟工厂确定工厂信号是否有变动，显示的频道列表是否正常，在不重启的情况下是否正常，以及在HDMI频道下频道频点，等排除的情况下依然有问题，经过排查最终定位在切ID时会把分区下的tvdata 数据清除，这样会导致切id后db 数据找到，无法播放，只有重新预制频才能正常。      
+    > * 首先跟工厂确定工厂信号是否有变动，显示的频道列表是否正常，在不重启的情况下是否正常，以及在HDMI频道下频道频点，等排除的情况下依然有问题，经过排查最终定位在切ID时会把分区下的tvdata 数据清除，这样会导致切id后db 数据找到，无法播放，只有重新预制频才能正常。      
 * 解决方法 
-    >  2022-5-13日康德恩解决此问题，切ID 不清楚tvdata 数据并导入量产分支
+    > * 2022-5-13日康德恩解决此问题，切ID 不清楚tvdata 数据并导入量产分支
 * 注意事项 
     > * 1、切了id，记得shop后在预置频道，
     > * 2、在HDMI频道下进入工厂菜单频道频点，
@@ -114,11 +116,11 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 初次反馈为必现，我们怀疑是不是工厂菜单启动过早打开P模式所导致，我们了延时3秒打开P模式。必现变成概率性。所以可以确定是P模式内部出现问题，经过中间排查，发现在按键返回监听事件被重复注册两次，导致第一个注册的被第二个覆盖，导致第一个无返回值。      
+    > * 初次反馈为必现，我们怀疑是不是工厂菜单启动过早打开P模式所导致，我们了延时3秒打开P模式。必现变成概率性。所以可以确定是P模式内部出现问题，经过中间排查，发现在按键返回监听事件被重复注册两次，导致第一个注册的被第二个覆盖，导致第一个无返回值。      
 * 解决方法 
-    > 合并监听事件
+    > * 合并监听事件
 * 调用流程 
-    > 中间件调用流程->UartService ->AppUart ->FactoryUart-> startUartThread() - > UartCommunication () -> transferData()->getRemoteCode()
+    > * 中间件调用流程->UartService ->AppUart ->FactoryUart-> startUartThread() - > UartCommunication () -> transferData()->getRemoteCode()
 
 ***
 ### 41A工厂抄KEY 工具无法抄 widevine 等KEY 失败，导致prime video 片源无法播放等问题【2022-05-11】
