@@ -13,25 +13,15 @@ header-img: "img/green.jpg"
 ***
 
 * Mantis ID号
-    > 0125519
+    > * 0125519
 * 问题分析
-    > * SQA反馈41A电视shop后开机，在开机向导下选择all搜台，再选择cable通道搜台，结束后切到antenna通道播放5.1节目有图像无声音，初步猜测是RMCA key 不正常，但是进入mnt/vendor/impdata 下查看RMCA_ready md5值正常，41A只有一个RMCA key mnt/vendor/factory 下RMCA 也存在。之前赵龙边也出现过类似问题，是factory RMCA key 未生效，重新U盘抄同一个RMCA 按理说同一台机器，同一个key， factory 分区下的RMCA key md5值应该是同一个，但之前的问题两个key的md5值不一样，U盘重抄正常，有声音，所以第一次factory 分区RMCA key 有问题。而这一次重抄后依然有问题，而 widevine 、playready key抄写失败。跟RTK 分析是换了IC 或都EMMMC 导致key不生效。
+    > * SQA反馈41A电视shop后开机，在开机向导下选择all搜台，再选择cable通道搜台，结束后切到antenna通道播放5.1节目有图像无声音，初步猜测是RMCA key 不正常，但是进入mnt/vendor/impdata 下查看RMCA_ready md5值正常，41A只有一个RMCA key mnt/vendor/factory 下RMCA 也存在。之前[2022-04-22]号赵龙边也出现过类似问题，是factory RMCA key 未生效，重新U盘抄同一个RMCA 按理说同一台机器，同一个key， factory 分区下的RMCA key md5值应该是同一个，但之前的问题两个key的md5值不一样，U盘重抄正常，有声音，所以第一次factory 分区RMCA key 有问题。而这一次重抄后依然有问题，而 widevine 、playready key抄写失败。跟RTK 分析是换了IC 或都EMMMC 导致key不生效。
 * 检测是否更换了IC 或都EMMMC日志
     > * cd /mnt/vendor/rtdlog/ 
     > * cat rtd_kcpu.log
     > * 是否有日志显示Verify key fail, rpmb secure key not match
 * 解决方法 
     > * 重新更换IC或者新的EMMC，然后重新抄key
-
-***
-### 【贴板问题】赵龙反馈41A试做的几个贴板DTV 有画面但是没有声音的问题【2022-04-22】
-***
-
-
-* 问题分析
-    > * 赵龙的41A几片贴板发现DTV有视频画面，但是没有声音，发现impdata 目录下的RMCA_ready也正常，最但是用U盘从新抄相同的RMCA key 后又正常有声音，同一个软件件升级到另一台机器又正常的，最后定位为板卡上的 vendor/factory 加密分区的RMCA key md5值，与重抄的加密Md5值不一样导致的。同一台机器，同一个RMCA 加密分区的RMCA 值应该是一样的。
-* 解决方法 
-    > * 查找为什么第一次RMCA 值不一样。
 
 
 ***
@@ -60,7 +50,7 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 试产线观察现象，JP008_NHK統合・大阪2019040430.ts无法播放，切换到NHK27(-t).ts正常。     
+    > * 试产线观察现象，JP008_NHK統合・大阪2019040430.ts无法播放，切换到NHK27(-t).ts正常。     
 * 解决方法 
     > * 更换地波码流为NHK27(-t).ts. 
     > * 修改tr_preset_channel.json 和tr_preset_service.json 文件
@@ -84,7 +74,15 @@ header-img: "img/green.jpg"
 * 总结 
     > * 7月份的试产才报出问题，之前试产批次都未测试最大亮度，新机芯自测白平衡时，需要勾选最大亮度
 
+***
+### 【贴板问题】赵龙反馈41A试做的几个贴板DTV 有画面但是没有声音的问题【2022-04-22】
+***
 
+
+* 问题分析
+    > * 赵龙的41A几片贴板发现DTV有视频画面，但是没有声音，发现impdata 目录下的RMCA_ready也正常，最但是用U盘从新抄相同的RMCA key 后又正常有声音，同一个软件件升级到另一台机器又正常的，最后定位为板卡上的 vendor/factory 加密分区的RMCA key md5值，与重抄的加密Md5值不一样导致的。同一台机器，同一个RMCA 加密分区的RMCA 值应该是一样的。
+* 解决方法 
+    > * 查找为什么第一次RMCA 值不一样。
  
 ***
 ### 【试产问题】泰霖反抄软件升级后在不用遥控器切的情况下，第一次启用串口切DTV，无法切到DTV目录下，用遥控器切一次DTV后，用串口能正常切【2022-03-22】
@@ -127,9 +125,9 @@ header-img: "img/green.jpg"
 ***
 
 * 问题分析
-    > 首先已确定工厂抄KEY 工具的订单正确，所以我们服务器获取的KYE正常。查看板卡，发现有被重新焊过的痕迹，说明IC 或才EMMC 是旧的，有可能之前已抄过key ，经跟RTK 确认，KEY 一旦抄过无法清除，而且新的IC和新的EMMC一旦抄过key，就会相互绑定。绑定过后更换IC 或者更换其它机器上已经抄过key 的EMMC，会导致抄widevine等  key 失败。更换新的EMMC 不影响      
+    > * 首先已确定工厂抄KEY 工具的订单正确，所以我们服务器获取的KYE正常。查看板卡，发现有被重新焊过的痕迹，说明IC 或才EMMC 是旧的，有可能之前已抄过key ，经跟RTK 确认，KEY 一旦抄过无法清除，而且新的IC和新的EMMC一旦抄过key，就会相互绑定。绑定过后更换IC 或者更换其它机器上已经抄过key 的EMMC，会导致抄widevine等  key 失败。更换新的EMMC 不影响      
 * 解决方法 
-    >  换新的EMMC,重新跟IC配对绑定
+    > * 换新的EMMC,重新跟IC配对绑定
 
 
 
