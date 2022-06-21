@@ -7,6 +7,23 @@ header-img: "img/green.jpg"
 ## -----------------------------------问题纪要----------------------------
 ***
 
+
+***
+### DTV节目有图像无声音，mp3,ac3 等video也没有声音【2022-06-21】
+***
+
+* Mantis ID号
+    > 0125519
+* 问题分析
+    > SQA反馈41A电视shop后开机，在开机向导下选择all搜台，再选择cable通道搜台，结束后切到antenna通道播放5.1节目有图像无声音，初步猜测是RMCA key 不正常，但是进入mnt/vendor/impdata 下查看RMCA_ready md5值正常，41A只有一个RMCA key mnt/vendor/factory 下RMCA 也存在。之前赵龙边也出现过类似问题，是factory RMCA key 未生效，重新U盘抄同一个RMCA 按理说同一台机器，同一个key， factory 分区下的RMCA key md5值应该是同一个，但之前的问题两个key的md5值不一样，U盘重抄正常，有声音，所以第一次factory 分区RMCA key 有问题。而这一次重抄后依然有问题，而 widevine 、playready key抄写失败。跟RTK 分析是换了IC 或都EMMMC 导致key不生效。
+* 检测是否更换了IC 或都EMMMC日志
+    > cd /mnt/vendor/rtdlog/ 
+    > cat rtd_kcpu.log
+    > 是否有日志显示Verify key fail, rpmb secure key not match
+* 解决方法 
+    > 重新更换IC或者新的EMMC，然后重新抄key
+
+
 ***
 ### 松下菲律宾项目工厂菜单预置HZ工厂频道失败【2022-06-20】
 ***
