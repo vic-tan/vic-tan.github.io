@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年06月
 ***
+> + 松下ODM机型51M/41A机芯Menu键值冲突问题确认与跟进。
+> + 眼图添加UI设置及展频参数设置
 > + 【0124524】【0124525】中东非战略P酒店模式下的Pic sound Mode 与TV 设置下的pic sound Mode 不一致问题。
 > + 欧规STRONG客户出现USB，串口工具，工厂在线抄key软件无法找CI key问题
 > + 乌兹别克A客户生产KEY软件上切换ID会出现导致P模式消失，CI key丢失问题
