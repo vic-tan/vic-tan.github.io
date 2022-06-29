@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年06月
 ***
+> + 工厂菜单添加P模式日志保存功能。
 > + 松下ODM机型51M/41A机芯Menu键值冲突问题确认与跟进。
 > + 眼图添加UI设置及展频参数设置
 > + 【0124524】【0124525】中东非战略P酒店模式下的Pic sound Mode 与TV 设置下的pic sound Mode 不一致问题。
