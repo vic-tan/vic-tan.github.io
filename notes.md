@@ -364,6 +364,18 @@ header-img: "img/zhihu.jpg"
 | TV组每日任务| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27963131](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27963131) |
 | TV组任务清单| [https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224](https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224)|
 
+
+
+***
+### git相关路径
+***
+
+|  名称   | 路径  |
+|  ----  | ----  |
+|  ExtTv源文件 | http://10.126.16.60/gerrit/gitweb?p=kernel/rtk_aosp/device/tv051/frameworks/native/ExtTv.git;a=tree;f=src/service;h=708692e5b70762932a775e7c10a913a8f0b16f33;hb=refs/heads/realtek/mac7p/android-11/scbc |
+| 41/51串口路径  | http://10.126.16.60/gerrit/gitweb?p=kernel/rtk_aosp/device/tv051/app.git;a=blob;f=FactoryTools/src/java/com/realtek/factorytools/FactoryUart.java;h=a9686d993d4a6f1501f448d77570bef655c51a3a;hb=refs/heads/rt4151/mp210407_20Q4 |
+
+
 ***
 ### apk push 路径
 ***
