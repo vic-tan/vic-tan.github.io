@@ -323,6 +323,7 @@ header-img: "img/zhihu.jpg"
 | 系统升级 | 连接串口->reboot->长按tab等待日志出来 |
 | 盲切ID  | 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数） |
 | 键盘及遥控器切ID  | 062598 menu 047 前面这数字要用一排的那行数字输入，id 是三位数 |
+| 串口切ID  | 选择中切ID行，input text ID |
 | 改屏参 | 串口工具->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启) |
 | 屏蔽遥控器 | settings put global shop_ir_lock 0 |
 | 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
