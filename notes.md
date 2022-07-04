@@ -187,6 +187,16 @@ header-img: "img/zhihu.jpg"
 > 6. 如果自己编译代码想要理更改apk上的svn 版本，可修改服务器上的kernel\android\R\vendor\tv051\app\prebuilt_app\save_apk_svn的路径svn版本号，然后再编译。
 
 
+
+***
+### 夹版本后查看提交code版本
+***
+
+> 1. 夹到差异版本后打开对比工具比较相应的V8-T851MGL-JP-debug2022063008_2022063011.xml文件查看提交的code
+> 2. 根据对比差异code 找到对应的路径及commit id 进行查找。
+> 3. 或者根据RTK sync code Excel表格 找出对日期提交的code进行查看。
+
+
 ***
 
 ## -----------------------------------TV相关----------------------------  
@@ -335,7 +345,7 @@ header-img: "img/zhihu.jpg"
 | adb 保存log到文件| adb logcat > name.log |
 | 工厂遥控器| 长按PAT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
 | 回退版本| git revert ID |
-
+| cd 后回退上一次目录 | cd - |
 
 
 ***
