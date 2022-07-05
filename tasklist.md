@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年07月
 ***
+> + 【0121434】 欧洲STRONG客户ID167 Factory data copy 无tv.db 文件问题。
 > + 【0126086】日本SH客户 SPEC需求不支持Dolby vision，电视可播放Dolby vision, 但播放后图像异常
 > + 工厂菜单眼图UI讨论与界面实现。
 > + 【0125981】RT2851M/日本SH客户/ID:11白平衡调试内置白场调试第一次打开白场失败
