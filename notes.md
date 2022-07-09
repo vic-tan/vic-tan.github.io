@@ -191,10 +191,15 @@ header-img: "img/zhihu.jpg"
 ***
 ### 夹版本后查看提交code版本
 ***
-
-> 1. 夹到差异版本后打开对比工具比较相应的V8-T851MGL-JP-debug2022063008_2022063011.xml文件查看提交的code
-> 2. 根据对比差异code 找到对应的路径及commit id 进行查找。
-> 3. 或者根据RTK sync code Excel表格 找出对日期提交的code进行查看。
+> 1. 先找夹到相邻的有差异的两个软件版本。
+> 2. 找到异常两个版本后，找到Reports文件夹中的.xml 文件，eg:V8-T851MGL-0020445_2022060809.xml
+> 3. 打开对比工具比较两个.xml文件，所差异文件即为两差异版本修改code
+> 4. 根据对比差异中path路径及revision（commid id）进行相关的查找。也可以根据据RTK sync code Excel表格 找出对日期提交的code进行查看。
+> 5. 如果要回退到两个相差的版本，可以将.xml 文件替换编译项目下的.repo文件中的manifest.xml
+> 6. 注意，如果替换过了manifest.xml内容， 然后又做了repo forall -c "pwd && git clean -xfd && git checkout -- ." manifest.xml文件会重新替换，我们得又重新替换 )
+> 7. 替换完后执行 repo sync 
+> 8. 通过差异的.xml 进行code 回退，通过git checkout id （回退后恢复也是用这个）
+> 9. 编译软件即可
 
 
 ***
