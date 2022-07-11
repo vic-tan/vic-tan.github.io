@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年07月
 ***
+> + 松下远场语音新增远场灯光测试等串口问题开发。
+> + 日规生产反馈白平衡6月初正常，7月内置白场第一次黑屏问题分析
 > + 【0121434】 欧洲STRONG客户ID167 Factory data copy 无tv.db 文件问题。
 > + 【0126086】日本SH客户 SPEC需求不支持Dolby vision，电视可播放Dolby vision, 但播放后图像异常
 > + 工厂菜单眼图UI讨论与界面实现。
