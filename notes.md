@@ -340,6 +340,7 @@ header-img: "img/zhihu.jpg"
 | 键盘及遥控器切ID  | 062598 menu 047 前面这数字要用一排的那行数字输入，id 是三位数 |
 | 串口切ID  | 选择中切ID行，input text ID |
 | 改屏参 | 串口工具->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启) |
+| 绑定遥控器 | 串口工具->断电上电->长按ESC(出现Realtek)->irda ->输入遥控器品牌序号（0为自动识别） |
 | 屏蔽遥控器 | settings put global shop_ir_lock 0 |
 | 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
 | U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA . |
