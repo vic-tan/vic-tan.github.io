@@ -9,6 +9,9 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年07月
 ***
+> + 【0126508】中东客户问题 - Hotel Menu问题-Channel Lock無LAST MEMORY.Powe Source 無AV MODE
+> + 41A生产反馈在config 设置STB,Shop 红屏断电后概率上电模式为ON问题
+> + Google TV 工厂相关功能生产适应性测试
 > + 松下远场语音新增远场灯光测试等串口问题开发。
 > + 日规生产反馈白平衡6月初正常，7月内置白场第一次黑屏问题分析
 > + 【0121434】 欧洲STRONG客户ID167 Factory data copy 无tv.db 文件问题。
