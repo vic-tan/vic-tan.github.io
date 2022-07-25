@@ -463,7 +463,7 @@ header-img: "img/zhihu.jpg"
 > + 区分rtk_provider_db目录还是provider_db 目录 ，把客户提供的DB 打，查看数据中的包名是否带com.realtek.（rtk），带则把db放到rtk_provider_db目录下，以com.apps则放provider_db 目录下
 > 5. 打factorydata_vendor对应目录下，把channel下所有文件放到dvb/dtv_db目录下（如果dtv_db已经存在，有数据，可以不用在传，rtk_provider_db和provider_db可以共用一套）
 > * 工厂所有信息如下：
-    *|序号 |工厂 |  代号（数据库名）|
+    *|HEX值 |工厂 |  代号（数据库名）|
     | :----- | :---- | :---- |
     |1| 惠州工厂|HZ|                                 
     |2| 波兰工厂| PL|
@@ -529,3 +529,4 @@ header-img: "img/zhihu.jpg"
     |62| 印度ACER客户工厂 |ACER|
     |63| 印尼Arisa工厂 |PGI|
     |64| 泰国Xtream工厂 |Xtream|
+    |65| 阿尔及利亚Stream system工厂 |STREAM|
