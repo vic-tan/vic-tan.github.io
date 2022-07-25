@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年07月
 ***
+> + 【0126733】工厂PS模式下，串口发送shop指令，TV会退出PS模式且不会执行shop
 > + 【0126638】【2851M/欧洲P客户/ID:176】酒店模式中图像/声音模式无Filmmaker Mode、Power Channel中无数字排序
 > + 【0126613】【2841A/中东非战略P客户/ID:208】客户问题 - Hotel Menu中Power Source有HDMI3項目,應該刪除.
 > + 【0126508】中东客户问题 - Hotel Menu问题-Channel Lock無LAST MEMORY.Powe Source 無AV MODE
