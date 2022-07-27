@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年07月
 ***
+> + RT2851M机芯生产适应性调试说明文档编写
 > +  RT2851M-泰国/马来OAD码流制作与验证
 > + 【0126733】工厂PS模式下，串口发送shop指令，TV会退出PS模式且不会执行shop
 > + 【0126638】【2851M/欧洲P客户/ID:176】酒店模式中图像/声音模式无Filmmaker Mode、Power Channel中无数字排序
