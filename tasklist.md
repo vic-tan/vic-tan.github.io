@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + 眼图功能的开发与验证
 > + 申请新增Audioelec工厂预置频道及db同步到41A/51M各分支
 > + 2851M Google TV 国内DTMB预制频道开发功能
 > + P升R casper升级DB数据结构不一致问题 Factory 第一次 Shop解决方案
