@@ -8,6 +8,17 @@ header-img: "img/green.jpg"
 ***
 
 ***
+### P升R casper升级后部分软件不能搜台问题【2022-08-1】
+***
+* 问题分析
+    > 前期因为代码框架不成熟，中间修改了数据结构框架，导致搜台逻辑发生变化，OTA新软件后，导致前期软件不能搜台，android P的OTA临时措施增加开机向导，重写数据结构，但因为andnroidR跟androidP代码结构也不一样
+* 解决方法 
+    > *  在Factory app 启动后做一个shop 把数据删除，直接调用FactoryAdapter factoryManager.restoreToDefault(mContext)方法
+    > *  做一个SP标识，只有第一次启Shop，下次启动不再做shop动作
+
+
+
+***
 ### 六合一的板，一连串口工具通信直接就重启【2022-07-4】
 ***
 
