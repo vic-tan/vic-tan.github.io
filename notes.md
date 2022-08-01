@@ -530,3 +530,4 @@ header-img: "img/zhihu.jpg"
     |63| 印尼Arisa工厂 |PGI|
     |64| 泰国Xtream工厂 |Xtream|
     |65| 阿尔及利亚Stream system工厂 |STREAM|
+    |66| 瓜多尔Audioelec工厂 |AUDIOELEC|
