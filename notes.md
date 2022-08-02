@@ -122,10 +122,33 @@ header-img: "img/zhihu.jpg"
 ***
 ### 本地项目打包apptvmidware.jar步骤
 ***
+
 > 1. 打开SVN的中间件项目，更新最新代码
 > 2. 在android studio 工具上左下角的Buiild Variants : apptvmidware 选择 debug
 > 3. 选中apptvmidware项目->Build ->make module
 > 4. 右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
+
+***
+### 中间件新增接口步骤
+***
+
+> 1. 在apptvmidware包下java.com.tv.tvmidwaremanager下对应的应用类中添加新接口，如：IFactory类，新接口最好加在类最后。
+> 2. 在com.tv.tvmidwaremanager.app 目录下找到与第一步对应的Service.aidl添加对应接口，如IFacotryService.aidl类。
+> 3. 在tvmidware 中对应的Impl实现接口，如:FactoryAIDLImpl 
+> 4. 在TVMidwareManager 中对应的AdapterManager和AdapterProxy 实现接口
+> 5. 也可在选中apptvmidware 然后选项Build-> Make module 未实现的接口会自动报错，然后去实现即可
+
+***
+### 编译 exttv-framework.jar步骤
+***
+
+> 1. cd RT2851M\kernel\android\R
+> 2. 执行source build/envsetup.sh
+> 3. 执行 lunch 9
+> 4. 进到exttv路径：RT2851M\kernel\android\R\vendor\tv051\app\exttv-framework\core
+> 5. 执行 mm
+> 6. 生成的jar包路径：RT2851M\kernel\android\R\out\target\common\obj\JAVA_LIBRARIES\exttv-framework_intermediates
+> 7. 注意是classes.jar文件，然后更改名字为exttv-framework.jar 替换中间件TVMidwareManager下rt2841A 下的exttv-framework.jar
 
 
 ***
