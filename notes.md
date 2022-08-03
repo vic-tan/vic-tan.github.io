@@ -120,13 +120,23 @@ header-img: "img/zhihu.jpg"
 > 3. 下载以上最新TVMidwareService.apk文件push 到TV上 /system_ext/app/TVMidwareService 目录
 
 ***
-### 本地项目打包apptvmidware.jar步骤
+### 本地项目打包apptvmidware.jar->TVMidwareService.apk 生成->TVMidwareManager.jar包步骤
 ***
 
 > 1. 打开SVN的中间件项目，更新最新代码
-> 2. 在android studio 工具上左下角的Buiild Variants : apptvmidware 选择 debug
+> 2. 在android studio 工具上左下角的Buiild Variants : tvmidware 和TVMidwareManager选择tv_rt2841aDebug, apptvmidware 选择 debug
 > 3. 选中apptvmidware项目->Build ->make module
 > 4. 右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
+
+> 1. 选中tvmidware项目->Build ->Genrate Signed Bundle or APK -> APK ->Module 选择MiddleCommon.tvmidware ,填写key和密码->选择tv_rt2841ADebug->Finish 
+> 2. 会在demo项目下-》tv_rt2841A->debug->TVMidwareService.apk
+
+
+> 1. 找到TVMidwareManager项目中libs->tv->apptvmidware-debug.aar文件
+> 2. 把上面文件替换成apptvmidware项目中的build->outputs->aar->apptvmidware-debug.aar文件
+> 3. 删除TVMidwareManager的build文件
+> 4. 把TVMidwareManager 文件夹都复制到服务器，按单编流程编译出tv-midware-manager.jar文件
+
 
 ***
 ### 中间件新增接口步骤
@@ -142,7 +152,7 @@ header-img: "img/zhihu.jpg"
 ### 编译 exttv-framework.jar步骤
 ***
 
-> 1. cd RT2851M\kernel\android\R
+> 1. cd RT2851M\kernel\android\Ra
 > 2. 执行source build/envsetup.sh
 > 3. 执行 lunch 9
 > 4. 进到exttv路径：RT2851M\kernel\android\R\vendor\tv051\app\exttv-framework\core
