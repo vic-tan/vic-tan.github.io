@@ -9,6 +9,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + 泰国和马来西亚2841A-OAD码流制作
+> + 产线小米盒子HDMI 花屏问题分析与跟进
+> + Factory 添加Light Sensor Curve 功能
+> + Factory 添加显示EMCMV信息及中间件添加EMCMV接口
 > + 眼图功能的开发与验证
 > + 申请新增Audioelec工厂预置频道及db同步到41A/51M各分支
 > + 2851M Google TV 国内DTMB预制频道开发功能
