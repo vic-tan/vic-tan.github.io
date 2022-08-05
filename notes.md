@@ -362,6 +362,15 @@ header-img: "img/zhihu.jpg"
 > 4. 进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
 
 
+***
+### A310色温仪常见问题
+***
+> 1. 报HDMI HIGH LIGHT C-A err 时需要校准下色温仪，把探头刻度对到0-CAL,然后放到黑色区，按色温仪CAL 黄色按钮，三行显示有000瞬间即可，然后把探头刻度对到MEAS开始使用
+> 2. 报Warm register thanless MinRGB err 时,白平衡工具ofs项中LimitValue min 值不对，Normal 与 Cool &Warm 相加不参小于或大于 LimitValue值
+> 3. 报TV switch to WB adjust err  时，有可能时当前ID 应该是RTK UI，但就为是Dailyduild 版本，显示的是Moka UI，导致无法跳转到HDMI1 ,可以查看日志跳转HDMI 指令是否正常。
+> 4. 报Project ID code err 时，把白平衡工具SNO项中的P-ID check的勾去掉
+> 5. 报MAC addr code or net err 时，把白平衡工具SNO项中的MACcheck的勾去掉
+> 6. 报SW code err 时，把白平衡工具SNO项中的sw ver option 和ignore-chk的勾选
 
 ***
 ### 其它相关操作
