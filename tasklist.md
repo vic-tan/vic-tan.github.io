@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + P客户2023项目 Hotel mode 功能评估
+> + 【0127545】51M 工厂模式下显示MEMC版本号
 > + 泰国和马来西亚2841A-OAD码流制作
 > + 产线小米盒子HDMI 花屏问题分析与跟进
 > + Factory 添加Light Sensor Curve 功能
