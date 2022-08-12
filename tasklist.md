@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + 日本4K转2k  0127745: HDMI recorder Audio Multiplex NG; When choise HDMI recorder unable to switch audio setting via TV RC "音声切換" key
+> + 日本4K转2k 	0127762: CEC command does not work properly"Unmatch our intenal list"
 > + 日本I客户【0127787】预抄写软件测试 4K HDMI 画面显示异常，无声音
 > + P客户2023项目 Hotel mode 功能评估
 > + 【0127545】51M 工厂模式下显示MEMC版本号
