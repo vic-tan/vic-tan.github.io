@@ -8,6 +8,31 @@ header-img: "img/green.jpg"
 
 
 ***
+### 泰霖工厂反馈抄写key后，DTV出现无画面，无声音【2021-07-2】
+***
+* 问题分析
+    > 升级同版本软件，抄写key，未出现问题。后面找泰霖拿机架抄写的log，发现有问题的log中有切ID的动作。后面确认问题出现是和切ID有关。进一步分析代码，切ID会擦除OEM分区，会将tvdata清除，导致DTV 数据库异常，出现now tuning。
+* 解决方法
+    > 切ID擦除OEM时，不清除Tvdata
+* 修改路径 
+    > * /kernel/android/R/vendor/tv051/R4/recovery
+    > * Rtk方案的频道DB数据分两部分，ATV+部分DTV存放在data目录，DTV数据存放在tvdata
+* 总结
+    > 泰霖反馈问题，没有将最重要的now tuning反馈过来，导致分析方向偏离，浪费不少分析时间，已告知泰霖工厂，反馈问题时需要全面，最好能提供问题视频。
+另外，问题是2021.5月份就出现的，8月份才暴露出来，以后的自测需加入切ID后的验证。
+
+***
+### 泰霖工厂反馈：切ID会改变上电模式【2021-07-2】
+***
+* 问题分析
+    > 原因是切ID会切OEM，会将所有的数据都load一遍,开会沟通，RTK底层是公版，不针对工厂模式修改。所以在中间件里修改，当工厂模式时，切ID后再执行一次set power mode on的动作。由于开机过程中，切换oem会清空数据库，导致会执行InitialPowerOnModeValueFromConfig方法，将mode的数据库默认为ini的上电模式（一般默认为STB），会出现UI显示和实际上电模式不一致。所以将工厂模式和上电模式ON绑定，开机时再设置一次
+* 解决方法
+    > 2851M机芯P模式和上电模式ON绑定
+* 修改路径 
+    > * 中间件 svn 9310
+    > * kernel/android/R/vendor/tv051/app/rtk_app/FactoryAdapter
+
+***
 ### P升R casper升级后部分软件不能搜台问题【2022-08-1】
 ***
 * 问题分析
