@@ -396,7 +396,7 @@ header-img: "img/zhihu.jpg"
 | 工厂遥控器| 长按PAT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
 | 回退版本| git revert ID |
 | cd 后回退上一次目录 | cd - |
-
+| 查找当前git 仓库 | git remote -v |
 
 ***
 ### 相关路径
