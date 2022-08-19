@@ -9,6 +9,15 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + 0125968: 【51M/新西兰P客户/ID:183】客户问题：HDMI ARC output with eARC ON results in audio dropouts when Digital Audio Out is AUTO on NETFIX program
+> + 0125965: 【51M/新西兰P客户/ID:183】客户问题：Switch on Dolby E-AC-3 Atmos soundbar (SC-HTB700) with TV CEC causes Android OS to re-boot. Sometimes th
+> + 0127494: 【51M/台灣P客戶/ID:147】HDMI不能播放HDR10+片源
+> + 0128070: 【51M-GTV/台湾P客户/ID:147】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入：HDMI信号格式：显示为：standard format等
+> + 0128076: 【51M-GTV/台湾P客户/ID:147】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入-HDMI CEC控制为关时，下面两个菜单仍可以操作。
+> + 0128074: 【51M-GTV/台湾P客户/ID:147】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入-HDMI CEC设置：设备自动开机和电视自动关机应与51M描述一致。
+> + 0128073: 【51M-GTV/台湾P客户/ID:147】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入：HDMI CEC 设定菜单缺少：CEC设备列表
+> + 0128072: 【51M-GTV/台湾P客户/ID:147】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入：HDMI CEC设置改为：HDMI CEC 设定
+> + 0127452: 【51M/台灣P客戶/ID:147】HDMI信源下，進入Menu>頻道和輸入來源>Inputs>HDMI CEC設置，CEC控制設為關，設備自動關機、電視自動開機不跟隨灰選
 > + 日本S客户OAD制作 OAD 码流制作
 > + 日本4K转2k  0127745: HDMI recorder Audio Multiplex NG; When choise HDMI recorder unable to switch audio setting via TV RC "音声切換" key
 > + 日本4K转2k 	0127762: CEC command does not work properly"Unmatch our intenal list"
