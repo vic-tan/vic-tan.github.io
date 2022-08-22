@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+> + 0128304: 【2851M/印度Acer/ID:450】ARC功能不起作用。
+> + 0128263: 【PANASONIC_smoketest_002】声音模式调节到ByPass，播放“Spider-Man:Homecoming”和”Blade Runner 2049”,功放上均无显示Dolby 标识
 > + 0125968: 【51M/新西兰P客户/ID:183】客户问题：HDMI ARC output with eARC ON results in audio dropouts when Digital Audio Out is AUTO on NETFIX program
 > + 0125965: 【51M/新西兰P客户/ID:183】客户问题：Switch on Dolby E-AC-3 Atmos soundbar (SC-HTB700) with TV CEC causes Android OS to re-boot. Sometimes th
 > + 0127494: 【51M/台灣P客戶/ID:147】HDMI不能播放HDR10+片源
