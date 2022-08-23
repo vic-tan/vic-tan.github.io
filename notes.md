@@ -481,7 +481,7 @@ header-img: "img/zhihu.jpg"
 > 3. git remote -v 即可查到当前文件的在的仓库。如：kernel/rtk_aosp/device/realtek/app/RTKMenu
 > 4. 创建一个临时文件夹，然后初始化你要同步的仓库到临时文件夹 如：repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
 > 5. 不需要下载代码，直接打开临时文件夹下的.repo/manifests/41a-51m-scbc-common.xml
-> 6. 在文件中找到kernel/rtk_aosp/device/realtek/app/RTKMenu 仓库后，查看revision 即是它的共仓库，如果是相同，说明为独立仓库
+> 6. 在文件中找到kernel/rtk_aosp/device/realtek/app/RTKMenu 仓库后，查看revision 即是它的共仓库 如：revision="rt41a/master_220718"，则说明你要同步的支与rt41a/master_220718是共仓的，你只要提交rt41a/master_220718即可，如果是相同，说明为独立仓库,
 
 
 
