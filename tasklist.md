@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年08月
 ***
+
+> + 
 > + 0128304: 【2851M/印度Acer/ID:450】ARC功能不起作用。
 > + 0128263: 【PANASONIC_smoketest_002】声音模式调节到ByPass，播放“Spider-Man:Homecoming”和”Blade Runner 2049”,功放上均无显示Dolby 标识
 > + 0125968: 【51M/新西兰P客户/ID:183】客户问题：HDMI ARC output with eARC ON results in audio dropouts when Digital Audio Out is AUTO on NETFIX program
@@ -29,7 +31,7 @@ header-img: "img/orange.jpg"
 > + 泰国和马来西亚2841A-OAD码流制作
 > + 产线小米盒子HDMI 花屏问题分析与跟进
 > + Factory 添加Light Sensor Curve 功能
-> + Factory 添加显示EMCMV信息及中间件添加EMCMV接口
+> + Factory 添加显示MEMCV信息及中间件添加MEMCV接口
 > + 眼图功能的开发与验证
 > + 申请新增Audioelec工厂预置频道及db同步到41A/51M各分支
 > + 2851M Google TV 国内DTMB预制频道开发功能

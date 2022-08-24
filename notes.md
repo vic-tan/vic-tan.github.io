@@ -44,7 +44,7 @@ header-img: "img/zhihu.jpg"
 > 1. 连接进入自己的服务器 eg : 10.126.69.28
 > 2. 命令进入需要编译的项目， eg: cd 2851M
 > 3. 切换到开发分支,可执行repo init -u patch 切到对应分支，或者cd 到有仓库的文件目录下git checkout 切换分支
-> 4. 同步当前分支代码 命令:repo sync -j8
+> 4. 同步当前分支代码 命令:repo sync -j10
 > 5. cd 到需要同步代码的仓库
 > + 预置DB路径 ：2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
 > + RTK 同步Code 仓库路径请看下面RTK 同步Code 代码的仓库查找说明纪要
@@ -103,7 +103,7 @@ header-img: "img/zhihu.jpg"
 > 7. 进入单个项目目录，eg:kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider
 > + 中间件TVMidwareManager路径为2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager目录下
 > 8. 替换需要编译的项目
-> 9. 执行编译 mm -j32
+> 9. 执行编译 mm
 > + 如果报错1：build/make/core/Makefile:49: error: overriding commands for target `out/target/product/R4/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492，则用#号注释掉device/tv051/R4 或R3下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。
 > + 如果报错2： error: overriding commands for target `out/target/product/R4_GTV/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492
 11:23:25 ckati failed with: exit status 1，则用#号注释掉/kernel/android/R/device/tv051/R4_GTV 下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。
@@ -383,6 +383,7 @@ header-img: "img/zhihu.jpg"
 | 盲切ID  | 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数） |
 | 键盘及遥控器切ID  | 062598 menu 047 前面这数字要用一排的那行数字输入，id 是三位数 |
 | 串口切ID  | 选择中切ID行，input text ID |
+| 串口输入按键  | input keyevent 106（键值） |
 | 改屏参 | 串口工具->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启) |
 | 绑定遥控器 | 串口工具->断电上电->长按ESC(出现Realtek)->irda ->输入遥控器品牌序号（0为自动识别）-> irda_filter_disable->reset |
 | 屏蔽遥控器 | settings put global shop_ir_lock 0 |
