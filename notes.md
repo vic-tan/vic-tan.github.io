@@ -425,7 +425,8 @@ header-img: "img/zhihu.jpg"
 | 2841A批次及发布软件时间| [https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv](https://docs.qq.com/sheet/DTEtSY3FVWnVjYWxv) |
 | TV组每日任务| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27963131](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27963131) |
 | TV组任务清单| [https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224](https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224)|
-
+| 泰国OAD码流制作方法| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60715849](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60715849)|
+| 日本OAD码流制作方法| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911)|
 
 
 ***
