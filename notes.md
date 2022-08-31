@@ -106,7 +106,7 @@ header-img: "img/zhihu.jpg"
 > 9. 执行编译 mm
 > + 如果报错1：build/make/core/Makefile:49: error: overriding commands for target `out/target/product/R4/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492，则用#号注释掉device/tv051/R4 或R3下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。
 > + 如果报错2： error: overriding commands for target `out/target/product/R4_GTV/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492
-11:23:25 ckati failed with: exit status 1，则用#号注释掉/kernel/android/R/device/tv051/R4_GTV 下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。
+11:23:25 ckati failed with: exit status 1，则用#号注释掉/kernel/android/R/device/tv051/R4_GTV 下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。 如果整编也会报这个错，则把2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager 删除，或者把2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager/Android.mk 文件改个名字即可。
 
 > 10. 编译完成后输出 build completed successfully （时间）
 > 11. 完成后输出文件输出路径为 kernel\android\R\out\target\product\R4\system_ext\framework
