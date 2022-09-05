@@ -177,6 +177,7 @@ header-img: "img/zhihu.jpg"
 > + git diff 查看冲突文件修改信息，（或者用对比工具比较）进行修改
 > + eg :git diff /home/lifei/2851M/kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider/AndroidManifest.xml
 > + 对比是不是patch 要修改的内容，进行修改，然后删除 rm -rf AndroidManifest.xml.orig
+> + 每次改完最用git diff 查看是否跟给的patch 文件相同
 
      
 ***
