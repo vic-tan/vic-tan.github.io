@@ -154,7 +154,7 @@ header-img: "img/zhihu.jpg"
 ### 编译 exttv-framework.jar步骤
 ***
 
-> 1. cd RT2851M\kernel\android\Ra
+> 1. cd RT2851M\kernel\android\R
 > 2. 执行source build/envsetup.sh
 > 3. 执行 lunch 9
 > 4. 进到exttv路径：RT2851M\kernel\android\R\vendor\tv051\app\exttv-framework\core
@@ -371,6 +371,7 @@ header-img: "img/zhihu.jpg"
 > 4. 报Project ID code err 时，把白平衡工具SNO项中的P-ID check的勾去掉
 > 5. 报MAC addr code or net err 时，把白平衡工具SNO项中的MACcheck的勾去掉
 > 6. 报SW code err 时，把白平衡工具SNO项中的sw ver option 和ignore-chk的勾选
+> 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可
 
 ***
 ### 其它相关操作
