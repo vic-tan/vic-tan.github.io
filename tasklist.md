@@ -10,6 +10,8 @@ header-img: "img/orange.jpg"
 ### 2022年09月
 ***
 
+> + Factory Shop 复位红屏断电导致上电模式异常问题分析与跟进
+> + Factory 调用中间接口整理【https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory】【https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980007】
 > + 128356: 【伊拉克A/2851M/ID:486】ALLM功能开启后，玩X-BOX游戏（极限竞速：地平线）时画面抖动异常，且界面右边显示重叠
 > + 128322:【伊拉克A/2851M/ID:486】玩X-BOX游戏时，游戏机的遥控器返回X-BOX主页时，画面黑屏。
 > + 0128459: 【SH-32】ID:11 HDMI 认证 CEC2.0 FAIL，Test HF4-2-4项Fail，对于自身未声明Follow支持的指令，DUT未将其忽略，而是有响应。
