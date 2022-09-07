@@ -7,10 +7,21 @@ header-img: "img/orange.jpg"
 ## -----------------------------------工作清单----------------------------
 
 ***
+### 2022年09月
+***
+
+> + 128356: 【伊拉克A/2851M/ID:486】ALLM功能开启后，玩X-BOX游戏（极限竞速：地平线）时画面抖动异常，且界面右边显示重叠
+> + 128322:【伊拉克A/2851M/ID:486】玩X-BOX游戏时，游戏机的遥控器返回X-BOX主页时，画面黑屏。
+> + 0128459: 【SH-32】ID:11 HDMI 认证 CEC2.0 FAIL，Test HF4-2-4项Fail，对于自身未声明Follow支持的指令，DUT未将其忽略，而是有响应。
+> + 0128460: 【SH-32】ID:11 HDMI 认证 CEC2.0 FAIL，Test HF4-2-10项Fail，DUT收到polling message后未回复ACK
+> + 0128461: 【SH-32】ID:11 HDMI 认证 eARC FAIL，测试eARC协议时，差分信号的协议测试项结果均为fail，通过示波器查看，发现DUT回传的eARC只有共模信号，没有差分信号。
+> + 0128935: TV restart when AV AMP is connected with eARC and POWER OFF->POWER ON
+
+
+***
 ### 2022年08月
 ***
 
-> + 
 > + 0127185: 【RT2851M/日本SH客户/ID:11】HDMI 1口连接三星功放，将eARC设置为ON后，会出现功放无声现象
 > + 0128459: 【SH-32】ID:11 HDMI 认证 CEC2.0 FAIL，Test HF4-2-4项Fail，对于自身未声明Follow支持的指令，DUT未将其忽略，而是有响应。
 > + 0128460: 【SH-32】ID:11 HDMI 认证 CEC2.0 FAIL，Test HF4-2-10项Fail，DUT收到polling message后未回复ACK
