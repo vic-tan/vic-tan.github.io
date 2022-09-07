@@ -8,6 +8,18 @@ header-img: "img/green.jpg"
 
 
 ***
+### HDIM 认证Input1,2都有这个问题。Test HF2-26项Fail，在1.4的EDID配置下测试，在H14b-VSDB有列出VIC98，但在VDB中没有找到VIC98。【2022-08-25】
+***
+* 解决方法
+    > * /home/lifei/2851M-temp/kernel/android/R/device/tv051/R4/custom_images/tclconfig/model/找到对应的ID.ini 文件
+    > * 找到HDMI_EDID_ 文件内容，把对应用到的EDID 路径保存起来
+    > * R_atpmgr_6.70_Win32.msi
+    > * 在左边点击EDID/DPCD 菜单-> EDID-> 选择中User 点击右键->Import-> 选择文件导入
+    > * 打开1.4相关的文件文件——>CTA Block ->Data Blocks -> Video Data -> 上右角Add-> 滚动最下面最后一项，选择(98)->右上角APPLY ->左下角空白右键->Export...->保存类型改成.bin——》保存——>右上角x关闭
+    > * 以上步骤修改所有的1.4文件
+    > * 把修改后的文件替换服务器对应路径的文件即可。
+
+***
 ### 泰霖反馈41在线抄key后切id会进入Recovre模式，无法启动系统，选择Recovre模式下的Factory DATA reSet 可以正常启动【2022-08-25】
 ***
 
