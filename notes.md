@@ -494,6 +494,17 @@ header-img: "img/zhihu.jpg"
 > 6. 在文件中找到kernel/rtk_aosp/device/realtek/app/RTKMenu 仓库后，查看revision 即是它的共仓库 如：revision="rt41a/master_220718"，则说明你要同步的支与rt41a/master_220718是共仓的，你只要提交rt41a/master_220718即可，如果是相同，说明为独立仓库,
 
 
+***
+### 查看git 仓库是否共仓库方法
+***
+
+> + git cherry-pick xxx_id1..xxx_id3
+> + 注意中间的两个点，表示把两个commit区间的所有commit多复制过去
+> + 单个commit只需要git cherry-pick commitid
+> + 多个commit 只需要git cherry-pick commitid1..commitid100
+> + 注意，不包含第一个commitid ， 即 git cherry-pick (commitid1..commitid100]
+> + 如果想搞成[]区间，使用 git cherry-pick A^..B 相当于[A B]包含A
+
 
 
 
