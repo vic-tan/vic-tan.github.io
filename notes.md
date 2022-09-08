@@ -479,7 +479,7 @@ header-img: "img/zhihu.jpg"
 > + 提取某时间范围的所有仓库修改记录~比如要看2-25到2-28改了什么：
 > + repo forall -c git log --since="2020-02-25" --until="2020-02-28" > ~/log.log
 > + 提取某时间范围的所有仓库某个人的修改记录
-> + repo forall -p -c git log --author="chenqx@tcl.com" --since="2022-04-03 08:00:00" --until="2022-04-15 23:59:59" > ~/masterlog.log
+> + repo forall -p -c git log --author="tanlifei@tcl.com" --since="2022-04-03 08:00:00" --until="2022-04-15 23:59:59" > ~/masterlog.log
 
 
 ***
