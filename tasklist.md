@@ -10,6 +10,8 @@ header-img: "img/orange.jpg"
 ### 2022年09月
 ***
 
+> + 
+> + 0129069: 【RT2851M/日本SH客户/ID:416】地面波信源下，连接ARC Soundbar，执行声音复位，将Digital Audio Output设为Passthroug，无声音输出
 > + Factory Shop 复位红屏断电导致上电模式异常问题分析与跟进
 > + Factory 调用中间接口整理【https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory】【https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980007】
 > + 128356: 【伊拉克A/2851M/ID:486】ALLM功能开启后，玩X-BOX游戏（极限竞速：地平线）时画面抖动异常，且界面右边显示重叠
