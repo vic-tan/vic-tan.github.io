@@ -429,7 +429,8 @@ header-img: "img/zhihu.jpg"
 | TV组任务清单| [https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224](https://rd-mokadisplay.tcl.com/pms/secure/Dashboard.jspa#%E7%AD%9B%E9%80%89%E5%99%A8%E7%BB%93%E6%9E%9C/11224)|
 | 泰国OAD码流制作方法| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60715849](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60715849)|
 | 日本OAD码流制作方法| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911)|
-
+| 工厂菜单调中间件接口| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory)|
+| 工厂菜单调中间件接口说明| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory)|
 
 ***
 ### git相关路径
