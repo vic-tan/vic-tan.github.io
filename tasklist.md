@@ -10,7 +10,7 @@ header-img: "img/orange.jpg"
 ### 2022年09月
 ***
 
-> + 
+> + 0129290: 【51M/南美M客户/ID:462】ARC输出时，在media player应用下播放AAC视频或音乐，Digital Audio Out设为passthrough时功放无声
 > + 0129069: 【RT2851M/日本SH客户/ID:416】地面波信源下，连接ARC Soundbar，执行声音复位，将Digital Audio Output设为Passthroug，无声音输出
 > + Factory Shop 复位红屏断电导致上电模式异常问题分析与跟进
 > + Factory 调用中间接口整理【https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory】【https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980007】
