@@ -9,6 +9,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年09月
 ***
+> + 
+> + 
+> + 0129798: 【泰国松下客户场测问题】复位后，色温超标
+> + 0129804: 【51M/B客户/ID253】HDMI CEC功能为开，HDMI1.4与2.0之间相互切换后无像（DVD:SAMSUNG）切换CEC开关也会出黑屏无像（连接YAMAHA功放）
 > + 0129526: The Noise of Audio from AMP(connected with ARC) is terrible at digital audio output setting is "auto"
 > + 0129290: 【51M/南美M客户/ID:462】ARC输出时，在media player应用下播放MP4视频或AAC格式音乐，Digital Audio Out设为passthrough时功放无声
 > + 0129527: The noise of the audio from the AMP(connected with eARC) is terrible.
