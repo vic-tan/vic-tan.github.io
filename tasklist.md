@@ -12,7 +12,7 @@ header-img: "img/orange.jpg"
 > + 
 > + 
 > + 
-> + 
+> + 0130160: 【51M-GTV/台湾P客户/ID:111】语言为繁体中文，HDMI信源-Menu键-频道和输入来源-外部输入-HDMI CEC 设定菜单-CEC Device List及子菜单未翻译
 > + 白平衡检测mgk、playReady key 失败问题分析与解决以及兼容王牌后补串口协议。
 > + 工厂菜单整理中间件接口，并说明接口作用
 > + 0129937: 【51M/非洲P客户/ID:292】ARC输出时，在media player应用下播放MP4视频或AAC格式音乐，Digital Audio Out设为passthrough时功放无声
