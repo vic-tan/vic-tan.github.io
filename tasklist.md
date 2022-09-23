@@ -9,6 +9,12 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年09月
 ***
+> + 
+> + 
+> + 
+> + 
+> + 白平衡检测mgk、playReady key 失败问题分析与解决以及兼容王牌后补串口协议。
+> + 工厂菜单整理中间件接口，并说明接口作用
 > + 0129937: 【51M/非洲P客户/ID:292】ARC输出时，在media player应用下播放MP4视频或AAC格式音乐，Digital Audio Out设为passthrough时功放无声
 > + 0129871: 【41A/ISDB/ID222】无法从eeprom内获取key数据，导致主板没key
 > + 0129798: 【泰国松下客户场测问题】复位后，色温超标
