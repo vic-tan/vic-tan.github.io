@@ -390,7 +390,7 @@ header-img: "img/zhihu.jpg"
 | 绑定遥控器 | 串口工具->断电上电->长按ESC(出现Realtek)->irda ->输入遥控器品牌序号（0为自动识别）-> irda_filter_disable->reset |
 | 屏蔽遥控器 | settings put global shop_ir_lock 0 |
 | 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
-| U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA . |
+| U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA /system_ext/app/ |
 | 删除文件| rm -rf R4（R4 表示文件名字） |
 | 串口PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
 | Log过滤关键字| logcat &#124; grep -E "word1 &#124; word2 &#124; word3" |
@@ -400,6 +400,7 @@ header-img: "img/zhihu.jpg"
 | 回退版本| git revert ID |
 | cd 后回退上一次目录 | cd - |
 | 查找当前git 仓库 | git remote -v |
+| 杀app进程 | ps -All -> kill 【pid】 |
 
 ***
 ### 相关路径
