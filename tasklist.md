@@ -25,7 +25,11 @@ header-img: "img/orange.jpg"
 > + 
 > + 
 > + 
-> + 
+> + 0130757: 【RT2851M/日本SH客户/ID:416】HDMI连接22293-B，输入Timing 65 PAT 47信号，图像显示不正确
+> + 0130836: 【51M-GTV/菲律宾P客户/ID:133】TV连接索尼功放ARC，Audio output切换失败，但是将功放INPUT调至HDMI1，点击HDMI-ARC功放会切换回TV
+> + 0130927: 【RT2851M/日本SH客户/ID:416】连接Yamaha ATS-1070，从地面波切至HDMI时，Soundbar source切至HDMI后又切回TV（与客户PQ样机表现不一致）
+> + 0130984: 【P升R 新西兰松下RT2841 ID:260】连接soundbar后在TV信源播放，频道直接卡死，然后信源类别TV模块丢失，操作遥控菜单键不能进入三级子菜单选项，只有断电才能恢复。
+> + 0130986: 【RT2851M/日本SH客户/ID:416】地面波节目在Digital Audio Out为PCM时，播放流畅，但切至Passthough或Auto时，声音断续
 > + 0130695: 【RT2851M/新西兰/ID:101】 开机模式Last，待机状态关开电源电视與用例結果不一致
 > + 0130720: 【RT2851M 中东E客户ID:342】HDMI信源下接22294仪器，720p60HZ切到576i50HZ画面瞬间闪花屏
 > + 0130694: 【RT2851M/新西兰/ID:101】 开机模式Standby，待机状态关开电源电视與用例結果不一致
