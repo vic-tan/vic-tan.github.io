@@ -200,6 +200,31 @@ header-img: "img/zhihu.jpg"
 > 4. fatload usb 0:1 0x108000 ? , ?表示文件名 e:fatload usb 0:1 0x108000 vmlinux.bin
 > 5. 输入 go all
 
+
+***
+### 制式（2841&2851机芯制式）
+***
+
+> 1. DVB
+> + ATV ----ATV全，不用切signal type
+> + Cable ---Cable下的DTV------------DVBC
+> + Antena ---Antena下的DTV---------DVBT
+> + Sat --- Sat下的DTV-----------------DVBS
+
+> 2. ISDB（信源列表显示TV，通过signal type切换）
+> + Cable ----只有ATV
+> + Antena ---有ATV和DTV
+
+> 3. ATSC（信源列表显示TV，通过signal type切换）
+> + Cable  ---有ATV和DTV
+> + Antena ---有ATV和DTV
+
+> 4. colombia 中美哥伦比亚 (DVB 6M)
+> + ATV ---有Cable ATV和Antena ATV 通过signal type切换
+> + Antena ---只有DTV
+
+
+
 ***
 ### RTK代码sync code Excel提交同步分支相关路径
 ***
@@ -441,6 +466,7 @@ header-img: "img/zhihu.jpg"
 |  ----  | ----  |
 |  ExtTv源文件 | http://10.126.16.60/gerrit/gitweb?p=kernel/rtk_aosp/device/tv051/frameworks/native/ExtTv.git;a=tree;f=src/service;h=708692e5b70762932a775e7c10a913a8f0b16f33;hb=refs/heads/realtek/mac7p/android-11/scbc |
 | 41/51串口路径  | http://10.126.16.60/gerrit/gitweb?p=kernel/rtk_aosp/device/tv051/app.git;a=blob;f=FactoryTools/src/java/com/realtek/factorytools/FactoryUart.java;h=a9686d993d4a6f1501f448d77570bef655c51a3a;hb=refs/heads/rt4151/mp210407_20Q4 |
+
 
 
 
