@@ -186,7 +186,7 @@ header-img: "img/zhihu.jpg"
 
 > 1. 选择打开diff 文件，找到要diff 文件路径 diff -&#45;git &#91;PATCH&#93;
 > 2. 在自己的服务器上cd 到该目录下，把diff 文件放到该目录下
-> 3. 执行git apply 文件路径(可以tab 出来)
+> 3. 执行git apply 文件路径(可以tab 出来),如果apply 不进去可以用patch -p1 < xx.diff 试试
 > 4. 出现冲突 git diff 查看冲突文件修改信息，（或者用对比工具比较）进行修改
 
 
