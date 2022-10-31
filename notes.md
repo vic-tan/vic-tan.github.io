@@ -360,6 +360,14 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### 登录google 账号
+***
+> 1. adb shell input text weishengqin6@gmail.com
+> 2. adb shell input text MOKA@123
+
+
+
+***
 ### 预制频道通道查找
 ***
 > 1. 用SQLiteStudio 打开DB
@@ -516,10 +524,11 @@ header-img: "img/zhihu.jpg"
 
 > 1. 首页切到你要同步的分支
 > 2. 进入到你要同步代码的文件路径
-> 3. git remote -v 即可查到当前文件的在的仓库。如：kernel/rtk_aosp/device/realtek/app/RTKMenu
+> 3. git remote -v 即可查到当前文件的在的仓库。如：kernel/rtk_aosp/device/realtek/app/RTKMenu，或者在gerrit回到git仓库后，找到页面URL ssh://lifei@10.126.16.60:29418后面到.git即仓库
 > 4. 创建一个临时文件夹，然后初始化你要同步的仓库到临时文件夹 如：repo init -u ssh://10.126.16.60:29418/rt51M_manifest -m odin-gms.xml -b realtek/merlin5/android-11/scbc
 > 5. 不需要下载代码，直接打开临时文件夹下的.repo/manifests/41a-51m-scbc-common.xml
 > 6. 在文件中找到kernel/rtk_aosp/device/realtek/app/RTKMenu 仓库后，查看revision 即是它的共仓库 如：revision="rt41a/master_220718"，则说明你要同步的支与rt41a/master_220718是共仓的，你只要提交rt41a/master_220718即可，如果是相同，说明为独立仓库,
+> 7. 另一种方法可以在[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60697622]https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60697622 中搜索仓库，如果没有表示共仓。
 
 
 ***
