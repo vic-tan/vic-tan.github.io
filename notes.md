@@ -131,7 +131,7 @@ header-img: "img/zhihu.jpg"
 > 4. 右上角Gradlle->apptvmidware项目 ->Tasks->Other->makeJar->会在build->lib下生成apptvmidware.jar包 
 
 > 1. 选中tvmidware项目->Build ->Genrate Signed Bundle or APK -> APK ->Module 选择MiddleCommon.tvmidware ,填写key和密码->选择tv_rt2841ADebug->Finish 
-> 2. 会在demo项目下-》tv_rt2841A->debug->TVMidwareService.apk
+> 2. 会在tvmidware项目下->tv_rt2841A->debug->TVMidwareService.apk
 
 
 > 1. 找到TVMidwareManager项目中libs->tv->apptvmidware-debug.aar文件
