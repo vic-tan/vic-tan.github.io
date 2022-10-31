@@ -8,7 +8,7 @@ header-img: "img/orange.jpg"
 
 
 ***
-### 2022年10月
+### 2022年11月
 ***
 > + 
 > + 
@@ -20,11 +20,15 @@ header-img: "img/orange.jpg"
 > + 
 > + 
 > + 
-> + 
-> + 
-> + 
-> + 
-> + 
+> + 0131675: 【51M-GTV/台湾P客户/ID:111】HDMI信源-Menu键-频道和输入来源-外部输入-HDMI CEC控制设置为关，再设置为开时，下面两个子菜单不跟随打开。
+> + 0131144: 【51M-GTV/台湾P客户/ID:111】酒店模式，Power Source有cable ATV和Antenna ATV，只保留ATV，与菜单信源一致
+
+***
+### 2022年10月
+***
+> + 0131186: 【SH-32】When Audio Output change from TV to HDMI-ARC, TV change to HDMI too.
+> + 0131045: 【51M-GTV/新西兰P客户/ID:101】连接ARC，HDMI-ARC切换到TV Speaker模式，有时不切换到TV音量大小
+> + 0131036: 【2841 P升R/新西兰P客户/ID:261】客户问题 - TV locks up when connected to SC-HBT688 soundbar (AC-3 only audio decode).
 > + 0130927: 【RT2851M/日本SH客户/ID:416】连接Yamaha ATS-1070，从地面波切至HDMI时，Soundbar source切至HDMI后又切回TV（与客户PQ样机表现不一致）
 > + 0130984: 【P升R 新西兰松下RT2841 ID:260】连接soundbar后在TV信源播放，频道直接卡死，然后信源类别TV模块丢失，操作遥控菜单键不能进入三级子菜单选项，只有断电才能恢复。
 > + 0130757: 【RT2851M/日本SH客户/ID:416】HDMI连接22293-B，输入Timing 65 PAT 47信号，图像显示不正确
