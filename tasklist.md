@@ -19,7 +19,7 @@ header-img: "img/orange.jpg"
 > + 
 > + 
 > + 
-> + 
+> + 雷达串口协议定义与及串口获取雷达状态功能开发
 > + 0131675: 【51M-GTV/台湾P客户/ID:111】HDMI信源-Menu键-频道和输入来源-外部输入-HDMI CEC控制设置为关，再设置为开时，下面两个子菜单不跟随打开。
 > + 0131144: 【51M-GTV/台湾P客户/ID:111】酒店模式，Power Source有cable ATV和Antenna ATV，只保留ATV，与菜单信源一致
 
