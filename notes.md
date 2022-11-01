@@ -307,6 +307,19 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### 修改屏幕倒转
+***
+
+> 1. 找到倒屏ID 的model.ini 文件
+> 2. 打开id model文件,找到【PANEL】 中的路径 如：m_pPanelName = "/mnt/vendor/tclconfig/panel/UHD_ST4251B05-2.ini";
+> 3. 找到上面【PANEL】路径文件，因为是tclconfig 目录，所以必须用串口输入指令： su，然后再输入mount -o remount,rw /mnt/vendor/tclconfig 申请权限 
+> 4. 把上面【PANEL】路径文件先导出来，才可以进行编辑。
+> 5. 导出后打开文件，找到 VFLIP 字段，如果1则设置0，如果是0则设置为1，后保存
+> 6. 把文件导入到TV上面【PANEL】路径文件，替换之前的文件
+> 7. 打开工厂菜单，进入Service Menu ，切换一下其它ID ，然后在切回到倒屏ID，重启即生效（因为修改的文件不是真正生效文件，必须要切ID后才会把数据拷贝到生效文件中，所以必须要切一下ID） 
+
+
+***
 ### 遥控器显示工厂菜单方法
 ***
 
