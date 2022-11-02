@@ -566,6 +566,19 @@ header-img: "img/zhihu.jpg"
 > + 打开git.plugin.zsh 文件 
 > + 在文件最后添加别名，eg: alias acon='adb connect 192.168.1.128'
 > + 重启 iTerm 直接输入acon 即代表输入adb connect 192.168.1.128
+> * 自定义别名列表
+*|别名 |指令 |  
+    | :----- | :---- |
+    |act| adb connect 192.168.1.128|                            
+    |acr| adb connect 192.168.1.128 && adb root && adb remount| 
+    |art| adb root| 
+    |arm| adb remount| 
+    |adv| adb disable-verity| 
+    |abt| adb reboot| 
+    |asl| adb shell| 
+    |apf| adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory| 
+    |apl| adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp| 
+    |gst| git status| 
 
 
 ## -----------------------常用账号-------------------
