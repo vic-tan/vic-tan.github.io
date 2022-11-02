@@ -558,6 +558,14 @@ header-img: "img/zhihu.jpg"
 > + 注意，不包含第一个commitid ， 即 git cherry-pick (commitid1..commitid100]
 > + 如果想搞成[]区间，使用 git cherry-pick A^..B 相当于[A B]包含A
 
+***
+### Mac iTerm2 设置命令别名方法
+***
+
+> + 打开访达—> 前往文件夹->输入~/.oh-my-zsh/plugins/git —> git.plugin.zsh
+> + 打开git.plugin.zsh 文件 
+> + 在文件最后添加别名，eg: alias acon='adb connect 192.168.1.128'
+> + 重启 iTerm 直接输入acon 即代表输入adb connect 192.168.1.128
 
 
 ## -----------------------常用账号-------------------
