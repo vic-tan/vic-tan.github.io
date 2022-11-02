@@ -548,7 +548,7 @@ header-img: "img/zhihu.jpg"
 
 
 ***
-### 查看git 仓库是否共仓库方法
+### git 多笔CODE 同步
 ***
 
 > + git cherry-pick xxx_id1..xxx_id3
