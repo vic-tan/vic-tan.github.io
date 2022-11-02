@@ -20,9 +20,8 @@ header-img: "img/zhihu.jpg"
 > 5. 同步当前分支代码 命令:repo sync -j8
 > 6. 同步过程如果提示报错文件，可以先删除该文件，然后重新从2步开始，还是不行可以直接删除R3或R4文件，再重新第2步开始
 > + 删除文件命令 eg:rm -rf kernel/android/R/vendor/R4
-> 7. 执行脚本 ./std-build  或者./scbc_build_51m.sh  回车（如果有std-build则用std-build）
+> 7. 执行脚本 ./std-build 如果是Google tv 则执行std-build_GTV.sh  回车
 > + 文件一定是在项目根目录下执行，在根目下，可以打前几个然后tab 出来 
-> + 在脚本后面加 0 true 表示公版 eg:./scbc_build_51m.sh 0 true
 > + 此过程会自动去下载关联apk，如果此时想编译自己本的apk，工具日志下载完apk后就可可以直接替换自己的apk到对应的目录下，这样编译出来的就自己的apk。apk 路径一般在kernel/android/R/vendor/tv051/app/prebuilt_app/目录下
 > 8. 请输入版本号[Please type version] 按回国为默认V8-T851MGL-LF1V001版本号，最好按时间命名加上自己的标签，ge:V8-T851MGL-LF1V20220421_TAN
 > 9. CTS or not?[1-CTS 2-Debug 3-CTS&Debug] 表示编译软件类型，一般输入 2
@@ -30,11 +29,15 @@ header-img: "img/zhihu.jpg"
 > + 2-Debug，表示开发模式，有root等多个权限，适合开发
 > 10. Build OTA package or not? 表示是否支持OTA升级，一般输入 n
 > 11. 是否启用远场语音[n/y]? 表示当前软件是否支持远场语音，一般输入 n，41A硬件不支持这项
-> 12. Clean or not? 选n 是否先清除下环境
-> 13. 请输入客户品牌[Please type product][0-NOKIA(Default) 1-MOTOROLA 2-NOKIA_2K 3-PANASONIC_EU 4-PANASONIC_FFM 5-PANASONIC_BASE] 品牌选择（1，2 表示区域客户，3、4表示松下）
-> 14. 回车后，如果是清空环境第一次编译，一般要等待2个小时，已经编译过第二次，则基本上30分钟。
-> 15. 编译完成后会输出 Image creation complete. Output file:install_wipe.img 为正常
-> 16. 编译完成后会输出路径为根目录 eg:2851M/Buildimg/V8-T851MGL-LF1V20220421_TAN  
+> 12. Clean or not? 是否先清除下环境，如果走了第3步，一般选n
+> 13. 是否编译中间件，一般选y, 如果中间件不影响可以选n
+> 13. 是否编译RTK公版? y表示编译 RTK UI ,n 表示moka UI
+> 13. 编译标志位，一般我们选0
+> 14. 请输入客户品牌[Please type product][0-NOKIA(Default) 1-MOTOROLA 2-NOKIA_2K 3-PANASONIC_EU 4-PANASONIC_FFM 5-PANASONIC_BASE 6-Amati 7-KALLEY_FFM 8-KALLEY_BASE] 品牌选择（1，2 表示区域客户，3、4表示松下）
+> 14. 默认没有数字标牌，是否集成数字标牌 [n/y] ，这个一般选 n 
+> 15. 回车后，如果是清空环境第一次编译，一般要等待2个小时，已经编译过第二次，则基本上30分钟。
+> 16. 编译完成后会输出 Image creation complete. Output file:install_wipe.img 为正常
+> 17. 编译完成后会输出路径为根目录 eg:2851M/Target/V8-T851MGL-LF1V20220421_TAN  
 
 
 ***
