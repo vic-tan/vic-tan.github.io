@@ -576,6 +576,7 @@ header-img: "img/zhihu.jpg"
     |adv| adb disable-verity| 
     |abt| adb reboot| 
     |asl| adb shell| 
+    |mnc| minicom| 
     |apf| adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory| 
     |apl| adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp| 
     |gst| git status| 
