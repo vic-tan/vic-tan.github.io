@@ -301,7 +301,8 @@ header-img: "img/zhihu.jpg"
 |  名称   | 命令  |
 |  ----  | ----  |
 | 工厂菜单  | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity |
-| 设置界面  | am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings|
+| moka 设置界面  | am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings|
+| RTK 设置界面  | am start -n com.realtek.menu/com.realtek.menu.MainActivity|
 | 信源菜单  | am start -n  com.apps.livetv/.SelectInputActivity|
 | ATV搜台  | am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity |
 | RTK ATV  |am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity |
@@ -577,6 +578,8 @@ header-img: "img/zhihu.jpg"
     |abt| adb reboot| 
     |asl| adb shell| 
     |mnc| minicom| 
+    |alg| adb logcat > log001.log| 
+    |aslg| adb logcat > log001.log| 
     |apf| adb push /Users/tanlifei/Desktop/work/moka/project/Factory_General/app/release/Factory.apk /system_ext/app/Factory| 
     |apl| adb push /Users/tanlifei/Desktop/work/moka/project/LogApp/app/release/LogApp.apk /system_ext/app/LogApp| 
     |gst| git status| 
