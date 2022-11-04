@@ -560,6 +560,22 @@ header-img: "img/zhihu.jpg"
 > + 如果想搞成[]区间，使用 git cherry-pick A^..B 相当于[A B]包含A
 
 ***
+### git commit后（尚未git push操作），需要回退的情况
+***
+
+> 1.  git cherry-pick xxx_id1..xxx_id3
+> + 比如commit id信息为：90f1ce4d73c5dc63f46fa61984a6bb878f47374
+> 2. 执行git reset --soft HEAD^操作
+> + 对应HEAD即上述commit id信息 git reset --soft 90f1ce4d73c5dc63f46fa61984a6bb878f47374^
+> + 说明：最后的符号^记得不要漏掉,此时通过git status时，可以看到git add 的文件(绿色）
+> 3. git reset file_name
+> + 通过git reset file_name 操作后，再git status可以看到红色的修改文件
+> 4. git checkout file_name
+> + 通过git checkout modify_file还原至修改之前状态
+
+
+
+***
 ### Mac iTerm2 设置命令别名方法
 ***
 
