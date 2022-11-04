@@ -14,8 +14,8 @@ header-img: "img/orange.jpg"
 > + 
 > + 
 > + 
-> + 
-> + 
+> + GTV HDIM 认证EDID 问题解决
+> + 0132006: 【SH-32][recurrence]If the "Support HDMI Mode" of HDMI2 is 2.0, there is no description of AAC in the EDID.
 > + 0131790: 【51M/泰国P客戶/ID:107】菜单CEC功能中的Tv改为大写
 > + 0131511: 【RT2851M/日本SH客户/ID:11】OAD下载完成后，需要重启才会弹出升级提示框
 > + 工厂菜单添加AQ/EQ版本号显示功能开发
