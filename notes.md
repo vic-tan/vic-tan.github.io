@@ -115,6 +115,17 @@ header-img: "img/zhihu.jpg"
 > 11. 完成后输出文件输出路径为 kernel\android\R\out\target\product\R4\system_ext\framework
 > + 中间件输出文件为该目录下的tv-midware-manager.jar文件
 
+***
+### 编译kernal
+***
+> 1. 确定分支，然后同步代码 repo sync -j8 
+> 2. 进入项目R文件夹,eg：2851M/kernel/android/R
+> 3. 执行脚本 source build/envsetup.sh
+> 5. 执行 lunch 找到对应的项目序号 
+> 6. 2851M/2841A  序号为9 所以我们一般输入lunch 9 
+> 7. cd kernal/system
+> 8. ./build_android.sh -p NOKIA.cfg -c n -v userdebug -j 8 -K y
+> + 如果是日规，则把上面的NOKIA改成SHARP.cfg
 
 ***
 ### 中间件更新步骤
