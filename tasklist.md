@@ -10,10 +10,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年11月
 ***
-> + 
-> + 
-> + 
-> + 
+> + 0132369: 【51M/泰国P客戶/ID:107】Google TV模式，DTV已搜台，从ID127切到ID107，工厂菜单NVM后再Shop，开机走完向导后，进入DTV台未清掉。
+> + 0132244: 【51M/印度P客戶/ID:139】HDMI1连接LG ARC Soundbar SP8YA，YouTube下，按遥控待机键待机，Soundbar不跟随待机
+> + 【51M/印度P客戶/ID:139】HDMI1连接LG ARC Soundbar SP8YA，YouTube下，Output Device从HDMI-ARC设为TV Speaker，会自动回到HDMI-ARC或等待一段时间自动回到HDMI-ARC
+> + 0132194: 【51M/台湾P客戶/ID:111】HDMI接带CEC功能的杰科DVD，TV待机后DVD待机，再按DVD开机，有时电视不会跟随开机
 > + GTV HDIM 认证EDID 问题解决
 > + 0132006: 【SH-32][recurrence]If the "Support HDMI Mode" of HDMI2 is 2.0, there is no description of AAC in the EDID.
 > + 0131790: 【51M/泰国P客戶/ID:107】菜单CEC功能中的Tv改为大写
