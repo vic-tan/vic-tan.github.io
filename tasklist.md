@@ -10,6 +10,9 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年11月
 ***
+> + 0131945: 【51M-GTV/印度松下/ID:184】工厂自动测试模式下，声音切换到光纤后，光纤没声音输出（问题原因是从喇叭切到光纤后，SPDIF变成了AUTO，要求为PCM）
+> + 0131987: 【RT2851M/日本SH客户/ID:416]地面波信源下，连接Yamaha YAS-106 ARC Soundbar，不能自动打开ARC
+> + 0132794: 【51M-GTV/新西兰P客户/ID:124】MediaPlayer应用下播放HDR视频噪点严重（见图)
 > + 0132369: 【51M/泰国P客戶/ID:107】Google TV模式，DTV已搜台，从ID127切到ID107，工厂菜单NVM后再Shop，开机走完向导后，进入DTV台未清掉。
 > + 0132244: 【51M/印度P客戶/ID:139】HDMI1连接LG ARC Soundbar SP8YA，YouTube下，按遥控待机键待机，Soundbar不跟随待机
 > + 【51M/印度P客戶/ID:139】HDMI1连接LG ARC Soundbar SP8YA，YouTube下，Output Device从HDMI-ARC设为TV Speaker，会自动回到HDMI-ARC或等待一段时间自动回到HDMI-ARC
