@@ -10,6 +10,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年11月
 ***
+
+> + RT2851M-GoogleTV机芯维护文档，生产适应性问题文档 [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=68098491]https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=68098491
 > + 0131945: 【51M-GTV/印度松下/ID:184】工厂自动测试模式下，声音切换到光纤后，光纤没声音输出（问题原因是从喇叭切到光纤后，SPDIF变成了AUTO，要求为PCM）
 > + 0131987: 【RT2851M/日本SH客户/ID:416]地面波信源下，连接Yamaha YAS-106 ARC Soundbar，不能自动打开ARC
 > + 0132794: 【51M-GTV/新西兰P客户/ID:124】MediaPlayer应用下播放HDR视频噪点严重（见图)
