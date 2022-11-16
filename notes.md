@@ -452,7 +452,7 @@ header-img: "img/zhihu.jpg"
 | 屏蔽遥控器 | settings put global shop_ir_lock 0 |
 | 设置tclconfig 权限 |mount -o remount,rw /mnt/vendor/tclconfig |
 | U盘复制到TV当前路径| cp /mnt/media_rw/00AF-9C6B/RMCA_ATV/RMCA /system_ext/app/ |
-| 删除文件| rm -rf R4（R4 表示文件名字） |
+| 删除文件| rm -rf R4（R4 表示文件名字, 多个文件可以在后面加空格，然后接第二个文件路径） |
 | 串口PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
 | Log过滤关键字| logcat &#124; grep -E "word1 &#124; word2 &#124; word3" |
 | 串口占用输出log| logcat -s  tag > data/log.log 或logcat -s FactoryUart > /data/temp/log.log |
