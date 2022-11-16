@@ -462,7 +462,7 @@ header-img: "img/zhihu.jpg"
 | cd 后回退上一次目录 | cd - |
 | 查找当前git 仓库 | git remote -v |
 | 杀app进程 | ps -All -> kill 【pid】 |
-| 获取TV 最上层activity | adb shell dumpsys activity activities | findstr mResumedActivity |
+| 获取TV 最上层activity | adb shell dumpsys activity activities | grep mResumedActivity (windowns 把 grep 改为 findstr )|
 
 
 ***
