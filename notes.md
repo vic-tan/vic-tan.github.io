@@ -495,7 +495,7 @@ header-img: "img/zhihu.jpg"
 | 日本OAD码流制作方法| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911)|
 | 工厂菜单调中间件接口| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory)|
 | 工厂菜单调中间件接口说明| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory)|
-
+| HDMI认证问题点收集| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806)|
 
 
 ***
