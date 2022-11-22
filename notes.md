@@ -433,7 +433,14 @@ header-img: "img/zhihu.jpg"
 > 4. 报Project ID code err 时，把白平衡工具SNO项中的P-ID check的勾去掉
 > 5. 报MAC addr code or net err 时，把白平衡工具SNO项中的MACcheck的勾去掉
 > 6. 报SW code err 时，把白平衡工具SNO项中的sw ver option 和ignore-chk的勾选
-> 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可
+> 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可a
+
+***
+### 22293仪常见问题
+***
+> 1. 打100%白场——>PATTERN——>按101（或者转动滚轮到显示为00101w:100%）——> 按ENTENR ——> 按OUT
+> 2. 打100%白场——>PATTERN——>按103（或者转动滚轮到显示为00103w:80%）——> 按ENTENR ——> 按OUT
+
 
 ***
 ### 其它相关操作
