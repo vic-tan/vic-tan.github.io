@@ -484,7 +484,7 @@ header-img: "img/zhihu.jpg"
 |  ----  | ----  |
 | 所有APP SVN总路径 | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src |
 | 工厂菜单SVN路径  | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/Factory_General |
-| 中间间SVN路径  | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware |
+| 中间件SVN路径  | https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/TVMidware |
 | 项目档案 | https://odm-design-center-hz.tclking.com/svn/Project_Document |
 | 51M抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851M安卓TV机芯项目档案 |
 | 41A抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案 |
@@ -713,3 +713,4 @@ header-img: "img/zhihu.jpg"
     |64| 泰国Xtream工厂 |Xtream|
     |65| 阿尔及利亚Stream system工厂 |STREAM|
     |66| 瓜多尔Audioelec工厂 |AUDIOELEC|
+    |67| 阿尔及利亚Brandt工厂 |BRANDT|
