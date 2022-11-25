@@ -10,6 +10,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年11月
 ***
+> + 
+> + 
+> + 0133412: 【2851M/中国香港战略P客户/ID: 606】生产适应性 - DTMB制式
+> +	0133432: 41A&51M阿尔及利亚B客户预置频道添加
 > + 0133216: 【51M-GTV印度P客户/ID:184】ARC接松下B490功放，Audio output不能自动跳转到ARc选项，手动选项到ARc选项，也不能选成功。
 > + RT2851M-GoogleTV机芯维护文档，生产适应性问题文档 [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=68098491]https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=68098491
 > + 0131945: 【51M-GTV/印度松下/ID:184】工厂自动测试模式下，声音切换到光纤后，光纤没声音输出（问题原因是从喇叭切到光纤后，SPDIF变成了AUTO，要求为PCM）
