@@ -9,6 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年12月
 ***
+> + 50D8300P_HDMI/43D8300P_HDMI HDMI 认证EDID 修改及CEC问题跟进
+> + 松下酒店模式实现清除指定应用数据功能实现
 > + 日规码流文档整理[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911]https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911
 > + BTMD ZH ODM 是以800开头的，要重新搜索,并重导到到预制频道
 > + 0133412: 【2851M/中国香港战略P客户/ID: 606】生产适应性 - DTMB制式 
