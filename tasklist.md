@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年12月
 ***
+> + 0133797: 【台湾松下客户场测问题】GTV工厂菜单隐藏酒店模式
 > + 0133789: 【51M/新西兰P客户/ID:127】HDMI3接带dolby vision的松下DVD，再ARC接松下B600功放，播放DVD时，功放无声音输出。
 > + 0132794: 【51M-GTV/新西兰P客户/ID:124】MediaPlayer应用下播放HDR视频噪点严重（见图）
 > + 0133811: 【南美B客户/51M/ID:261】Media Player应用下播放HDR视频彩色偏淡
