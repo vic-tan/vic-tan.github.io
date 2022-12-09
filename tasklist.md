@@ -9,6 +9,9 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年12月
 ***
+> + 0133789: 【51M/新西兰P客户/ID:127】HDMI3接带dolby vision的松下DVD，再ARC接松下B600功放，播放DVD时，功放无声音输出。
+> + 0132794: 【51M-GTV/新西兰P客户/ID:124】MediaPlayer应用下播放HDR视频噪点严重（见图）
+> + 0133811: 【南美B客户/51M/ID:261】Media Player应用下播放HDR视频彩色偏淡
 > + 50D8300P_HDMI/43D8300P_HDMI HDMI 认证EDID 修改及CEC问题跟进
 > + 松下酒店模式实现清除指定应用数据功能实现
 > + 日规码流文档整理[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911]https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55457911
