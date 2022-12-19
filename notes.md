@@ -20,7 +20,7 @@ header-img: "img/zhihu.jpg"
 > 5. 同步当前分支代码 命令:repo sync -j8
 > 6. 同步过程如果提示报错文件，可以先删除该文件，然后重新从2步开始，还是不行可以直接删除R3或R4文件，再重新第2步开始
 > + 删除文件命令 eg:rm -rf kernel/android/R/vendor/R4
-> 7. 执行脚本 ./std-build 如果是Google tv 则执行std-build_GTV.sh  回车
+> 7. 执行脚本 ./std-build.sh 如果是Google tv 则执行std-build_GTV.sh  回车
 > + 文件一定是在项目根目录下执行，在根目下，可以打前几个然后tab 出来 
 > + 此过程会自动去下载关联apk，如果此时想编译自己本的apk，工具日志下载完apk后就可可以直接替换自己的apk到对应的目录下，这样编译出来的就自己的apk。apk 路径一般在kernel/android/R/vendor/tv051/app/prebuilt_app/目录下
 > 8. 请输入版本号[Please type version] 按回国为默认V8-T851MGL-LF1V001版本号，最好按时间命名加上自己的标签，ge:V8-T851MGL-LF1V20220421_TAN
