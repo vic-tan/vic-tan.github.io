@@ -507,6 +507,8 @@ header-img: "img/zhihu.jpg"
 | 工厂菜单调中间件接口| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/090112-Factory)|
 | 工厂菜单调中间件接口说明| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory)|
 | HDMI认证问题点收集| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806)|
+| Settings.Global.put() 保存路径 | /data/system/users/0/settings_global.xml|
+
 
 
 ***
@@ -542,9 +544,12 @@ header-img: "img/zhihu.jpg"
 ### 常用TV 尺寸 ID
 ***
 > 1. 51M(55寸)
-> + 香港DTMB(607)
+> + 香港DTMB(607)(RTK UI)
+> + Isdb(152)(RTK UI)
+> + DVB(404)(moka UI)
 > 2. 41A(43寸)
-> + 502(欧规软件)
+> + 502(RTK UI)
+> + DVB(500)(moka UI)
 
 
 ***
