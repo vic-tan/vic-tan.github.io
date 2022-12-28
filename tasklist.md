@@ -9,6 +9,9 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年12月
 ***
+> + 0134513: 【基础dailybuild 1224 ID45】抄写HDCP2 key后，read key数据与抄写内容不一致
+> + 0134467: 【41A_GTV/印度A客户ID:001】工厂菜单有酒店模式，应去掉
+> + 0134465: 【41A_GTV/印度A客户ID:001】工厂菜单内的版本号、Clienttype 等修改
 > + 0134405: 【RT2851M SINGER客户tconless PID: 647】某些品牌的笔记本电脑接入HDMI后，overscan无作用
 > + 0134312: [RT51M 中东LOD项目 ID502]在试产线生产大货机器，发现HDMI分屏问题
 > + 0133696: [RT2841A ]CVTE工厂切DVB-S通道后软硬开机问题
