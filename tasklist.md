@@ -9,6 +9,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2022年12月
 ***
+
+> + Led 远场灯光控制功能开发
+> + 0134537: [RT2851M/日本I客户/ID:5]在HDMI 1信源下，DVD按播放键，TV会跳至HDMI 3信源
+> + 0134535: [RT2851M/日本I客户/ID:5]Device Control Key设为Normal，DVD不响应TV遥控器指令
 > + 0134513: 【基础dailybuild 1224 ID45】抄写HDCP2 key后，read key数据与抄写内容不一致
 > + 0134467: 【41A_GTV/印度A客户ID:001】工厂菜单有酒店模式，应去掉
 > + 0134465: 【41A_GTV/印度A客户ID:001】工厂菜单内的版本号、Clienttype 等修改
