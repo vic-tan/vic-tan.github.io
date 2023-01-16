@@ -508,6 +508,7 @@ header-img: "img/zhihu.jpg"
 | 工厂菜单调中间件接口说明| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/11+Factory)|
 | HDMI认证问题点收集| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806)|
 | Settings.Global.put() 保存路径 | /data/system/users/0/settings_global.xml|
+| 中间件架构| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875|
 
 
 
