@@ -380,14 +380,28 @@ header-img: "img/zhihu.jpg"
 | /mnt/vendor/tvdata  | mount -t ext4 /dev/block/mmcblk0p30 |
 
 
-
+***
+### 克隆软件
+***
+> 1. 用NTFS格式的U盘，剩余空间需要大于16G。
+> 2. 将usb插入电视。
+> 3. 将串口工具连接到PC和电视，并确保串口打印正常。
+> 4. 按住电脑键盘上的ESC键并保持静止，电视已关闭并打开，当您输入uboot时，它将显示Realtek>，然后您可以释放ESC按钮。
+> 5. 输入命令“mp_dump”将数据从emmc克隆到U盘，当您看到复制进度条时，克隆已开始。
+> 6. 生成大约需要20分钟。U盘的根目录中会生成mp_user.bin，mp_boot0.bin，mp_boot1.bin三个文件，大约16 GB。克隆完成后，串行端口将显示成功。
+> 7. 压缩三箱文件并将其发送给我们。
 
 ***
-### 反抄写
+### 反抄写（回写)
 ***
-> 1. 把反抄写文件放到U盘根目录下
-> 2. 上电一直按着ESC按住进bootcode，显示Realtek>后
-> 3. 输入 mp_restore
+> 1. 将3个文件mp_user.bin，mp_boot0.bin，mp_boot1.bin拷贝到U盘
+> 2. 连上串口工具，断电上电一直按着ESC按住进bootcode，显示Realtek>后
+> 3. 串口工具输入命令mp_restore将镜像写入emmc
+> 4. 大约需要20分钟左右
+> 5. 恢复完成后，断电重启电视
+> 5. 验证P模式，Uart Enable，预置的频点，音量，power mode，是否正确
+
+
 
 
 ***
