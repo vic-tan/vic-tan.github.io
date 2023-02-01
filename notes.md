@@ -51,12 +51,12 @@ header-img: "img/zhihu.jpg"
 > 5. 执行 lunch 找到对应的项目序号 
 > 6. 2851M/2841A 序号为3 所以我们一般输入lunch 3 
 > 7. 进入单个项目目录，eg:kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider
-> + 中间件TVMidwareManager路径为2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager目录下
+> + 中间件TVMidwareManager路径为2851m/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager目录下
 > 8. 替换需要编译的项目
 > 9. 执行编译 mm
 > + 如果报错1：build/make/core/Makefile:49: error: overriding commands for target `out/target/product/R4/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492，则用#号注释掉device/tv051/R4 或R3下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。
 > + 如果报错2： error: overriding commands for target `out/target/product/R4_GTV/system_ext/framework/tv-midware-manager.jar', previously defined at build/make/core/base_rules.mk:492
-11:23:25 ckati failed with: exit status 1，则用#号注释掉/kernel/android/R/device/tv051/R4_GTV 下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。 如果整编也会报这个错，则把2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager 删除，或者把2851M/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager/Android.mk 文件改个名字即可。
+11:23:25 ckati failed with: exit status 1，则用#号注释掉/kernel/android/R/device/tv051/R4_GTV 下的scbc.mk文件中的vendor/tv051/app/prebuilt_app/tvmidware/tv-midware-manager.jar:/system_ext/framework/tv-midware-manager.jar再编译，全编软件的时候记得恢复。 如果整编也会报这个错，则把2851m/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager 删除，或者把2851m/kernel/android/R/vendor/tv051/app/rtk_app/TVMidwareManager/Android.mk 文件改个名字即可。
 
 > 10. 编译完成后输出 build completed successfully （时间）
 > 11. 完成后输出文件输出路径为 kernel\android\R\out\target\product\R4_GTV\system_ext\framework
