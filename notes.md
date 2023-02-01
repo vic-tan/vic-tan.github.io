@@ -40,59 +40,6 @@ header-img: "img/zhihu.jpg"
 > 17. 编译完成后会输出路径为根目录 eg:2851M/Target/V8-T851MGL-LF1V20220421_TAN  
 
 
-***
-### 同步开发代码
-***  
-
-> 1. 连接进入自己的服务器 eg : 10.126.69.28
-> 2. 命令进入需要编译的项目， eg: cd 2851M
-> 3. 切换到开发分支,可执行repo init -u patch 切到对应分支，或者cd 到有仓库的文件目录下git checkout 切换分支
-> 4. 同步当前分支代码 命令:repo sync -j10
-> 5. cd 到需要同步代码的仓库
-> + 预置DB路径 ：2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
-> + RTK 同步Code 仓库路径请看下面RTK 同步Code 代码的仓库查找说明纪要
-> 6. git pull scbc realtek/merlin5/android-11/scbc 更新当前目录或者（repo sync .）
-> 7. git status 查看当前工作区否干净
-> 8. git log 或者git log -&#45;oneline查看日志并检查当前分支是否正确
-> 9. 复制要同步的commit id 
-> 11. git branch -a 查看当前仓库所有分支 
-> 12. git checkout 要同步的分支 eg git checkout scbc/rt51m/master 
-> 13. git log 确定一下分支是否切换成功
-> 14. git cherry-pick ID ，ID 为复制的要同步的commit id
-> 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 
-> 16. git status 此时工作区否为你修改冲突的文件
-> 17. git add 文件名 
-> + 如果是提交操作，需要走git commit -m "add rtk pl db tv" 添加提交信息 然后走20步开始即可
-> 18. git checkout ../..scbc.mk 当前可以回退之前的修改
-> 18. git cherry-pick -&#45;continue 继续同步
-> 19. 如果想取消同步，可以执行git cherry-pick -&#45;abort取消上次操作
-> 20. git push scbc HEAD:rt51m/master 把同步到本地的代码提交到远程服务
-> 21. 如果提示push失败，提示要先pull， 则先回退到上一步 git reset -&#45;hard 重新从6步开始 
-
-
-***
-### RTK 同步Code 代码的仓库查找
-***  
-
-> 1. 一般RTK 会提供一个 sync code Excel表格
-> 2. 打开sync code Excel提交文件
-> 2. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
-> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找
-> 4. 方法一（推荐）
-> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
-> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
-> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker（不带后缀）
-> + 连接自己的服务器 eg 10.126.69.28
-> + 进入项目根目录，打开.repo--> manifests-->mac7p-atv-scbc.xml文件。
-> + 搜索TvApiHooker关键字，查找对应的文件路径即可
-> 5. 方法二
-> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
-> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
-> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker.cpp
-> + 连接自己的服务器 eg 10.126.69.28
-> + rtk 文件一般在/kernel/android/R/vendor/realtek/common/ATV 下，先cd到目录
-> + 输入命令搜索文件名 find -name "TvApiHooker.cpp" 
-> + 搜索到会显示对应的路径eg./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
 
 ***
 ### 编译单个项目
@@ -114,6 +61,7 @@ header-img: "img/zhihu.jpg"
 > 10. 编译完成后输出 build completed successfully （时间）
 > 11. 完成后输出文件输出路径为 kernel\android\R\out\target\product\R4_GTV\system_ext\framework
 > + 中间件输出文件为该目录下的tv-midware-manager.jar文件
+
 
 ***
 ### 编译kernal
@@ -175,6 +123,63 @@ header-img: "img/zhihu.jpg"
 > 5. 执行 mm
 > 6. 生成的jar包路径：RT2851M\kernel\android\R\out\target\common\obj\JAVA_LIBRARIES\exttv-framework_intermediates
 > 7. 注意是classes.jar文件，然后更改名字为exttv-framework.jar 替换中间件TVMidwareManager下rt2841A 下的exttv-framework.jar
+
+
+
+***
+### 同步开发代码
+***  
+
+> 1. 连接进入自己的服务器 eg : 10.126.69.28
+> 2. 命令进入需要编译的项目， eg: cd 2851M
+> 3. 切换到开发分支,可执行repo init -u patch 切到对应分支，或者cd 到有仓库的文件目录下git checkout 切换分支
+> 4. 同步当前分支代码 命令:repo sync -j10
+> 5. cd 到需要同步代码的仓库
+> + 预置DB路径 ：2851M/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel
+> + RTK 同步Code 仓库路径请看下面RTK 同步Code 代码的仓库查找说明纪要
+> 6. git pull scbc realtek/merlin5/android-11/scbc 更新当前目录或者（repo sync .）
+> 7. git status 查看当前工作区否干净
+> 8. git log 或者git log -&#45;oneline查看日志并检查当前分支是否正确
+> 9. 复制要同步的commit id 
+> 11. git branch -a 查看当前仓库所有分支 
+> 12. git checkout 要同步的分支 eg git checkout scbc/rt51m/master 
+> 13. git log 确定一下分支是否切换成功
+> 14. git cherry-pick ID ，ID 为复制的要同步的commit id
+> 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 
+> 16. git status 此时工作区否为你修改冲突的文件
+> 17. git add 文件名 
+> + 如果是提交操作，需要走git commit -m "add rtk pl db tv" 添加提交信息 然后走20步开始即可
+> 18. git checkout ../..scbc.mk 当前可以回退之前的修改
+> 18. git cherry-pick -&#45;continue 继续同步
+> 19. 如果想取消同步，可以执行git cherry-pick -&#45;abort取消上次操作
+> 20. git push scbc HEAD:rt51m/master 把同步到本地的代码提交到远程服务
+> 21. 如果提示push失败，提示要先pull， 则先回退到上一步 git reset -&#45;hard 重新从6步开始 
+
+
+***
+### RTK 同步Code 代码的仓库查找
+***  
+
+> 1. 一般RTK 会提供一个 sync code Excel表格
+> 2. 打开sync code Excel提交文件
+> 2. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
+> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找
+> 4. 方法一（推荐）
+> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
+> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
+> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker（不带后缀）
+> + 连接自己的服务器 eg 10.126.69.28
+> + 进入项目根目录，打开.repo--> manifests-->mac7p-atv-scbc.xml文件。
+> + 搜索TvApiHooker关键字，查找对应的文件路径即可
+> 5. 方法二
+> + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
+> + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
+> + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker.cpp
+> + 连接自己的服务器 eg 10.126.69.28
+> + rtk 文件一般在/kernel/android/R/vendor/realtek/common/ATV 下，先cd到目录
+> + 输入命令搜索文件名 find -name "TvApiHooker.cpp" 
+> + 搜索到会显示对应的路径eg./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
+
 
 
 ***
@@ -351,8 +356,8 @@ header-img: "img/zhihu.jpg"
 ***
 
 > 1. 开机按住tab 键，或者按住Esc键进入bootcode，当显示Realtek> 后输入go r
-> 2. 创建想要挂载对应的文件夹，想挂载tclconfig则 :mkdir /mnt/vendor/tclconfig
-> 3. 把系统文件挂载到新创建的文件夹中,eg:mount -t ext4 /dev/block/？ /mnt/vendor/tclconfig,这个？号根据机型不同可能名字不同,41A/51M 如下面表格
+> 2. 创建想要挂载对应的文件夹，想挂载tclconfig则 :mkdir /mnt/vendor/impdata
+> 3. 把系统文件挂载到新创建的文件夹中,eg:mount -t ext4 /dev/block/？ /mnt/vendor/impdata,这个？号根据机型不同可能名字不同,41A/51M 如下面表格
 > 4. 如果想把文件复制出来，则插上U盘，如果不停有日志打印影响输入，通过执行ps 命令查看所有进程，找到/sbin/loader_m进程的PID，执行kill PID 进程，eg: kill 109 
 > 5. 执行 cp RMCA_ready /mmnt/udisk/sda1/ 把文件拷贝到U盘，文件夹则执行 cp -rf * /mmnt/udisk/sda1/
 > 6. 拷贝完执行 sync 
@@ -483,6 +488,7 @@ header-img: "img/zhihu.jpg"
 | adb 保存log到文件| adb logcat > name.log |
 | 工厂遥控器| 长按PAT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
 | 回退版本| git revert ID |
+| 回退修改| git checkout . |
 | cd 后回退上一次目录 | cd - |
 | 查找当前git 仓库 | git remote -v |
 | 杀app进程 | ps -All -> kill 【pid】 |
@@ -571,6 +577,7 @@ header-img: "img/zhihu.jpg"
 > + 香港DTMB(607)(RTK UI)
 > + Isdb(152)(RTK UI)
 > + DVB(404)(moka UI)
+> + atsc(432)(moka UI)
 > 2. 41A(43寸)
 > + 502(RTK UI)
 > + DVB(500)(moka UI)
