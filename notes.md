@@ -11,7 +11,7 @@ header-img: "img/zhihu.jpg"
 ***
 
 > 1. 连接进入自己的服务器 eg 10.126.69.28
-> 2. 命令进入需要编译的项目， eg: cd 2851M
+> 2. 命令进入需要编译的项目， eg: cd 2851m
 > 3. 确保项目环境干净，防止出现因之前切换过分支导致环境不干净，先清除环境，输入如下清除命令 repo forall -c "pwd && git clean -xfd && git checkout -- ."
 > 4. 确定要编译的分支，然后init编译的分支,可以在以下查找分支
 > + [2841A分支管理链接](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35542944)
@@ -46,7 +46,7 @@ header-img: "img/zhihu.jpg"
 ***
 
 > 1. 确定分支，然后同步代码 repo sync -j8 
-> 2. 进入项目R文件夹,eg：2851M/kernel/android/R
+> 2. 进入项目R文件夹,eg：2851m/kernel/android/R
 > 3. 执行脚本 source build/envsetup.sh
 > 5. 执行 lunch 找到对应的项目序号 
 > 6. 2851M/2841A 序号为3 所以我们一般输入lunch 3 
