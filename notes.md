@@ -573,16 +573,20 @@ header-img: "img/zhihu.jpg"
 ***
 ### 常用TV 尺寸 ID
 ***
-> 1. 51M(55寸)
+> 1. ATV - 51M(55寸)
 > + 香港DTMB(607)(RTK UI)
-> + Isdb(152)(RTK UI)
+> + ISDB(152)(RTK UI)
+> + ISDB(369)(moka UI)
 > + DVB(404)(moka UI)
 > + atsc(432)(moka UI)
-> 2. 41A(43寸)
+> 2. ATV -41A(43寸)
 > + 502(RTK UI)
 > + DVB(500)(moka UI)
 > + atsc(250)(moka UI)
 
+> 3. GTV -51M(43寸)
+> + DVB(137)
+> 4. GTV -41A(43寸)
 
 ***
 ### 查看时间范围内的提交日志
