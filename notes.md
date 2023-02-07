@@ -529,6 +529,7 @@ header-img: "img/zhihu.jpg"
 | HDMI认证问题点收集| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=27980806)|
 | Settings.Global.put() 保存路径 | /data/system/users/0/settings_global.xml|
 | 中间件架构| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875)|
+| 对外工厂生产流程文档| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773)|
 
 
 
