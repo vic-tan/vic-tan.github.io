@@ -554,6 +554,21 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### code 路径
+***
+
+|   名称   | code路径  |
+|  ----  | ----  |
+| ExtTv | kernel/android/R/vendor/tv051/app/exttv-framework/core/java/com/exttv/tv/ExtTv.java |
+| app| kernel/android/R/vendor/realtek/common/ATV/app|
+| rtk_app| kernel/android/R/vendor/tv051/app/rtk_app|
+| RtkTvProvider| kernel/android/R/vendor/realtek/common/ATV/app/RtkTvProvider|
+| RtkKeyInterceptServer | kernel/android/R/vendor/tv051/app/rtk_app/RtkKeyInterceptServer |
+| FactoryAdapter| kernel/android/R/vendor/tv051/app/rtk_app/FactoryAdapter |
+| FactoryTools| kernel/android/R/vendor/tv051/app/rtk_app/FactoryTools |
+| frameworks| kernel/android/R/vendor/realtek/common/ATV/frameworks |
+
+***
 ### apk push 路径
 ***
 
@@ -571,7 +586,7 @@ header-img: "img/zhihu.jpg"
 > 2. \10.118.1.100（2851M）
 
 ***
-### 常用TV 尺寸 ID
+### 常用TV ID 尺寸 ID
 ***
 > 1. ATV - 51M(55寸)
 > + 香港DTMB(607)(RTK UI)
