@@ -9,6 +9,11 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年02月
 ***
+> + 0136575: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接带CEC的功放，CEC为ON，功放关机后几秒马上自动开
+> + 0136584: 【51M-GTV越南C客户/ID:195】在HDMI1信源连接PHILIPS DVP3690K/93 DVD，切换HDMI signal format时闪烁（见视频）
+> + 0136572: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接带CEC的功放或DVD，CEC为ON，TV开关机功放或DVD不跟随开关机
+> + 马来SIPSI 泰国 NBTC认证需要 NBTC认证-GOOGLE TV OAD码流制作
+> + 0136565: 【51M-GTV越南C客户/ID:195】在HDMI1信源连接索尼4KDVD BDP-S6700 DVD，CEC为off，TV开关机后画面闪烁卡顿（见视频）
 > + 0136103: 【南美M客户/41A/ID:325】HDMI信源接22294仪器切换分辨率屏幕瞬间闪绿屏
 
 
