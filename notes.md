@@ -530,12 +530,7 @@ header-img: "img/zhihu.jpg"
 | Settings.Global.put() 保存路径 | /data/system/users/0/settings_global.xml|
 | 中间件架构| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875)|
 | 对外工厂生产流程文档| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773)|
-
-
-
-***
-### git相关路径
-***
+| Git提交规范文档| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/02+Code+Review](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/02+Code+Review)|
 
 
 ***
@@ -591,6 +586,7 @@ header-img: "img/zhihu.jpg"
 > 1. ATV - 51M(55寸)
 > + 香港DTMB(607)(RTK UI)
 > + ISDB(152)(RTK UI)
+> + dvb(10)(RTK UI 带卫星)
 > + ISDB(369)(moka UI)
 > + DVB(404)(moka UI)
 > + atsc(432)(moka UI)
