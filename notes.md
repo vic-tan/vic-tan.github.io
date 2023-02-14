@@ -494,7 +494,7 @@ header-img: "img/zhihu.jpg"
 | 杀app进程 | ps -All -> kill 【pid】 |
 | 获取TV 最上层activity | adb shell dumpsys activity activities |
 | 获取TV 所有栈activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
-
+| 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->urat0_enable enable—>re|
 
 ***
 ### 相关路径
@@ -562,6 +562,25 @@ header-img: "img/zhihu.jpg"
 > 6. 升级img 软件
 
 
+***
+### 预制频道表更新方法
+***
+
+> 1. 找到中间件com.tv.tvmidwaremanager.constant.TvContractEx 类，区分预制频道各种Input type 
+> + TYPE_DTV_CABLE = 0;
+> + TYPE_DTV_ANTENNA = 1;
+> + TYPE_DTV_SATELLITE = 2;
+> + TYPE_ATV = 8;
+> + TYPE_ATV_CABLE = 9;
+> + TYPE_OTHERS = 10;
+> + TYPE_ATSC_CABLE = 11;
+> + TYPE_ATSC_ANTENNA = 12;
+> + TYPE_ISDB_CABLE = 13;
+> + TYPE_ISDB_ANTENNA = 14;
+> 2. 把/home/lifei/2851m-dev/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/factorydata_app 目录下各工厂db 数据下载出来
+> 3. 用SQLite 工具打开 ，打开SQL 编译器
+> 4. SQL查询select input_type,package_name,type,display_number,display_name from channels
+> 5. 根据input_type类型把display_number得到对应的表即可
 
 ***
 ### apk push 路径
