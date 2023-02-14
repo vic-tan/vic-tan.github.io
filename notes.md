@@ -162,16 +162,16 @@ header-img: "img/zhihu.jpg"
 
 > 1. 一般RTK 会提供一个 sync code Excel表格
 > 2. 打开sync code Excel提交文件
-> 2. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
-> 3. 如果在路径栏无法直接定位路径，可以按下面方法寻找
-> 4. 方法一（推荐）
+> 3. 在表格中找到路径栏，一般文件夹是以_，从左到右即为服务器中的路径
+> 4. 如果在路径栏无法直接定位路径，可以按下面方法寻找
+> 5. 方法一（推荐）
 > + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
 > + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
 > + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker（不带后缀）
 > + 连接自己的服务器 eg 10.126.69.28
 > + 进入项目根目录，打开.repo--> manifests-->mac7p-atv-scbc.xml文件。
 > + 搜索TvApiHooker关键字，查找对应的文件路径即可
-> 5. 方法二
+> 6. 方法二
 > + 找到Excel 中的最一栏，以http://10.126.16.60/ 开头的路径，这个是git提交路径 
 > + 把开找到的链接，在信息行中，找到tree 文字，然后行点tree 进入。
 > + 找到这笔提交的相关文件的关键搜索文字 eg: 如TvApiHooker.cpp
@@ -180,6 +180,16 @@ header-img: "img/zhihu.jpg"
 > + 输入命令搜索文件名 find -name "TvApiHooker.cpp" 
 > + 搜索到会显示对应的路径eg./frameworks/native/ExtTv/src/TvApiHooker/TvApiHooker.cpp。
 
+
+
+***
+### gerrit 找仓库查找
+*** 
+
+> 1. 先按【RTK 同步Code 代码的仓库查找】找到代码对应的路径
+> 2. 然后进入路径执行git remote -v
+> 3. 显示出来的以/kernel到最后面就是仓库路径
+> 4. 打开 gerrit—> Projects->List->Filter->输入搜索仓库路径-> 找到仓库路径然后点击gitWeb-> 显示出的heads即是当前仓库的所有分支 
 
 
 ***
