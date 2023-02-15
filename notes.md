@@ -146,6 +146,7 @@ header-img: "img/zhihu.jpg"
 > 13. git log 确定一下分支是否切换成功
 > 14. git cherry-pick ID ，ID 为复制的要同步的commit id
 > 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 
+> 15. 修改提交信息git commit --amend ——>control+x ——> Y回车
 > 16. git status 此时工作区否为你修改冲突的文件
 > 17. git add 文件名 
 > + 如果是提交操作，需要走git commit -m "add rtk pl db tv" 添加提交信息 然后走20步开始即可

@@ -9,6 +9,7 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年02月
 ***
+> + 0136904: 【41A_GTV/印度A客户ID:103】进入Settings-inputs-应去掉HDMI Signal Formart，同RT2841A设计
 > + 0136615: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接PHILIPS DVP3690K/93 DVD，CEC为ON，info信息栏设备名称一直变化（见视频）
 > + 0136575: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接带CEC的功放，CEC为ON，功放关机后几秒马上自动开
 > + 0136584: 【51M-GTV越南C客户/ID:195】在HDMI1信源连接PHILIPS DVP3690K/93 DVD，切换HDMI signal format时闪烁（见视频）
