@@ -561,6 +561,16 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### toDosk
+***
+|   名称   | 临时密码  |
+|  ----  | ----  |
+| mac | w69nx49k |
+| windowns home| 3u9uj986 |
+| windowns pc| 7e1zuy60 |
+
+
+***
 ### 全擦升级
 ***
 
