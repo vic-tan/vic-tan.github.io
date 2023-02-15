@@ -521,7 +521,7 @@ header-img: "img/zhihu.jpg"
 | 41A抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841A机芯项目档案 |
 | 41抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2841机芯项目档案 |
 | 51抄Key址址 | https://odm-design-center-hz.tclking.com/svn/Project_Document/RT2851机芯项目档案 |
-| 红屏断言 |https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp |
+| 红屏断言 |[https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp](https://odm-design-center-hz.tclking.com/svn/scbc_apps/trunk/app/src/LogApp) |
 | 新编译软件 |ftp://10.118.1.85/ProjectSoftware/TEST/MOKA-AMCS/ |
 | 2851M代码管理| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35523632)|
 | 问题测试表| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60701669](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=60701669) |
@@ -542,6 +542,10 @@ header-img: "img/zhihu.jpg"
 | 中间件架构| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=35540875)|
 | 对外工厂生产流程文档| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295773)|
 | Git提交规范文档| [https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/02+Code+Review](https://rd-mokadisplay.tcl.com/kms/display/SWHelloWorld/02+Code+Review)|
+| 频道频道表| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)|
+| 软件工厂支持 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769)|
+| 生产适应性 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670)|
+
 
 
 ***
