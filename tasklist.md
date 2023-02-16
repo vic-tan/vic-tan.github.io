@@ -9,6 +9,11 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年02月
 ***
+
+> + USB抓log改善措施，添加tv_info.bin TV 信息显示
+> + sharp logo错问题复盘添加USB Upgrade 升级成功标识 及串口检测
+> + GTV 工厂菜单添加USB DB TO TV 选项
+> + LED 松下远场语音恒嘉生产语音功能开发
 > + 0136904: 【41A_GTV/印度A客户ID:103】进入Settings-inputs-应去掉HDMI Signal Formart，同RT2841A设计
 > + 0136615: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接PHILIPS DVP3690K/93 DVD，CEC为ON，info信息栏设备名称一直变化（见视频）
 > + 0136575: 【51M-GTV越南C客户/ID:195】TV HDMI1信源连接带CEC的功放，CEC为ON，功放关机后几秒马上自动开
