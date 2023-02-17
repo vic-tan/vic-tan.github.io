@@ -145,7 +145,7 @@ header-img: "img/zhihu.jpg"
 > 12. git checkout 要同步的分支 eg git checkout scbc/rt51m/master 
 > 13. git log 确定一下分支是否切换成功
 > 14. git cherry-pick ID ，ID 为复制的要同步的commit id
-> 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 
+> 15. 如果报错报黄说明有冲突，需要找到冲突文件，修改冲突文件内容，再提交 ，可以通过git diff 来查看冲突文件
 > 15. 修改提交信息git commit --amend ——>control+x ——> Y回车
 > 16. git status 此时工作区否为你修改冲突的文件
 > 17. git add 文件名 
