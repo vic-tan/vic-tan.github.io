@@ -568,11 +568,11 @@ header-img: "img/zhihu.jpg"
 ***
 ### toDosk
 ***
-|   名称   | 临时密码  |
-|  ----  | ----  |
-| mac | w69nx49k |
-| windowns home| 3u9uj986 |
-| windowns pc| 7e1zuy60 |
+|   名称  | 设备代码 | 临时密码  |
+|  ----  | ----  | ----  |
+| mac | 505 707 890 |w69nx49k |
+| windowns home| 223 944 126 | 3u9uj986 |
+| windowns pc| 370 234 361| 7e1zuy60 |
 
 
 ***
