@@ -370,7 +370,7 @@ header-img: "img/zhihu.jpg"
 > 2. 创建想要挂载对应的文件夹，想挂载tclconfig则 :mkdir /mnt/vendor/impdata
 > 3. 把系统文件挂载到新创建的文件夹中,eg:mount -t ext4 /dev/block/？ /mnt/vendor/impdata,这个？号根据机型不同可能名字不同,41A/51M 如下面表格
 > 4. 如果想把文件复制出来，则插上U盘，如果不停有日志打印影响输入，通过执行ps 命令查看所有进程，找到/sbin/loader_m进程的PID，执行kill PID 进程，eg: kill 109 
-> 5. 执行 cp RMCA_ready /mmnt/udisk/sda1/ 把文件拷贝到U盘，文件夹则执行 cp -rf * /mmnt/udisk/sda1/
+> 5. 执行 cp RMCA_ready /mmnt/udisk/sda1/ 把文件拷贝到U盘，文件夹则执行 cp -rf * /mmnt/udisk/sda1/ 或者在要拷贝的上一级目录 cp -r impdata /mmnt/udisk/sda1/
 > 6. 拷贝完执行 sync 
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/ 或者mount查询 （正常开机后输此命令才可以查询，然后复现出来从第1步开始），如下表格    
