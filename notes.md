@@ -375,6 +375,22 @@ header-img: "img/zhihu.jpg"
 > 7. 第6步不执行，有可能无法复制  
 > 8. TV的挂载路径可以通过命令 ls -l dev/block/by-name/ 或者mount查询 （正常开机后输此命令才可以查询，然后复现出来从第1步开始），如下表格    
 
+> 9. 示例impdata
+> + mkdir /mnt/vendor/impdata
+> + mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata
+> + ps
+> + kill 110
+> + cd mnt/vendor/impdata
+> + cp -rf * /mmnt/udisk/sda1/
+
+> 9. 示例factory
+> + mkdir /mnt/vendor/factory
+> + mount -t ext4 /dev/block/mmcblk0p4 /mnt/vendor/factory
+> + ps
+> + kill 110
+> + cd mnt/vendor/factory
+> + cp -rf * /mmnt/udisk/sda1/
+
 2851M  
 
 |  TV路径   | 对应挂载路径  |
