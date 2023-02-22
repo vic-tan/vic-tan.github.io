@@ -657,6 +657,7 @@ header-img: "img/zhihu.jpg"
 
 > 3. GTV -51M(43寸)
 > + DVB(137)
+> + colombia(209)
 > 4. GTV -41A(43寸)
 >
 ***
