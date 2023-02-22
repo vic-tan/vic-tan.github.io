@@ -10,6 +10,11 @@ header-img: "img/orange.jpg"
 ### 2023年02月
 ***
 
+> + 
+> + 
+> + 0137220: [EU]4K signal is output to the screen when 4K up-conversion playback of FHD Blu-ray Disc is performed via HDMI.
+> + 0137198: [EU]HDR content in HDMI input is played as SDR.
+> + 0137232: 【阿联酋EVVOLI/2841A/ID:322】分辨率切换到480i59时，会花屏一下。
 > + USB抓log改善措施，添加tv_info.bin TV 信息显示
 > + sharp logo错问题复盘添加USB Upgrade 升级成功标识 及串口检测
 > + GTV 工厂菜单添加USB DB TO TV 选项

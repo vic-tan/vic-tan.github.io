@@ -448,7 +448,7 @@ header-img: "img/zhihu.jpg"
 ### 预制频道通道查找
 ***
 > 1. 用SQLiteStudio 打开DB
-> 2. 打开SQL编辑器，查找 select type ,display_number, input_type from channels
+> 2. 打开SQL编辑器，查找 select package_name,type,input_type ,display_number from channels
 > 3. input_type 即为通道，可以在中间件项目CommDefine 查找，或下表格。
 
 |  通道值   | 通道  |
@@ -658,7 +658,7 @@ header-img: "img/zhihu.jpg"
 > 3. GTV -51M(43寸)
 > + DVB(137)
 > 4. GTV -41A(43寸)
-
+>
 ***
 ### 查看时间范围内的提交日志
 ***
