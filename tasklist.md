@@ -9,8 +9,8 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年02月
 ***
-> + 
-> + 
+> + GTV 2841A HDMI 认证EDID 问题修改
+> + 0137581: 【51M GTV/欧洲SS客户/ID:221】国家为法国，ANTENNA通道下，播放法国流，HDMI1接SOUNDBAR，出现声音断断续续，卡顿的现象。
 > + 0137534: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，碟机开机或者电视端开机，信源在主页界面下
 > + 0137536: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，电视端开机，DVD不跟随唤醒
 > + 0137537: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，电视端开机，按source键切换信源至HDMI3通道，DVD不能被唤醒。
