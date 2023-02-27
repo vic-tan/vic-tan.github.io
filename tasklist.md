@@ -9,9 +9,19 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年02月
 ***
-
 > + 
 > + 
+> + 0137534: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，碟机开机或者电视端开机，信源在主页界面下
+> + 0137536: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，电视端开机，DVD不跟随唤醒
+> + 0137537: 【51M GTV/欧洲SS客户/ID:221】电视端CEC功能都为开的状态，HDMI3口接CEC碟机，HDMI1口接eARC功能的soundbar，HDMI3通道下关机后，电视端开机，按source键切换信源至HDMI3通道，DVD不能被唤醒。
+> + 0137538: 【51M GTV/欧洲SS客户/ID:221】当前通道在非HDMI通道，CEC功能设置为打开状态，切换信源至接有CEC功能碟机的HDMI通道，DVD不能被唤醒
+> + 0137539: 【51M GTV/欧洲SS客户/ID:221】当前通道在非HDMI通道，CEC功能设置为打开状态，按DVD的POWER键开机碟机，通道不跳转至HDMI通道。
+> + 0137541: 【51M GTV/欧洲SS客户/ID:221】USB通道播放片源1920x1080（12.2Mbps）（AVC）(AAC,AC-3)(219M).MKV,三个音轨切换播放，出现无声音现象。
+> + 0137543: 【51M GTV/欧洲SS客户/ID:221】HDMI1通道接soundbar,USB通道播放片源1920x1080（18Mbps)（MPEG2）(AC-3)(231M).mpg,按遥控器左右方向键后，soundbar出现无声音现象。
+> + 0137446: 【41A GTV/Acer客户/ID:101】HDMI测试，只做H14b但同时要保留HDR特性，需要在DUT的EDID1.4中添加HDR模块
+> + 0137148: 【GTV_51M/台湾松下/PID112】升级软件后，预置频道，首次和第二次皆无效，第三次才预置成功
+> + 0137358: [id139,V10041]P模式按power键关机-》等待20秒开机，操作串口，TV不响应
+> + 酒店模式添加断电上电/待机清除app 数据功能
 > + 0137220: [EU]4K signal is output to the screen when 4K up-conversion playback of FHD Blu-ray Disc is performed via HDMI.
 > + 0137198: [EU]HDR content in HDMI input is played as SDR.
 > + 0137232: 【阿联酋EVVOLI/2841A/ID:322】分辨率切换到480i59时，会花屏一下。
