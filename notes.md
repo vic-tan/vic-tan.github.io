@@ -340,6 +340,13 @@ header-img: "img/zhihu.jpg"
 | RTK DTV | am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity|
 
 
+
+***
+### 新工厂遥控器P模式恢复老的协议
+***
+> 1. 因为新的工厂遥控器只能关P模式不能打开P模式，而老的工厂遥控器可关可开，用新的遥控器恢复老的遥控器协议方法
+> + SET+EXIT 3秒进入设置模式（闪灯）-->P（闪灯）-->0-->OK（闪灯）-->2-->1（闪灯）-->2-->0-->0-->OK（闪灯）-->5-->SET（闪灯）-->4-->5-->SET（闪灯）-->6-->SET（闪灯）-->4-->5-->SET（闪灯）-->5-->SET（闪灯）-->6-->3-->SET
+
 ***
 ### 修改屏幕倒转
 ***
