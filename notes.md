@@ -528,7 +528,9 @@ header-img: "img/zhihu.jpg"
 | 杀app进程 | ps -All -> kill 【pid】 |
 | 获取TV 所有栈activity| adb shell dumpsys activity activities |
 | 获取TV 最上层activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
-| 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->urat0_enable enable—>re|
+| 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->找到urat0_enable enable—>输入urat0_enable->re|
+| 工厂遥控器查看键值 | logcat -s KCR-KeyConverter\|logcat -s getevent|
+
 
 ***
 ### 相关路径
@@ -660,12 +662,15 @@ header-img: "img/zhihu.jpg"
 > + atsc(432)(moka UI)
 > 2. ATV -41A(43寸)
 > + 502(RTK UI)
-> + DVB(500)(moka UI)
+> + DVB137(RTK UI)
+> + DVB(122)(moka UI)
 > + atsc(250)(moka UI)
+
 
 > 3. GTV -51M(43寸)
 > + isdb(137)
-> + colombia(209)
+> + colombia(209/112)
+> + dvb(12)
 > 4. GTV -41A(43寸)
 >
 ***
