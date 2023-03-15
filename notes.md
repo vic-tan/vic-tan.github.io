@@ -438,7 +438,20 @@ header-img: "img/zhihu.jpg"
 > 3. 串口工具输入命令mp_restore将镜像写入emmc
 > 4. 大约需要20分钟左右
 > 5. 恢复完成后，断电重启电视
-> 5. 验证P模式，Uart Enable，预置的频点，音量，power mode，是否正确
+> 6. 验证P模式，Uart Enable，预置的频点，音量，power mode，是否正确
+
+
+***
+### RTK extTv 方法调试(比如调试extledControl 方法)
+***
+> 1. 进入串口
+> 2. su
+> 3. setenforce 0
+> 4. exttvtest 
+> 5. 选27（facFunctionSet）
+> 6. ledControl
+> 7. 输入1或者2或者3，可以控制亮光颜色
+> 8. 看结果
 
 
 
