@@ -543,7 +543,7 @@ header-img: "img/zhihu.jpg"
 | 获取TV 最上层activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
 | 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->找到urat0_enable enable—>输入urat0_enable->re|
 | 工厂遥控器查看键值 | logcat -s KCR-KeyConverter\|logcat -s getevent|
-| code 查找文件或关键字 | find -name "TvApiHooker.cpp" \|grep -nr 关键字|
+| code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYP)|
 
 
 ***
@@ -670,7 +670,7 @@ header-img: "img/zhihu.jpg"
 
 | 名称 | 方案 |  DVB | ATSC |  ISDB |  Colombia | DTMB |
 | :----- | :---- | :---- | :---- | :---- | :---- |
-| ATV（51M）55寸 | RTK UI  | 10(带卫星) | /     | 152   | 152     | 607(香港)  |
+| ATV（51M）55寸 | RTK UI  | 10(带卫星) | /     | 152   | /       | 607(香港)  |
 | ATV（51M）55寸 | moka UI | 404       | 432   | 369   | 449     |  /        |
 | ATV（41A）43寸 | RTK UI  | 137       | /     | /     | /       |  /        |
 | ATV（41A）43寸 | moka UI | 122       | 250   | /     | /       |  /        |
