@@ -666,26 +666,16 @@ header-img: "img/zhihu.jpg"
 ***
 ### 常用TV ID 尺寸 ID
 ***
-> 1. ATV - 51M(55寸)
-> + 香港DTMB(607)(RTK UI)
-> + ISDB(152)(RTK UI)
-> + dvb(10)(RTK UI 带卫星)
-> + ISDB(369)(moka UI)
-> + DVB(404)(moka UI)
-> + atsc(432)(moka UI)
-> 2. ATV -41A(43寸)
-> + 502(RTK UI)
-> + DVB137(RTK UI)
-> + DVB(122)(moka UI)
-> + atsc(250)(moka UI)
 
+| 名称 | 方案 |  DVB | ATSC |  ISDB |  Colombia | DTMB |
+| :----- | :---- | :---- | :---- | :---- | :---- |
+| ATV（51M）55寸 | RTK UI  | 10(带卫星) | /     | 152   | 152     | 607(香港)  |
+| ATV（51M）55寸 | moka UI | 404       | 432   | 369   | 449     |  /        |
+| ATV（41A）43寸 | RTK UI  | 137       | /     | /     | /       |  /        |
+| ATV（41A）43寸 | moka UI | 122       | 250   | /     | /       |  /        |
+| GTV（51M）43寸 | RTK  UI | 12        | /     | 137   | 209/112 |  /        |
+| GTV（41A）43寸 | RTK  UI | 12        | /     | 137   | 209/112 |  /        |
 
-> 3. GTV -51M(43寸)
-> + isdb(137)
-> + colombia(209/112)
-> + dvb(12)
-> 4. GTV -41A(43寸)
->
 ***
 ### 查看时间范围内的提交日志
 ***

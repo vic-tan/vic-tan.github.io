@@ -9,10 +9,10 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年03月
 ***
-> + 
-> + 
-> + 
-> + 
+> + 0138780: [EU][OTA] Export hotel.bin from user menu Export to USB
+> + 0138541: 【2851M/越南Casper/ID:198】NVM reset后，系统没有自动重启。（见一次）
+> + 0139115: 【北非B客户/41AGTV/ID:112】工厂NVM复位后一直在绿屏界面，提示nvm is running
+> + 0139062: 【台湾松下客户场测问题】工厂菜单shop之后，开机没有进主页
 > + 0138350: [RT2841A/中美N客户/ID:348] shop复位后设置菜单里锁功能数据没有清除
 > + 0138575: 【51M-GTV/印度P客户/ID:138】ARC接松下B100功放，TV待机再开机，声音从电视输出，查看output显示HDMI-ARC
 > + 0138276: 【墨西哥Cobia/2851M/ID:】HDMI3个端口都无法输出图像声音。
