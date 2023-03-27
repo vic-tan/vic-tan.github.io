@@ -9,6 +9,11 @@ header-img: "img/orange.jpg"
 ***
 ### 2023年03月
 ***
+> + 
+> + 
+> + 
+> + 
+> + 0139419: 【RT2851M/RT2841A台湾客户PID：145/146/147/148/149】打開酒店模式，開機，信號源設定在HDMI 1，斷電後隔一下再上電、開機，無信號
 > + 0138780: [EU][OTA] Export hotel.bin from user menu Export to USB
 > + 0138541: 【2851M/越南Casper/ID:198】NVM reset后，系统没有自动重启。（见一次）
 > + 0139115: 【北非B客户/41AGTV/ID:112】工厂NVM复位后一直在绿屏界面，提示nvm is running
