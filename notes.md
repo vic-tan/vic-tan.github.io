@@ -470,6 +470,7 @@ header-img: "img/zhihu.jpg"
 > 1. 用SQLiteStudio 打开DB
 > 2. 打开SQL编辑器，查找 select package_name,type,input_type ,display_number from channels
 > 3. input_type 即为通道，可以在中间件项目CommDefine 查找，或下表格。
+> 4. 预制频道通道维护表[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)
 
 |  通道值   | 通道  |
 |  ----  | ----  |
@@ -544,7 +545,8 @@ header-img: "img/zhihu.jpg"
 | 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->找到urat0_enable enable—>输入urat0_enable->re|
 | 工厂遥控器查看键值 | logcat -s KCR-KeyConverter\|logcat -s getevent|
 | code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYP\ =\ 1)|
-
+| 串口设置Global | settings put global 字段 值|
+| 串口设置prop属性 | setprop 字段 值|
 
 ***
 ### 相关路径
