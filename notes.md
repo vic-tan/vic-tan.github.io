@@ -857,3 +857,4 @@ header-img: "img/zhihu.jpg"
     |65| 阿尔及利亚Stream system工厂 |STREAM|
     |66| 瓜多尔Audioelec工厂 |AUDIOELEC|
     |67| 阿尔及利亚Brandt工厂 |BRANDT|
+    |68| 埃及 MTI 工厂 |MTI|
