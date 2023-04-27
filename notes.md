@@ -506,7 +506,8 @@ header-img: "img/zhihu.jpg"
 > 4. 报Project ID code err 时，把白平衡工具SNO项中的P-ID check的勾去掉
 > 5. 报MAC addr code or net err 时，把白平衡工具SNO项中的MACcheck的勾去掉
 > 6. 报SW code err 时，把白平衡工具SNO项中的sw ver option 和ignore-chk的勾选
-> 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可a
+> 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可
+> 8. 报 HDMI high light C-A err 表示色温仪未校验证
 
 ***
 ### 22293仪常见问题
@@ -734,8 +735,8 @@ header-img: "img/zhihu.jpg"
 
 > 1.  git cherry-pick xxx_id1..xxx_id3
 > + 比如commit id信息为：90f1ce4d73c5dc63f46fa61984a6bb878f47374
-> 2. 执行git reset --soft HEAD^操作
-> + 对应HEAD即上述commit id信息 git reset --soft 90f1ce4d73c5dc63f46fa61984a6bb878f47374^
+> 2. 执行git reset -&#45;soft HEAD^操作
+> + 对应HEAD即上述commit id信息 git reset -&#45;soft 90f1ce4d73c5dc63f46fa61984a6bb878f47374^
 > + 说明：最后的符号^记得不要漏掉,此时通过git status时，可以看到git add 的文件(绿色）
 > 3. git reset file_name
 > + 通过git reset file_name 操作后，再git status可以看到红色的修改文件
