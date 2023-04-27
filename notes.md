@@ -744,6 +744,12 @@ header-img: "img/zhihu.jpg"
 > + 通过git checkout modify_file还原至修改之前状态
 
 
+***
+### R+ 断电上电串口不输出修改串口状态输出logcat
+***
+cd /mnt/vendor/factory/bin_panel 
+sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h 
+sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup 
 
 ***
 ### Mac iTerm2 设置命令别名方法
@@ -859,3 +865,32 @@ header-img: "img/zhihu.jpg"
     |66| 瓜多尔Audioelec工厂 |AUDIOELEC|
     |67| 阿尔及利亚Brandt工厂 |BRANDT|
     |68| 埃及 MTI 工厂 |MTI|
+
+
+***
+### 工厂遥控器
+***
+*|键名 |功能 |  
+| :----- | :---- |
+    | VGA/Menu | 打开设置菜单| 
+    | TV | DTV| 
+    | Cable | ATV| 
+    | Source | 打开信源列表 | 
+    | CMP1 | 现在没用，以前是做YPbPr /亚马逊的3P项目用来触发wifi强度获取| 
+    | 3D | 蓝牙 | 
+    | OOB | 重位 | 
+    | RATLE | ATV 音量80 | 
+    | C.TEMP | 调色温 | 
+    | PW | 进老化/退老化 | 
+    | P | 开P模式/关P模式 | 
+    | USB | madioplay | 
+    | SN | 进入/退出工厂售后界面 |
+    | WIFI | 打开WIFI界面 |
+***
+### 常用串口指令表
+***
+*|别名 |指令 |  
+| :----- | :---- |
+    | 远场语音模块状态 | AA 07 97 28 00 5E 0D| 
+    | 启动LED控制 | AA 07 FC 05 12 77 5E| 
+    | LED控制状态查询 | AA 07 FC 05 13 67 7F| 
