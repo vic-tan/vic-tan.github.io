@@ -525,8 +525,10 @@ header-img: "img/zhihu.jpg"
 |  ----  | ----  |
 | 系统升级 | 连接串口->reboot->长按tab等待日志出来 |
 | 盲切ID  | 按遥控器0 6 2 5 9 8 MENU +ID    注：（ ID10 是010  ID 是三位数） |
+
 | 键盘及遥控器切ID  | 062598 menu 047 前面这数字要用一排的那行数字输入，id 是三位数 |
-| 串口切ID  | 选择中切ID行，input text ID |
+| 切ID  | 选择中切ID行，input text ID |
+| 串口切ID  | projectidchanger->按enter 然后会弹出来所有的model ini文件，前面有数字，再输入数字就可以切到对应的project了|
 | 串口输入按键  | input keyevent 106（键值） |
 | 改屏参 | 串口工具->断电上电->长按ESC(出现Realtek)->panel->选择序号->re(重启) |
 | 绑定遥控器 | 串口工具->断电上电->长按ESC(出现Realtek)->irda ->输入遥控器品牌序号（0为自动识别）-> irda_filter_disable->reset |
