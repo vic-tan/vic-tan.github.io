@@ -553,6 +553,7 @@ header-img: "img/zhihu.jpg"
 | code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYP\ =\ 1)|
 | 串口设置Global | settings put global 字段 值|
 | 串口设置prop属性 | setprop 字段 值|
+| 设置当前文件夹下所有文件权限 | chmod 777 . -R |
 
 ***
 ### 相关路径
@@ -879,10 +880,11 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | Cable | ATV| 
     | Source | 打开信源列表 | 
     | CMP1 | 现在没用，以前是做YPbPr /亚马逊的3P项目用来触发wifi强度获取| 
-    | 3D | 蓝牙 | 
+    | 3D | 打开蓝牙列表 | 
     | OOB | 重位 | 
     | RATLE | ATV 音量80 | 
     | C.TEMP | 调色温 | 
+    | L.SR | 打开按键模式 | 
     | PW | 进老化/退老化 | 
     | P | 开P模式/关P模式 | 
     | USB | madioplay | 
@@ -896,3 +898,6 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | 远场语音模块状态 | AA 07 97 28 00 5E 0D| 
     | 启动LED控制 | AA 07 FC 05 12 77 5E| 
     | LED控制状态查询 | AA 07 FC 05 13 67 7F| 
+    | 喇叭 | AA 07 9F 1D 00 0D CC| 
+    | 光纤 | AA 07 9F 1D 01 1D ED|
+    | HDMI-ARC | AA 07 9F 1D 03 3D AF|  
