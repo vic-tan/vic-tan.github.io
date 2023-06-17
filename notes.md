@@ -746,6 +746,14 @@ header-img: "img/zhihu.jpg"
 > 4. git checkout file_name
 > + 通过git checkout modify_file还原至修改之前状态
 
+***
+### git push 未reView 需要回退的情况
+***
+
+> 1.  先在git 上 rebase
+> 2. git reset id
+> 3. git checkout -- .
+
 
 ***
 ### R+ 断电上电串口不输出修改串口状态输出logcat
