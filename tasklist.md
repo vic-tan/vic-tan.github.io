@@ -26,6 +26,8 @@ header-img: "img/orange.jpg"
 > + 0143444: 【51M/ATSC/ID243】RTK UI MX预置频道数据导入
 > + 0143477: 【51M/ATSC/ID243】RTK UI CVT预置频道数据导入
 > + 0142988: 【51M/ATSC/ID244】HZ_ODM_RTKUI预置频道导入
+> + 0144301: 【51M/ATSC/ID243】RTK UI TL预置频道数据导入
+> + 0143021: 【51M/ATSC/ID432】HZ_ODM_MOKA_UI预置频道导入
 > + 0143434: 【51M_GTV】HDMI1信源下读取信源名，返回值发生变化
 
 

@@ -595,6 +595,15 @@ header-img: "img/zhihu.jpg"
 | 生产适应性 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670)|
 
 
+***
+### 修改机器屏参
+***
+
+> 1. su(root)
+> 2. cd /mnt/vendor/tclconfig/panel/(你这个id-使用的屏参)
+> 3. cp /mnt/vendor/tclconfig/panel/（查到屏参）.ini /mnt/vendor/factory/bin_panel/rtkPanel.ini
+> 4. sync
+> 5. reboot
 
 ***
 ### code 路径
@@ -747,12 +756,20 @@ header-img: "img/zhihu.jpg"
 > + 通过git checkout modify_file还原至修改之前状态
 
 ***
+### git 常见用法
+***
+> + git checkout -- . ：清除当前目录下所有未暂存的文件。
+> + git clean -xfd ：清除当前目录下所有Untracked 的文件。
+
+***
 ### git push 未reView 需要回退的情况
 ***
 
-> 1.  先在git 上 rebase
-> 2. git reset id
+> 1. 先在git 上 abandon
+> 2. git reset id (这个id 是回到退到哪一笔的id ,而不是你要回退的那一个)
 > 3. git checkout -- .
+> 4. git log
+> 5. git status
 
 
 ***
