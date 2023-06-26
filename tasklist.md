@@ -14,11 +14,12 @@ header-img: "img/orange.jpg"
 
 > +
 > +
-> +
-> +
-> +
-> +
-> +
+> + 0144606: id:11 试产线反馈测试串口远场语音、led灯无作用
+> + 【专利】智能U盘串口指令自动发送执行系统
+> + 【专利】一种用于批量设置酒店电视机参数的克隆方法及云端系统
+> + 【文档】Factory 酒店模式设计规范
+> + 【文档】2841A&2851M预置频道列表 （https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472）
+> + 【文档】Factory支持的串口指令汇总 （https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74186640）
 > + 0143760: 「V8-GT51MGL-0010603.0001 ID:139」写入白平衡后，工厂菜单上第一次查看白平衡值未更新
 > + 0143764: 「V8-GT51MGL-0010603.0001 ID:139」key抄写返回值概率性错误
 > + 0143744: 【生产适应性问题】音频输出功能设置(0x9F 1D) 指令执行成功，实际功能有响应，UI无变化
