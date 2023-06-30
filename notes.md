@@ -933,6 +933,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
 ***
 ### 常用串口指令表
 ***
+
 |别名 |指令 |  
 | :----- | :---- |
     | 远场语音模块状态 | AA 07 97 28 00 5E 0D| 
