@@ -916,7 +916,8 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | Source | 打开信源列表 | 
     | CMP1 | 现在没用，以前是做YPbPr /亚马逊的3P项目用来触发wifi强度获取| 
     | 3D | 打开蓝牙列表 | 
-    | OOB | 重位 | 
+    | OOB | 复位 | 
+    | Menu | 在ATV/DTV/信源无效果，在HDMI/AV 下显示主菜单，moka UI 在左上角显示菜单，RTK UI 显示设置菜单 | 
     | RATLE | ATV 音量80 | 
     | C.TEMP | 调色温 | 
     | L.SR | 打开按键模式 | 
@@ -926,7 +927,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | SN | 进入/退出工厂售后界面 |
     | WIFI | 打开WIFI界面 |
 
-    
+
 ***
 ### 常用串口指令表
 ***
