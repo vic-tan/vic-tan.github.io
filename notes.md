@@ -496,6 +496,15 @@ header-img: "img/zhihu.jpg"
 > 3. 打开找到AUDIO_ADDNAME ="_tv051_jbl" 后面就是用的aduio fw 名字的后缀
 > 4. 进kernel\fw\audio_fw\4K文件夹 bluecore.audio.text_+ 上的后缀 ,即bluecore.audio.text_tv051_jbl.zip
 
+***
+### 色温标准值
+***
+|  类型   | x  | y  |
+|  ----  | ----  | ----  |
+|  Normal  | 283  | 297  |
+|  Cool    | 267  | 277  |
+|  Warm    | 313  | 329  |
+|  Warm2   | 314  | 329  |
 
 ***
 ### A310色温仪常见问题
@@ -898,6 +907,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
 ***
 ### 工厂遥控器
 ***
+
 *|键名 |功能 |  
 | :----- | :---- |
     | VGA/Menu | 打开设置菜单| 
@@ -915,6 +925,8 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | USB | madioplay | 
     | SN | 进入/退出工厂售后界面 |
     | WIFI | 打开WIFI界面 |
+
+    
 ***
 ### 常用串口指令表
 ***
