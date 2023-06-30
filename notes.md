@@ -499,12 +499,14 @@ header-img: "img/zhihu.jpg"
 ***
 ### 色温标准值
 ***
+
 |  类型   | x  | y  |
-|  ----  | ----  | ----  |
+|  :----  | :----  | :----  |
 |  Normal  | 283  | 297  |
 |  Cool    | 267  | 277  |
 |  Warm    | 313  | 329  |
 |  Warm2   | 314  | 329  |
+
 
 ***
 ### A310色温仪常见问题
@@ -908,7 +910,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
 ### 工厂遥控器
 ***
 
-*|键名 |功能 |  
+|键名 |功能 |  
 | :----- | :---- |
     | VGA/Menu | 打开设置菜单| 
     | TV | DTV| 
@@ -931,7 +933,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
 ***
 ### 常用串口指令表
 ***
-*|别名 |指令 |  
+|别名 |指令 |  
 | :----- | :---- |
     | 远场语音模块状态 | AA 07 97 28 00 5E 0D| 
     | 启动LED控制 | AA 07 FC 05 12 77 5E| 
