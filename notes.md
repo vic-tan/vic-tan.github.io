@@ -928,6 +928,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     | USB | madioplay | 
     | SN | 进入/退出工厂售后界面 |
     | WIFI | 打开WIFI界面 |
+    | SET | 调左右声道平衡-15 ,0 15 循环切 |
 
 
 ***
