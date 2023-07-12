@@ -613,6 +613,7 @@ header-img: "img/zhihu.jpg"
 > 1. su(root)
 > 2. cd /mnt/vendor/tclconfig/panel/(你这个id-使用的屏参)
 > 3. cp /mnt/vendor/tclconfig/panel/（查到屏参）.ini /mnt/vendor/factory/bin_panel/rtkPanel.ini
+> + (55寸) cp /mnt/vendor/tclconfig/panel/UHD_ST5461D12-6.ini /mnt/vendor/factory/bin_panel/rtkPanel.ini
 > 4. sync
 > 5. reboot
 
