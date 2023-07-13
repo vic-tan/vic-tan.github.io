@@ -566,6 +566,8 @@ header-img: "img/zhihu.jpg"
 | 串口设置prop属性 | setprop 字段 值|
 | 设置当前文件夹下所有文件权限 | chmod 777 . -R |
 | 设置mac adb 快捷指令 | ~/.oh-my-zsh/plugins/git/|
+| 抄key 工具测试订单号 | TR_IDX188090A_RD    20230605114801|
+
 
 ***
 ### 相关路径
