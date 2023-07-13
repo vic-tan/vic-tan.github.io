@@ -565,6 +565,7 @@ header-img: "img/zhihu.jpg"
 | 串口设置Global | settings put global 字段 值|
 | 串口设置prop属性 | setprop 字段 值|
 | 设置当前文件夹下所有文件权限 | chmod 777 . -R |
+| 设置mac adb 快捷指令 | ~/.oh-my-zsh/plugins/git/|
 
 ***
 ### 相关路径
