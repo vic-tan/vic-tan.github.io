@@ -27,7 +27,7 @@ header-img: "img/orange.jpg"
 > +
 > +
 > +
-> +
+> + 0145932: 【85N-GTV/约旦G客户/ID:17】：工厂菜单的Picture Mode对比设置的Picture Mode缺少ECO和Vivid模式
 > + 0145820: 【51M/土耳其A客户/PID690.691】HDR10+认证测试，CEC&EDID测试问题  4-2-4测试Fail/4-2-10的测试Fail
 > + 0145747: 【85N-GTV/北非B客户/ID:13】升级完软件，google复位完，查看工厂菜单开机模式是STB，断电再上电后，直接开机
 > + 0145636: 软件U盘OTA 升级后工厂遥控器部分按键无反应

@@ -568,7 +568,8 @@ header-img: "img/zhihu.jpg"
 | 设置mac adb 快捷指令 | ~/.oh-my-zsh/plugins/git/|
 | 抄key GTV 工具测试订单号 | TR_IDX188090A_RD    20230605114801|
 | 抄key R+ 工具测试订单号 | TR_IDK197775B_RD    20230605114801|
-
+| 串口控制台上输入 dumpsys tv_input | 查看LiveTV 信源信息（DTV/ATV/HDMI路径等）|
+| 串口控制台上输入 settings list global | 查看所有全局保存global数据 |
 
 ***
 ### 相关路径
