@@ -8,6 +8,37 @@ header-img: "img/green.jpg"
 
 
 ***
+###  泰国工厂产线上报问题：TV插入USB播放mp3音乐或者mp4视频时，DTV 没有声音。【2023-04-11】
+***
+
+* Mantis ID号
+    >  0144728
+
+* 问题分析
+    > 初步分析时，发现imdpata 下有Rmca_ready key ,Factory 分区也是有RMCA key ，但是Factory 下的的RMCA 并不是impdata 下的Rmca_ready key抄进去的。正常情况下，同一台机器，同一个key， 写入到Factory的RMCA key 的md5 值 是一样的。说明Factory 分区下的RMCA key 是来至于其它key 。只要是完整的RMCA key ,正常只要抄正去了都是有声音的。这种情况说明SOC 或者EMMC 不正确。可能之前抄完key后换过SOC 和EMMC 并且换完后没有再重新抄key。为了验证这种猜想，打开netflix, 发现直接报803 错误，说明其它key 也是不失效。重启TV查看开机日志，打出以下信息，验证了猜想。同时用抄key 工具重新抄key ，发现跟EMMC 和SOC 需要绑定的key都无法抄写。用U盘抓取日志查看rdlog ，也同样找到了Verify key fail, rpmb secure key not match 方案，说明SOC 与EMMC 不匹配
+
+[mmc rpmb get counter][409]verify hmac value fail!
+[rpmb secure key check][677]rpmb secure key is not match!
+[Warning]EMMC RPMB auth key is not match, please check it!
+[Warning]Strongly recommended to remount a new emmc on the board!
+* 解决方法 
+    > * 换新的EMMMC后重抄key
+    > * 换新SOC 和EMMMC 后重抄key
+
+
+***
+### 泰霖反馈通过抄key 工具抄白平衡数据后发现写的入的数据与抄写的数据对不上【2023-08-02】
+***
+
+
+* 问题分析
+    > 泰霖反馈通过抄key 工具抄白平衡数据后发现写的入的数据与抄写的数据对不上，通过查询抄key sn ，是有抄白平衡记录，而且返回了ACK ，通过拷贝出impdata 分区发现并没有在线调白平衡的wb_unchange标识文件，所以调白平衡数据并没有写入到TV ，通过分析抄key 工具日志，发现抄白平衡这一步是抄key 的最后一步。而且代码是先是返回ACK 再去写白平衡数据，所以抄key工具收到ACK 就直接显示pass,因为抄白平衡是最后一步， 怀疑工厂看到抄key 工具pass 就直接断电上了，跟泰霖确实看到pass 就断电了
+* 解决方法 
+    > * 延时抄key 工具指令结束时间。
+
+
+
+***
 ### 工厂NVM复位后一直在绿屏界面，提示nvm is running 或者NVM复位后，电视卡死 。【2023-04-11】
 ***
 
