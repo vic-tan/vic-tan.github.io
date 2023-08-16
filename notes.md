@@ -786,7 +786,7 @@ header-img: "img/zhihu.jpg"
 
 > 1. 先在git 上 abandon
 > 2. git reset id (这个id 是回到退到哪一笔的id ,而不是你要回退的那一个)
-> 3. git checkout -- .
+> 3. git checkout -&#45; .
 > 4. git log
 > 5. git status
 > 6. 如果找不回代码，可到gerrit上找到abandon 对应的记录，打开，找到DOWLOAD ,下载diff.zip
