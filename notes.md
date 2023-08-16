@@ -789,6 +789,8 @@ header-img: "img/zhihu.jpg"
 > 3. git checkout -- .
 > 4. git log
 > 5. git status
+> 6. 如果找不回代码，可到gerrit上找到abandon 对应的记录，打开，找到DOWLOAD ,下载diff.zip
+> 7. 把diff解压放到app 项目根目录下，然后在as 上的git 上输入patch -p1 <patch.diff 即可
 
 
 ***
