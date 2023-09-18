@@ -127,6 +127,17 @@ header-img: "img/zhihu.jpg"
 > 6. 生成的jar包路径：RT2851M\kernel\android\R\out\target\common\obj\JAVA_LIBRARIES\exttv-framework_intermediates
 > 7. 注意是classes.jar文件，然后更改名字为exttv-framework.jar 替换中间件TVMidwareManager下rt2841A 下的exttv-framework.jar
 
+***
+### 编译 factory-adapter-tv051.jar步骤
+***
+
+> 1. cd RT2851M\kernel\android\R
+> 2. 执行source build/envsetup.sh
+> 3. 执行 lunch 9
+> 4. 进到exttv路径：RT2851M/kernel/android/R/vendor/tv051/app/rtk_app/FactoryAdapter
+> 5. 执行 mm
+> 6. 生成的jar包路径：RT2851M\kernel\android\R\out\target\common\obj\JAVA_LIBRARIES\factory-adapter-tv051_intermediates/classes.jar
+> 7. 注意是classes.jar文件，然后更改名字为factory-adapter-tv 替换中间件TVMidwareManager下rt2841A 下的factory-adapter-tv.jar
 
 
 ***
@@ -707,7 +718,7 @@ header-img: "img/zhihu.jpg"
 | 名称 | 方案 |  DVB | ATSC |  ISDB |  Colombia | DTMB |
 | :----- | :---- | :---- | :---- | :---- | :---- |
 | ATV（51M）55寸 | RTK UI  | 10(带卫星) | /     | 152   | /       | 607(香港)  |
-| ATV（51M）55寸 | moka UI | 404       | 432   | 369   | 449     |  /        |
+| ATV（51M）55寸 | moka UI | 404       | 424   | 369   | 480     |  /        |
 | ATV（41A）43寸 | RTK UI  | 137       | /     | /     | /       |  /        |
 | ATV（41A）43寸 | moka UI | 122       | 250   | /     | /       |  /        |
 | GTV（51M）43寸 | RTK  UI | 12        | /     | 137   | 209/112 |  /        |
