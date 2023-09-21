@@ -691,7 +691,7 @@ header-img: "img/zhihu.jpg"
 > + TYPE_ISDB_ANTENNA = 14;
 > 2. 把/home/lifei/2851m-dev/kernel/android/R/device/tv051/R4/custom_images/tclconfig/preset_channel/factorydata_app 目录下各工厂db 数据下载出来
 > 3. 用SQLite 工具打开 ，打开SQL 编译器
-> 4. SQL查询select input_type,package_name,type,display_number,display_name from channels
+> 4. SQL查询select input_type,package_name,type,display_number,display_name,internal_provider_flag1 from channels order by input_type
 > 5. 根据input_type类型把display_number得到对应的表即可
 
 ***
