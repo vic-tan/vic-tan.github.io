@@ -245,31 +245,6 @@ header-img: "img/zhihu.jpg"
 > 5. 输入 go all
 
 
-***
-### 制式（2841&2851机芯制式）
-***
-
-> 1. DVB
-> + ATV ----ATV全，不用切signal type
-> + Cable ---Cable下的DTV------------DVBC
-> + Antena ---Antena下的DTV---------DVBT
-> + Sat --- Sat下的DTV-----------------DVBS
-
-> 2. ISDB（信源列表显示TV，通过signal type切换）
-> + Cable ----只有ATV
-> + Antena ---有ATV和DTV
-
-> 3. ATSC（信源列表显示TV，通过signal type切换）
-> + Cable  ---有ATV和DTV
-> + Antena ---有ATV和DTV
-
-> 4. colombia 中美哥伦比亚 (DVB 6M)
-> + ATV ---有Cable ATV和Antena ATV 通过signal type切换
-> + Antena ---只有DTV
-
-> 5. BTMD ATV全，不用切signal type
-> + Antena ---Antena下的DTV---------DVBT
-
 
 
 ***
@@ -478,26 +453,7 @@ header-img: "img/zhihu.jpg"
 
 
 
-***
-### 预制频道通道查找
-***
-> 1. 用SQLiteStudio 打开DB
-> 2. 打开SQL编辑器，查找 select package_name,type,input_type ,display_number from channels
-> 3. input_type 即为通道，可以在中间件项目CommDefine 查找，或下表格。
-> 4. 预制频道通道维护表[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)
 
-|  通道值   | 通道  |
-|  ----  | ----  |
-| 0 | DTV_CABLE |
-| 1  | DTV_ANTENA |
-| 2  | DTV_SATELLITE  |
-| 8 | ATV |
-| 9 | ATV_CABLE |
-| 10 |OTHERS |
-| 11| ATSC_CABLE |
-| 12| ATSC_ANTENA |
-| 13| ISDB_CABLE |
-| 14| ISDB_ANTENA |
 
 ***
 ### 查看用audio fw
@@ -572,7 +528,7 @@ header-img: "img/zhihu.jpg"
 | 获取TV 最上层activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
 | 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->找到urat0_enable enable—>输入urat0_enable->re|
 | 工厂遥控器查看键值 | logcat -s KCR-KeyConverter\|logcat -s getevent|
-| code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYP\ =\ 1)|
+| code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYPE\ =\ 1)|
 | 串口设置Global | settings put global 字段 值|
 | 串口设置prop属性 | setprop 字段 值|
 | 设置当前文件夹下所有文件权限 | chmod 777 . -R |
@@ -675,7 +631,7 @@ header-img: "img/zhihu.jpg"
 
 
 ***
-### 预制频道表更新方法
+### 预制频道表查找与更新方法
 ***
 
 > 1. 找到中间件com.tv.tvmidwaremanager.constant.TvContractEx 类，区分预制频道各种Input type 
@@ -693,6 +649,12 @@ header-img: "img/zhihu.jpg"
 > 3. 用SQLite 工具打开 ，打开SQL 编译器
 > 4. SQL查询select input_type,package_name,type,display_number,display_name,internal_provider_flag1 from channels order by input_type
 > 5. 根据input_type类型把display_number得到对应的表即可
+> 6. input_type 即为通道，可以在中间件项目CommDefine 查找，或下表格。
+> 7. 预制频道通道维护表[https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)
+
+
+
+
 
 ***
 ### apk push 路径
@@ -724,6 +686,34 @@ header-img: "img/zhihu.jpg"
 | GTV（51M）43寸 | RTK  UI | 12        | /     | 137   | 209/112 |  /        |
 | GTV（41A）43寸 | RTK  UI | 12        | /     | 137   | 209/112 |  /        |
 | R+（）65寸     | RTK  UI | 13        | 30     | 3   | 18      |  /        |
+
+
+
+***
+### 制式（2841&2851机芯制式）
+***
+
+> 1. DVB(8M)
+> + ATV ----ATV全，不用切signal type
+> + Cable ---Cable下的DTV------------DVBC
+> + Antena ---Antena下的DTV---------DVBT
+> + Sat --- Sat下的DTV-----------------DVBS
+
+> 2. ISDB（信源列表显示TV，通过signal type切换）
+> + Cable ----只有ATV
+> + Antena ---有ATV和DTV
+
+> 3. ATSC（信源列表显示TV，通过signal type切换）
+> + Cable  ---有ATV和DTV
+> + Antena ---有ATV和DTV
+
+> 4. colombia 中美哥伦比亚 (DVB 6M)
+> + ATV ---有Cable ATV和Antena ATV 通过signal type切换
+> + Antena ---只有DTV
+
+> 5. BTMD ATV全，不用切signal type
+> + Antena ---Antena下的DTV---------DVBT
+
 
 ***
 ### 查看时间范围内的提交日志
@@ -925,6 +915,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup
     |66| 瓜多尔Audioelec工厂 |AUDIOELEC|
     |67| 阿尔及利亚Brandt工厂 |BRANDT|
     |68| 埃及 MTI 工厂 |MTI|
+    |69| 埃及Fresh 工厂 |FRESH|
 
 
 ***
