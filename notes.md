@@ -615,7 +615,7 @@ header-img: "img/zhihu.jpg"
 | :----- | :---- | :---- |
 | mac | 505 707 890 |w69nx49k |
 | windowns home| 223 944 126 | 3u9uj986 |
-| windowns pc| 370 234 361| 7e1zuy60 |
+| windowns pc| 724 657 086| xvw7iep1 |
 
 
 ***
@@ -711,8 +711,9 @@ header-img: "img/zhihu.jpg"
 > + ATV ---有Cable ATV和Antena ATV 通过signal type切换
 > + Antena ---只有DTV
 
-> 5. BTMD ATV全，不用切signal type
-> + Antena ---Antena下的DTV---------DVBT
+> 5. BTMD （信源列表显示ATV/DTV），不用切signal type
+> + ATV ----ATV全，不用切signal type 
+> + DTV ---Antena下的DTV---------DVBT
 
 
 ***
@@ -770,7 +771,7 @@ header-img: "img/zhihu.jpg"
 > 2. 执行git reset -&#45;soft HEAD^操作
 > + 对应HEAD即上述commit id信息 git reset -&#45;soft 90f1ce4d73c5dc63f46fa61984a6bb878f47374^
 > + 说明：最后的符号^记得不要漏掉,此时通过git status时，可以看到git add 的文件(绿色）
-> 3. git reset file_name
+> 3. git reset file_name 或者git reset . 用来回退全部
 > + 通过git reset file_name 操作后，再git status可以看到红色的修改文件
 > 4. git checkout file_name
 > + 通过git checkout modify_file还原至修改之前状态
