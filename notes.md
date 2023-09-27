@@ -693,23 +693,23 @@ header-img: "img/zhihu.jpg"
 ### 制式（2841&2851机芯制式）
 ***
 
-> 1. DVB(8M)
+> 1. DVB(8M)（eg：惠州工厂DVB制式）OK
 > + ATV ----ATV全，不用切signal type
 > + Cable ---Cable下的DTV------------DVBC
 > + Antena ---Antena下的DTV---------DVBT
 > + Sat --- Sat下的DTV-----------------DVBS
 
-> 2. ISDB（信源列表显示TV，通过signal type切换）
+> 2. colombia 中美哥伦比亚 (DVB 6M) OK
+> + ATV ---有Cable ATV和Antena ATV 通过signal type切换
+> + Antena ---只有DTV
+
+> 3. ISDB（信源列表显示TV，通过signal type切换）（eg：惠州工厂isdb制式）OK
 > + Cable ----只有ATV
 > + Antena ---有ATV和DTV
 
-> 3. ATSC（信源列表显示TV，通过signal type切换）
+> 4. ATSC（信源列表显示TV，通过signal type切换）(eg:RTK 泰林工厂ATSC制式数据)(OK)
 > + Cable  ---有ATV和DTV
 > + Antena ---有ATV和DTV
-
-> 4. colombia 中美哥伦比亚 (DVB 6M)
-> + ATV ---有Cable ATV和Antena ATV 通过signal type切换
-> + Antena ---只有DTV
 
 > 5. BTMD （信源列表显示ATV/DTV），不用切signal type
 > + ATV ----ATV全，不用切signal type 
@@ -793,6 +793,8 @@ header-img: "img/zhihu.jpg"
 > 5. git status
 > 6. 如果找不回代码，可到gerrit上找到abandon 对应的记录，打开，找到DOWLOAD ,下载diff.zip
 > 7. 把diff解压放到app 项目根目录下，然后在as 上的git 上输入patch -p1 <patch.diff 即可
+> 8. 如果自己修改了想打成patch 可以用git diff > changes.patch 方法执行
+
 
 
 ***
