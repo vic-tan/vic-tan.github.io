@@ -531,6 +531,7 @@ header-img: "img/zhihu.jpg"
 | code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYPE\ =\ 1)|
 | 串口设置Global | settings put global 字段 值|
 | 串口设置prop属性 | setprop 字段 值|
+| 串口获取prop属性 | getprop 字段 值 , getprop 是获取所有|
 | 设置当前文件夹下所有文件权限 | chmod 777 . -R |
 | 设置mac adb 快捷指令 | ~/.oh-my-zsh/plugins/git/|
 | 抄key GTV 工具测试订单号 | TR_IDX188090A_RD    20230605114801|
@@ -577,8 +578,9 @@ header-img: "img/zhihu.jpg"
 | 频道频道表| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)|
 | 软件工厂支持 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769)|
 | 生产适应性 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670)|
-
-
+| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611](KMS-生产适应)|
+| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194](KMS-Mantis重点问题)|
+| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656](KMS-生产问题及售后问题)|
 ***
 ### 修改机器屏参
 ***
