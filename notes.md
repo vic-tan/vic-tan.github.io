@@ -578,9 +578,9 @@ header-img: "img/zhihu.jpg"
 | 频道频道表| [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=74159472)|
 | 软件工厂支持 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=65295769)|
 | 生产适应性 | [https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670](https://rd-mokadisplay.tcl.com/kms/pages/viewpage.action?pageId=55456670)|
-| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611](KMS-生产适应)|
-| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194](KMS-Mantis重点问题)|
-| 生产适应性 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656](KMS-生产问题及售后问题)|
+| KMS-生产适应| [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611)|
+| KMS-Mantis重点问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194)|
+| KMS-生产问题及售后问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656)|
 ***
 ### 修改机器屏参
 ***
