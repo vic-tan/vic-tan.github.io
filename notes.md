@@ -779,24 +779,26 @@ header-img: "img/zhihu.jpg"
 > 4. git checkout file_name
 > + 通过git checkout modify_file还原至修改之前状态
 
-***
-### git 常见用法
-***
-> + git checkout -- . ：清除当前目录下所有未暂存的文件。
-> + git clean -xfd ：清除当前目录下所有Untracked 的文件。
 
 ***
 ### git push 未reView 需要回退的情况
 ***
 
 > 1. 先在git 上 abandon
-> 2. git reset id (这个id 是回到退到哪一笔的id ,而不是你要回退的那一个)
+> 2. git reset id (这个id 是回到退到哪一笔的id ,而不是你要回退的那一个),到这一步如果又想提交，可以重新add/commit/push 不需要再走下面的步骤了
 > 3. git checkout -&#45; .
 > 4. git log
 > 5. git status
 > 6. 如果找不回代码，可到gerrit上找到abandon 对应的记录，打开，找到DOWLOAD ,下载diff.zip
 > 7. 把diff解压放到app 项目根目录下，然后在as 上的git 上输入patch -p1 <patch.diff 即可
 > 8. 如果自己修改了想打成patch 可以用git diff > changes.patch 方法执行
+
+
+***
+### git 常见用法
+***
+> + git checkout -- . ：清除当前目录下所有未暂存的文件。
+> + git clean -xfd ：清除当前目录下所有Untracked 的文件。
 
 
 
