@@ -373,7 +373,7 @@ header-img: "img/zhihu.jpg"
 
 > 9. 示例impdata
 > + mkdir /mnt/vendor/impdata
-> + mount -t ext4 /dev/block/mmcblk0p34 /mnt/vendor/impdata
+> + mount -t ext4 /dev/block/mmcblk0p1 /mnt/vendor/impdata
 > + ps
 > + kill 110
 > + cd mnt/vendor/impdata
@@ -540,6 +540,7 @@ header-img: "img/zhihu.jpg"
 | 串口控制台上输入 dumpsys tv_input | 查看LiveTV 信源信息（DTV/ATV/HDMI路径等）|
 | 串口控制台上输入 settings list global | 查看所有全局保存Global.putInt数据 |
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
+| 时时查看应用CPU 点用率| adb shell top |
 
 ***
 ### 相关路径
