@@ -486,6 +486,9 @@ header-img: "img/zhihu.jpg"
 > 6. 报SW code err 时，把白平衡工具SNO项中的sw ver option 和ignore-chk的勾选
 > 7. 报Device ID read err 指TV 没有抄Device ID key 用U盘抄一个key即可
 > 8. 报 HDMI high light C-A err 表示色温仪未校验证
+> 9. HDMI high light err 色温亮度不够，有可能是内置白场没打开
+> 10. MAX lum check Brightness err 最大亮度调不过，有可能是内置白场没打开
+> 11. :WB lum check Brightness err 最大亮度调不过，有可能是内置白场没打开
 
 ***
 ### 22293仪常见问题
