@@ -488,7 +488,7 @@ header-img: "img/zhihu.jpg"
 > 8. 报 HDMI high light C-A err 表示色温仪未校验证
 > 9. HDMI high light err 色温亮度不够，有可能是内置白场没打开
 > 10. MAX lum check Brightness err 最大亮度调不过，有可能是内置白场没打开
-> 11. :WB lum check Brightness err 最大亮度调不过，有可能是内置白场没打开
+> 11. ::WBA lum check Brightness err 内置白场没打开
 
 ***
 ### 22293仪常见问题
