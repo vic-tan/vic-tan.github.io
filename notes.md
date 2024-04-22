@@ -520,7 +520,7 @@ header-img: "img/zhihu.jpg"
 | 串口PASS 返回值| 固定值 AB 05 0A DF 4E （0A 为pass OE或OF 为Fail） |
 | Log过滤关键字| logcat &#124; grep -E "word1 &#124; word2 &#124; word3" |
 | 串口占用输出log| logcat -s  tag > data/log.log 或logcat -s FactoryUart > /data/temp/log.log |
-| adb 保存log到文件| adb logcat > name.log |
+| adb 保存log到文件| adb logcat -s "Factory_log" > name.log |
 | 工厂遥控器| 长按PAT 等上面两个灯长亮后，是RCA协议按000 ，NEC协议按001 ,松下按010 |
 | 回退版本| git revert ID |
 | 回退修改| git checkout . |
