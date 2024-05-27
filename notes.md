@@ -540,6 +540,7 @@ header-img: "img/zhihu.jpg"
 | 抄key GTV 工具测试订单号 | TR_IDX188090A_RD    20230605114801|
 | 抄key R+ 工具测试订单号 | TR_IDK197775B_RD    20230605114801|
 | 抄key 2875P 工具测试订单号 | TR_DHR230539_RD   20231220164801|
+| 抄key 2851F MNT 工具测试订单号 | TR_DHR230534_RD   20240422164802|
 | 串口控制台上输入 dumpsys tv_input | 查看LiveTV 信源信息（DTV/ATV/HDMI路径等）|
 | 串口控制台上输入 settings list global | 查看所有全局保存Global.putInt数据 |
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
