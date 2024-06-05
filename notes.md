@@ -545,6 +545,7 @@ header-img: "img/zhihu.jpg"
 | 串口控制台上输入 settings list global | 查看所有全局保存Global.putInt数据 |
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
 | 时时查看应用CPU 点用率| adb shell top |
+| 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 
 ***
 ### 相关路径
