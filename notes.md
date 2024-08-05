@@ -317,16 +317,14 @@ header-img: "img/zhihu.jpg"
 ### 命令启动Activity界面
 ***
 
-|  名称   | 命令  |
-|  ----  | ----  |
-| 工厂菜单  | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity |
-| moka 设置界面  | am start -n com.apps.tvsettings/com.apps.tvsettings.ui.MainSettings|
-| RTK 设置界面  | am start -n com.realtek.menu/com.realtek.menu.MainActivity|
-| 信源菜单  | am start -n  com.apps.livetv/.SelectInputActivity|
-| ATV搜台  | am start -n com.apps.atv/.atvsetup.AnalogueSetupActivity |
-| RTK ATV  |am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity |
-| DTV搜台  |am start -n com.apps.dtv/.DigitalSetup.DigitalChannelSetupActivity |
-| RTK DTV | am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity|
+| 名称              | 命令                                                                    |
+|-----------------|-----------------------------------------------------------------------|
+| 工厂菜单            | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity        |
+| 工厂菜单         | am start -n com.apps.factory.ui/.factorymenu.FactoryMenuActivity        |
+| 2886N 设置界面 | am start -a android.settings.SETTINGS                                 |
+| RTK 设置界面        | am start -n com.realtek.menu/com.realtek.menu.MainActivity            |
+| RTK ATV         | am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity        |
+| RTK DTV         | am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity |
 
 
 
@@ -547,6 +545,7 @@ header-img: "img/zhihu.jpg"
 | 时时查看应用CPU 点用率| adb shell top |
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
+| 2875P 不显示IP Settings 时| 1、设置ifconfig eth0 hw  ether 28:31:ae:3a:6e:d9 2、ifconfig eth0 down 3、ifconfig eth0 up 4、ifconfig eth0 192.168.1.128 |
 
 
 ***
