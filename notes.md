@@ -544,6 +544,7 @@ header-img: "img/zhihu.jpg"
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
 | 时时查看应用CPU 点用率| adb shell top |
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
+| 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
 | 2875P 不显示IP Settings 时| 1、设置ifconfig eth0 hw  ether 28:31:ae:3a:6e:d9 2、ifconfig eth0 down 3、ifconfig eth0 up 4、ifconfig eth0 192.168.1.128 |
 
