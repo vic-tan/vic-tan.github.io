@@ -547,6 +547,7 @@ header-img: "img/zhihu.jpg"
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
 | 2875P 不显示IP Settings 时| 1、设置ifconfig eth0 hw  ether 28:31:ae:3a:6e:d9 2、ifconfig eth0 down 3、ifconfig eth0 up 4、ifconfig eth0 192.168.1.128 |
+| 2875P 进入Pdata 分区| 1、google reset  2、显示圆圈时按住esc 进入bootcode 3、env set pmode 1 4、env  save 5、re|
 
 
 ***
