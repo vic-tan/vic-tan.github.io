@@ -546,10 +546,7 @@ header-img: "img/zhihu.jpg"
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
-| 2875P 不显示IP Settings 时| 1、设置ifconfig eth0 hw  ether 28:31:ae:3a:6e:d9 2、ifconfig eth0 down 3、ifconfig eth0 up 4、ifconfig eth0 192.168.1.128 |
-| 2875P 进入Pdata 分区| 1、google reset  2、显示圆圈时按住esc 进入bootcode 3、env set pmode 1 4、env  save 5、re|
-
-
+| 串口抓bugreport | 1、出现问题连接串口，输入bugreportz -p  2、执行成功后在data/user de/0/com.android.shell/files/bugreports 3、使用命令拷贝到U 盘中即可取出bugreport 压缩包，如cp ./bugreport-xxx.zip /storage/xxx |
 ***
 ### 相关路径
 ***
@@ -591,6 +588,38 @@ header-img: "img/zhihu.jpg"
 | KMS-生产适应| [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611)|
 | KMS-Mantis重点问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194)|
 | KMS-生产问题及售后问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656)|
+
+
+***
+###  不显示 IP Settings
+***
+
+> 1. 设置mac 地址：ifconfig eth0 hw  ether 28:31:ae:3a:6e:d0
+> 2. 关闭端口：ifconfig eth0 down
+> 3. 打开端口：ifconfig eth0 down
+> 4. 设置静态IP:ifconfig eth0 192.168.1.128
+
+***
+###  2875P/2886n 进入Pdata 分区
+***
+
+> 1. Google reset
+> 2. 当重启进入到数据显示圆圈时按住esc 进入bootcode
+> 3. env set pmode 1
+> 4. env save
+> 5. re
+
+
+***
+### 给文件路径权限
+***
+
+> 1. su(root)
+> 2. 先执行mount 查看需要挂在路径如想给/system_ext/app/Factory权限，通过查看只需要到/system_ext
+> 3. 查到给权限路径后执行mount -o remount,rw /system_ext 即可
+
+
+
 
 ***
 ### 修改机器屏参
