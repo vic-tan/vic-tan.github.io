@@ -619,6 +619,14 @@ header-img: "img/zhihu.jpg"
 > 3. 查到给权限路径后执行mount -o remount,rw /system_ext 即可
 
 
+***
+### Google 浏览器截长图方法
+***
+
+> 1. 打开chrome浏览器，依次点击右上角“更多>更多工具>开发者工具”。
+> 2. 在开“开发者工具”页面按下快捷键windows系统“Ctrl+Shift+P”调出搜索框，Mac系统按“command+Shift+P”。
+> 3. 在搜索框中输入“full”,点击下面搜索结果中的“Screenshot capture full size screenshot ”。
+> 4. 打开“下载内容”就可以看到一个图片文件，这就是整个网页的长截图，双击即可打开查看。
 
 
 ***
