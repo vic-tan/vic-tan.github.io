@@ -546,7 +546,7 @@ header-img: "img/zhihu.jpg"
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
-| 串口抓bugreport | 1、出现问题连接串口，输入bugreportz -p  2、执行成功后在data/user de/0/com.android.shell/files/bugreports 3、使用命令拷贝到U 盘中即可取出bugreport 压缩包，如cp ./bugreport-xxx.zip /storage/xxx |
+
 ***
 ### 相关路径
 ***
@@ -596,7 +596,7 @@ header-img: "img/zhihu.jpg"
 
 > 1. 设置mac 地址：ifconfig eth0 hw  ether 28:31:ae:3a:6e:d0
 > 2. 关闭端口：ifconfig eth0 down
-> 3. 打开端口：ifconfig eth0 down
+> 3. 打开端口：ifconfig eth0 up
 > 4. 设置静态IP:ifconfig eth0 192.168.1.128
 
 ***
