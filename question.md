@@ -24,16 +24,17 @@ header-img: "img/green.jpg"
 * 问题分析
     > 初步分析时，发现imdpata 下有Rmca_ready key ,Factory 分区也是有RMCA key ，但是Factory 下的的RMCA 并不是impdata 下的Rmca_ready key抄进去的。正常情况下，同一台机器，同一个key， 写入到Factory的RMCA key 的md5 值 是一样的。说明Factory 分区下的RMCA key 是来至于其它key 。只要是完整的RMCA key ,正常只要抄正去了都是有声音的。这种情况说明SOC 或者EMMC 不正确。可能之前抄完key后换过SOC 和EMMC 并且换完后没有再重新抄key。为了验证这种猜想，打开netflix, 发现直接报803 错误，说明其它key 也是不失效。重启TV查看开机日志，打出以下信息，验证了猜想。同时用抄key 工具重新抄key ，发现跟EMMC 和SOC 需要绑定的key都无法抄写。用U盘抓取日志查看rdlog ，也同样找到了Verify key fail, rpmb secure key not match 方案，说明SOC 与EMMC 不匹配
 
-接上串口，上电看有没有输出这个日志，有的话表示EMMC 和主IC 不匹配
-41A/51M GTV
-[mmc rpmb get counter][409]verify hmac value fail!
-[rpmb secure key check][677]rpmb secure key is not match!
-[Warning]EMMC RPMB auth key is not match, please check it!
-[Warning]Strongly recommended to remount a new emmc on the board!
+* 方法分析接上串口，上电看有没有输出这个日志，有的话表示EMMC 和主IC 不匹配
+  > * 41A/51M GTV
+  > * [mmc rpmb get counter][409]verify hmac value fail!
+  > * [rpmb secure key check][677]rpmb secure key is not match!
+  > * [Warning]EMMC RPMB auth key is not match, please check it!
+  > * [Warning]Strongly recommended to remount a new emmc on the board!
 
-75P
-[WARNl]RPMB auth key doesn't match your board!
-[WARN]RPMB auth key doesn't match your board!
+  > * 2875P/2886N
+  > * [WARNl]RPMB auth key doesn't match your board!
+  > * [WARN]RPMB auth key doesn't match your board!
+
 * 解决方法 
     > * 换新的EMMMC后重抄key
     > * 换新SOC 和EMMMC 后重抄key
