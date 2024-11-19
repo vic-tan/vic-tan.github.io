@@ -546,6 +546,7 @@ header-img: "img/zhihu.jpg"
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
+| 查看是否抄了有效key| rtk_system_info |
 
 ***
 ### 相关路径
