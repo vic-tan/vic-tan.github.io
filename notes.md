@@ -542,11 +542,14 @@ header-img: "img/zhihu.jpg"
 | 串口控制台上输入 dumpsys tv_input | 查看LiveTV 信源信息（DTV/ATV/HDMI路径等）|
 | 串口控制台上输入 settings list global | 查看所有全局保存Global.putInt数据 |
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
+| 串口控制台上输入 settings list system| 查看所有全局保存system.putInt数据 |
 | 时时查看应用CPU 点用率| adb shell top |
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
-| 查看应用是否运行 点用率| adb shell dumpsys  activity services  | grep com.apps.factory.ui |
+| 查看应用是否运行 点用率| adb shell dumpsys  activity services  \| grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
 | 查看是否抄了有效key| rtk_system_info |
+| 串口控制台数据查询| sqlite3->.help->.dump 即可，出现.... 输出；可退出，退出sqlite3 qiuet |
+
 
 ***
 ### 相关路径
@@ -589,6 +592,14 @@ header-img: "img/zhihu.jpg"
 | KMS-生产适应| [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-611)|
 | KMS-Mantis重点问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-194)|
 | KMS-生产问题及售后问题 | [https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656](https://rd-mokadisplay.tcl.com/pms/browse/SWPD-656)|
+
+
+***
+###  查看应用是否在运行
+***
+
+> 1. 查看当前是否在运行：adb shell dumpsys  activity services  \| grep com.apps.factory.ui
+> 2. 杀死当前应用：adb shell am force-stop com.apps.factory.ui 
 
 
 ***
