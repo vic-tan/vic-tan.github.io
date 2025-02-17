@@ -623,6 +623,16 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+###  platform.pk8 和 platform.x509.pem文件 转换为 .keystore文件
+***
+
+> 1. keytool-importkeypair下载地址：https://github.com/getfatday/keytool-importkeypair
+> 2. 蒋keytool-importkeypair下载下来的文件拷贝到Linux中，然后再拷贝platform.pk8 和 platform.x509.pem文件到keytool-importkeypair目录下面
+> 3. 打开DOS 命令窗口，然后进入keytool-importkeypair下文件夹：
+> 4. 使用命令来执行：./keytool-importkeypair -k ./android.keystore -p android -pk8 platform.pk8 -cert platform.x509.pem -alias android
+> 5. 执行完成后会再keytool-importkeypair下文件夹下创建android.keystore 文件，密码为android，别名为android
+
+***
 ### 给文件路径权限
 ***
 
