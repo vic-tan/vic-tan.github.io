@@ -652,6 +652,14 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### RTK 开机抓日志
+***
+> 1. 不管是USER还是userdebug版本，抓取log方法： logcat -b all -f /data/local/tmp/41a0416.txt &
+> 2. 拷贝方法 cp -rf /data/local/tmp/41a0416.txt /storage/
+> 3. 在出现这步，如果不知道具体U盘ID， 请按Tab键，电脑会列举是哪个U盘id
+
+
+***
 ### 修改机器屏参
 ***
 
