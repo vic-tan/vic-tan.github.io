@@ -660,6 +660,27 @@ header-img: "img/zhihu.jpg"
 
 
 ***
+### EMMC 自动手机验证
+***
+> 1. 进入bootcode ->  layout view 可以查看应用key的reserved0 offse  EMMC 抄key 的reserved是0x0000000007900000~0x0000000006900000之间
+> 2. 
+> 2. MAC 设置
+> + 1： echo 112233445566 > /data/mac.bin
+> + 2：cat /data/mac.bin
+> + 3：dd if=/data/mac.bin  of=/dev/block/by-name/reserved_0 seek=0x24000 obs=1 ibs=1 count=24
+> + 4：sync
+> + 5：dd if=/dev/block/by-name/reserved_0 of=/data/mac_out.bin  skip=0x24000  obs=1 ibs=1 count=24
+> + 6：cat /data/mac_out.bin
+
+> 3. deviceid 设置
+> + 1：假设deviceid是：abcdefghijklmnopqrstuvwsyz1233444444444444444444444
+> + 2：echo "abcdefghijklmnopqrstuvwsyz1233444444444444444444444" > /data/deviceId.bin；
+> + 3：dd if=/data/deviceId.bin of=/dev/block/by-name/reserved_0 seek=0xF00000 obs=1 ibs=1 count=40
+
+
+
+
+***
 ### 修改机器屏参
 ***
 
