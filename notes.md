@@ -660,7 +660,7 @@ header-img: "img/zhihu.jpg"
 
 
 ***
-### EMMC 自动手机验证
+### EMMC 自动抄KEY 测试验证
 ***
 > 1. 进入bootcode ->  layout view 可以查看应用key的reserved0 offse  EMMC 抄key 的reserved是0x0000000007900000~0x0000000006900000之间
 > 2. 
