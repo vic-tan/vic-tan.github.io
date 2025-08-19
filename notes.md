@@ -525,8 +525,6 @@ header-img: "img/zhihu.jpg"
 | cd 后回退上一次目录 | cd - |
 | 查找当前git 仓库 | git remote -v |
 | 杀app进程 | ps -All -> kill 【pid】 |
-| 获取TV 所有栈activity| adb shell dumpsys activity activities |
-| 获取TV 最上层activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
 | 不亮屏无法连接串口修改 | 串口工具->断电上电->长按ESC(出现Realtek)->help->找到urat0_enable enable—>输入urat0_enable->re|
 | 工厂遥控器查看键值 | logcat -s KCR-KeyConverter\|logcat -s getevent|
 | code 查找文件或关键字或多个条件 | find -name "TvApiHooker.cpp" \|grep -nr 关键字 \| (grep -nr isdb \| grep -nr TVAPP_TYPE\ =\ 1)|
@@ -547,6 +545,10 @@ header-img: "img/zhihu.jpg"
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  \| grep com.apps.factory.ui |
 | 时时查看应用MEM 点用率| adb top -b -o %MEM,PID,NAME -n 1 |
+| 杀死后工厂apk | adb shell am force-stop com.apps.factory.ui  |
+| 获取TV 所有栈activity| adb shell dumpsys activity activities |
+| 获取TV 最上层activity | adb shell dumpsys activity top \| grep ACTIVITY \| grep mResumedActivity (windowns 把 grep 改为 findstr )|
+| 查看EMMC信息 | 接入串口，断上电 或 reboot 后长按 Esc 键，进入 bootcode 命令行; 输入 mmc info 回车 |
 | 查看是否抄了有效key| rtk_system_info |
 | 串口控制台数据查询| sqlite3->.help->.dump 即可，出现.... 输出；可退出，退出sqlite3 qiuet |
 
