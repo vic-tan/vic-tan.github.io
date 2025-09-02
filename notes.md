@@ -551,6 +551,7 @@ header-img: "img/zhihu.jpg"
 | 查看EMMC信息 | 接入串口，断上电 或 reboot 后长按 Esc 键，进入 bootcode 命令行; 输入 mmc info 回车 |
 | 查看是否抄了有效key| rtk_system_info |
 | 串口控制台数据查询| sqlite3->.help->.dump 即可，出现.... 输出；可退出，退出sqlite3 qiuet |
+| 替换异常签名apk重复重启处理| su & cd system_ext/app/Factory-> mount -o remount,rw /system_ext-> rm -rf Factory.apk & sync|
 
 
 ***
