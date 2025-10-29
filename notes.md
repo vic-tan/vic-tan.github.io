@@ -911,6 +911,24 @@ cd /mnt/vendor/factory/bin_panel
 sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h 
 sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup 
 
+> + 长按tab键上电进入rescue 模式
+> + cd /mnt/vendor;
+> + mkdir factory && mount /dev/block/platform/18010800.emmc/by-name/factory /mnt/vendor/factory;
+> + cd factory/bin_panel;
+> + cat 000BootParams.h;
+> + 按键i键进修改#define BOOT_UART_SETTING 1;
+> + 按键ESC键退出修改
+> + 按:wq进行保存
+> + sync;
+> + reboot;
+> + 长按esc键上电进入boot模式
+> + env set OEMLock off
+> + env save
+> + reboot
+
+
+
+
 ***
 ### Mac iTerm2 设置命令别名方法
 ***
