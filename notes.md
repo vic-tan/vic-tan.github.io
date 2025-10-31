@@ -609,7 +609,8 @@ header-img: "img/zhihu.jpg"
 ###  不显示 IP Settings
 ***
 
-> 1. ifconfig 查看eth0网线地址
+> 1. 只有debug才可以用以下方法，先su一下
+> 2. ifconfig 查看eth0网线地址放下面
 > 2. 设置mac 地址：ifconfig eth0 hw  ether 28:31:ae:3a:6e:d0
 > 2. 关闭端口：ifconfig eth0 down
 > 3. 打开端口：ifconfig eth0 up
