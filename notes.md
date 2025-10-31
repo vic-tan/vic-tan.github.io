@@ -609,7 +609,8 @@ header-img: "img/zhihu.jpg"
 ###  不显示 IP Settings
 ***
 
-> 1. 设置mac 地址：ifconfig eth0 hw  ether 28:31:ae:3a:6e:d0
+> 1. ifconfig 查看eth0网线地址
+> 2. 设置mac 地址：ifconfig eth0 hw  ether 28:31:ae:3a:6e:d0
 > 2. 关闭端口：ifconfig eth0 down
 > 3. 打开端口：ifconfig eth0 up
 > 4. 设置静态IP:ifconfig eth0 192.168.1.128
