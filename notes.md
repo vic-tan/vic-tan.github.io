@@ -914,6 +914,7 @@ sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h
 sed -i s/BOOT_UART0_ENABLE\ 1/BOOT_UART0_ENABLE\ 0/g 000BootParam.h_backup 
 
 > + 长按tab键上电进入rescue 模式
+> + 终止扫描U盘的/sbin/loader_m进程 kill `ps |grep "\/sbin\/loader_m" | sed -n 's/^ *\([0-9]*\).*/\1/p'`;
 > + cd /mnt/vendor;
 > + mkdir factory && mount /dev/block/platform/18010800.emmc/by-name/factory /mnt/vendor/factory;
 > + cd factory/bin_panel;
