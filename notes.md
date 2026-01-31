@@ -4,7 +4,107 @@ title: "笔记"
 header-img: "img/zhihu.jpg"
 ---
 
-## -----------------------------------提交代码----------------------------  
+## -----------------------------------W客户MTK 方案----------------------------  
+
+
+***
+### 代码下载
+***
+> 1. 8.0分支：
+repo init -u https://git01.mediatek.com/dtv/mediatek/manifest -b vizio-apollo-mp-2102-linux-180-002-958-001
+> 2. 9.0分支：
+repo init -u https://git01.mediatek.com/dtv/mediatek/manifest -b vizio-apollo-dev-2102-linux-180-002-1090-spock3-mtk19715_m21-vzstack-master
+> 3. 10.0 分支：
+repo init -u https://git01.mediatek.com/dtv/mediatek/manifest -b vizio-apollo-prod-2102---m21-vzstack-master
+> 4. 存放名字
+> + 先在 10.118.1.22服务下xiulichun目录创建一个文件夹
+> + 把tar.zx压缩包放到这个文件夹中
+> + 执行解压指令tar -xJvf name.tar.xz （name要换成文件名字）一般要20分左右，因为文件有13个G
+> + 解压完后需要执行cp $(which mkimage) /home/xiulichun/name/release/tools/binary/open/image-tools/（name要换成文件夹名字）
+
+***
+### 服务器路径
+***
+> 1. 如果是SSH直接远程连接是
+> + 10.118.1.22
+> + 用户名:xiulichun.....
+> + 端口:22222
+> 2. 如果是SMB协议共享文件夹
+> + 10.118.1.22
+> + 账号:xiulichun....
+> + 密码:cJE8a6Ac9h3jJgUDGaub
+
+***
+### MOKA代码路径
+***
+> 1. Moka工厂代码路径(在VS CODE 只要导入到Factory文件夹即可)
+> + new_5586_0128/release/mtk_util/factory/custom/vizio/moka
+> 2. 代码入口
+> + 在a_mtvfapi_cmd_parser_custom.cpp类的_a_mtvfapi_cmd_parser_custom_on_event方法
+
+***
+### 代码编译
+***
+> 1. 进入路径
+> + sys_build/vizio_linux/mt5586_us_linux
+> 2. 执行make clean
+> 3. 全编译(40分钟左右)：
+> + make -L VZ_BUILD_VARIANT=dev 2>&1 | tee make.log
+单编(15分钟左右)：
+> + make -L libmtktvfapi_custom_12
+> 4. 当输出#### build completed successfully (50:48 (mm:ss)) ####表示编译成功
+> 5. USB升级包路径在release/out/vizio_linux/mt5586_us_linux/ltb_build/out/vizio_linux/mt5586_us_linux/output_nocert/
+> 6. 全擦包release/out/vizio_linux/mt5586_us_linux/ltb_build/out/vizio_linux/mt5586_us_linux/output/mt5586_upgrade_image_full_danger.pkg
+> 7. 下载软件包后放到U盘要改成这个名字mt5586_upgrade_image.pkg 插上U盘，断电上电自动会升级
+
+***
+### 后台服务挂着编译
+***
+> 1. 开一个后台挂着服务tmux new -s name
+> 2. 查看当前用户有多少后台挂着服务tmux ls
+> 3. 再次进入某一个后台挂着服务tmux attach -t name
+> 4. 退出后台挂着服务exit
+
+***
+### 代码提交
+***
+> 1. 提交网址：
+> + https://git01.mediatek.com/dashboard/self
+> 2. 提交要求：
+新建jira，一笔提交一个jira
+提交内容要同步到下面 3个jira：
+> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-554
+> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-555
+> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-556
+
+***
+### 服务器路径
+***
+> 1. 提交格式
+> + git commit -m "
+[DTV04854377][WMTV-123][TCL][MOKA][DTV][PQ]Fix PQ issues for PID 135E0002
+
+[Description]
+Fix PQ issues for PID 135E0002
+
+[Root Cause]
+
+[Solution]
+change PQ file from PQ engineer
+
+[Test Report]
+1.PQ test: OK
+
+[Dependency commit]
+none
+
+CR-Id:DTV04854377"
+
+> + 标红字体，需要留意。
+Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化。
+
+
+## -----------------------------------RTK 提交代码----------------------------
 
 ***
 ### 编译整个软件
