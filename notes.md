@@ -72,13 +72,31 @@ repo init -u https://git01.mediatek.com/dtv/mediatek/manifest -b vizio-apollo-pr
 > + https://git01.mediatek.com/dashboard/self
 > 2. 提交要求：
 新建jira，一笔提交一个jira
+push 方法如：git push mediatek.dtv HEAD:refs/for/vizio-apollo-mp-2102-linux-180-002-958-001_m21-vzstack-master
 提交内容要同步到下面 3个jira：
-> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-554
-> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-555
-> + https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-556
+> + 8.0 patch:https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-554
+> + 9.0 patch：https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-555
+> + 9.1 patch：https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-775
+> + 10.0 patch https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-556
+> +Hi @Huaxin Liu(MTK)
+
+8.0 patch:
+https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117312
+9.0 patch：
+https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117316
+9.1 patch：
+https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117314
+10.0 patch：
+https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117315
+
+
+
+@冯湘云Harvey(MOKA) @Zhao Long(MOKA)
+
+Thanks
 
 ***
-### 服务器路径
+### 提交格式
 ***
 > 1. 提交格式
 > + git commit -m "
@@ -103,6 +121,18 @@ CR-Id:DTV04854377"
 > + 标红字体，需要留意。
 Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化。
 
+***
+### 提交PQ文件路径
+***
+> 1. 先找到每个文件，色后用对比文件
+> 1. （文件区分65寸、75寸）CustomConfigDefaultValue.ini
+> + /Volumes/xiulichun/code/cusdata/vizio/platform/chip/mt5873/misc/CustomConfigDefaultValue/odm_12/W4K65M-1012/CustomConfigDefaultValue.ini
+> 2. （文件不区分）FactoryPanelGammaTable.ini
+> + /Volumes/xiulichun/code/cusdata/vizio/bsp/common/PQ_general/FactoryGammaTable/odm_12/FactoryPanelGammaTable.ini
+> 3. （文件区分65寸、75寸）HSY.BIN
+> + /Volumes/xiulichun/code/cusdata/vizio/bsp/chip/mt5873/pq/odm_12/HSY.BIN
+> 4. （文件区分65寸、75寸）UD_TCL_CSOT_ST645AD12_1.ini
+> + /Volumes/xiulichun/code/cusdata/vizio/bsp/chip/mt5873/panel/odm_12/UD_TCL_CSOT_ST645AD12_1.ini
 
 ## -----------------------------------RTK 提交代码----------------------------
 
