@@ -4,7 +4,7 @@ title: "笔记"
 header-img: "img/zhihu.jpg"
 ---
 
-## -----------------------------------W客户MTK 方案----------------------------  
+## -------------------W客户MTK 方案-------------------------  
 
 
 ***
@@ -78,45 +78,42 @@ push 方法如：git push mediatek.dtv HEAD:refs/for/vizio-apollo-mp-2102-linux-
 > + 9.0 patch：https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-555
 > + 9.1 patch：https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-775
 > + 10.0 patch https://vizio.atlassian.net/issues?filter=-2&selectedIssue=WMTV-556
-> +Hi @Huaxin Liu(MTK)
-
-8.0 patch:
-https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117312
-9.0 patch：
-https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117316
-9.1 patch：
-https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117314
-10.0 patch：
-https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117315
-
-
-
-@冯湘云Harvey(MOKA) @Zhao Long(MOKA)
-
-Thanks
+> + Hi @Huaxin Liu(MTK)
+> + 
+> + 示例
+> +8.0 patch:
+> +https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117312
+> +9.0 patch：
+> +https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117316
+> +9.1 patch：
+> +https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117314
+> +10.0 patch：
+> + https://git01.mediatek.com/c/dtv/mediatek/apollo/cusdata/vizio/+/117315
+> +@冯湘云Harvey(MOKA) @Zhao Long(MOKA)
+> +Thanks
 
 ***
 ### 提交格式
 ***
 > 1. 提交格式
 > + git commit -m "
-[DTV04854377][WMTV-123][TCL][MOKA][DTV][PQ]Fix PQ issues for PID 135E0002
+> + [DTV04854377][WMTV-123][TCL][MOKA][DTV][PQ]Fix PQ issues for PID 135E0002
 
-[Description]
-Fix PQ issues for PID 135E0002
+> + [Description]
+> + Fix PQ issues for PID 135E0002
 
-[Root Cause]
+> + [Root Cause]
 
-[Solution]
-change PQ file from PQ engineer
+> + [Solution]
+> + change PQ file from PQ engineer
 
-[Test Report]
-1.PQ test: OK
+> + [Test Report]
+> + 1.PQ test: OK
 
-[Dependency commit]
-none
+> + [Dependency commit]
+> + none
 
-CR-Id:DTV04854377"
+> + CR-Id:DTV04854377"
 
 > + 标红字体，需要留意。
 Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化。
@@ -134,10 +131,20 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 > 4. （文件区分65寸、75寸）UD_TCL_CSOT_ST645AD12_1.ini
 > + /Volumes/xiulichun/code/cusdata/vizio/bsp/chip/mt5873/panel/odm_12/UD_TCL_CSOT_ST645AD12_1.ini
 
-## -----------------------------------RTK 提交代码----------------------------
+## ---------------------RTK 提交代码---------------------
 
 ***
-### 编译整个软件
+### RTK 方法抓开机日志
+***
+> 1. 出现Google TV 动画 输入：logcat -b all -f /data/local/tmp/testlog.txt &
+> 2. 抓完到后把data/local/tmp导出U盘
+> 3. 关闭 cd /data/local/tmp
+> 4.  ls -l
+> 5.  kill 2027 （进程PID）
+
+
+***
+### 编译整个软件 
 ***
 
 > 1. 连接进入自己的服务器 eg 10.126.69.28
