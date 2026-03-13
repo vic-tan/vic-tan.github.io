@@ -16,6 +16,11 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/tanlifei/Documents/Moka/WorkSpace/work/vic-tan.github.io" value="27q5xgggeY61KQp7IaLOq4ndo7w" />
+    </persistenceIdMap>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>f</find>
@@ -918,5 +923,13 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

@@ -134,7 +134,7 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 ## ---------------------RTK 提交代码---------------------
 
 ***
-### RTK 方法抓开机日志
+### 抓开机日志方法
 ***
 > 1. 出现Google TV 动画 输入：logcat -b all -f /data/local/tmp/testlog.log &
 > 2. 抓完到后把data/local/tmp导出U盘
@@ -142,6 +142,7 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 > 3. 不想抓日志，可以关闭抓日志 cd /data/local/tmp
 > 4.  ls -l
 > 5.  kill 2027 （进程PID）
+> 6. 或者断电即可，此方法为一次性，下次又要重新开始从第1步开始
 
 
 ***
