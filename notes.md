@@ -456,13 +456,13 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 ### 命令启动Activity界面
 ***
 
-| 名称              | 命令                                                                    |
-|-----------------|-----------------------------------------------------------------------|
-| 工厂菜单            | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity        |
-| 工厂菜单         | am start -n com.apps.factory.ui/.factorymenu.FactoryMenuActivity        |
-| 2886N 设置界面 | am start -a android.settings.SETTINGS                                 |
-| RTK 设置界面        | am start -n com.realtek.menu/com.realtek.menu.MainActivity            |
-| RTK ATV         | am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity        |
+| 名称              | 命令                                                                   |
+|-----------------|----------------------------------------------------------------------|
+| 工厂菜单            | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity       |
+| 工厂菜单         | am start -n com.apps.factory.ui/.MainActivity        |
+| 2886N 设置界面 | am start -a android.settings.SETTINGS                                |
+| RTK 设置界面        | am start -n com.realtek.menu/com.realtek.menu.MainActivity           |
+| RTK ATV         | am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity       |
 | RTK DTV         | am start -n com.realtek.dtv/.DigitalSetup.DigitalChannelSetupActivity |
 
 
@@ -680,6 +680,11 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 | 串口控制台上输入 settings list global | 查看所有全局保存Global.putInt数据 |
 | 串口控制台上输入 settings list secure| 查看所有全局保存Secure.putInt数据 |
 | 串口控制台上输入 settings list system| 查看所有全局保存system.putInt数据 |
+| 串口控制台上输入 getprop | 查看所有全局保存prop数据 |
+| 串口控制台上输入 settings list global \| grep 名字| 查看单个Global数据 |
+| 串口控制台上输入 settings list secure \| grep 名字| 查看单个Secure数据 |
+| 串口控制台上输入 settings list system \| grep 名字| 查看单个system数据 |
+| 串口控制台上输入 getprop \| egrep -i 名字| 查看单个prop数据 |
 | 时时查看应用CPU 点用率| adb shell top |
 | 时时查看应用CPU 点用率| adb shell dumpsys meminfo -a 包名 |
 | 查看应用是否运行 点用率| adb shell dumpsys  activity services  \| grep com.apps.factory.ui |
