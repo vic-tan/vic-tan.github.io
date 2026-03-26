@@ -459,7 +459,7 @@ Fix，Add，Change等。Solution要填写。文件权限提交前后不要变化
 | 名称              | 命令                                                                   |
 |-----------------|----------------------------------------------------------------------|
 | 工厂菜单            | am start -n com.apps.factory.ui/.designmenu.DesignMenuActivity       |
-| 工厂菜单         | am start -n com.apps.factory.ui/.MainActivity        |
+| 工厂菜单         | am start -n com.apps.factory.ui/.activity.MainActivity        |
 | 2886N 设置界面 | am start -a android.settings.SETTINGS                                |
 | RTK 设置界面        | am start -n com.realtek.menu/com.realtek.menu.MainActivity           |
 | RTK ATV         | am start -n com.realtek.tv.atv/.atvsetup.AnalogueSetupActivity       |
